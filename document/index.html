@@ -13,16 +13,21 @@
       }
       strong {
         display: block;
-        color: #f00;
+        color: rgb(255, 0, 0);
       }
       a {
         font-size: 19px;
         font-weight: 700;
       }
+
+      h2 {
+        margin-left: 15px;
+      }
     </style>
   </head>
   <body>
-    <ol>
+    <ol>  
+      <h1 style="text-align: center">[ BOX ]</h1>
       <li>
         <!-- 
                 2022. 05. 17
@@ -30,6 +35,9 @@
                 ./ 나의 형제 레벨
                 ../ 나의 부모 레벨
             -->
+             
+          
+    <ol></ol>
         <a href="./doc/box01.html" target="_black">box 01</a>
         <p>태그의 일반적인 성질</p>
 
@@ -44,8 +52,9 @@
       <li>
         <a href="./doc/box03.html" target="_black">box 03</a>
         <p>
-          박스를 가로로 나열해 보았다. 먼말인지 1도 몰르겠다. <br />+박스에
-          사진도 넣어보았다.
+          박스를 가로로 나열해 보았다. 먼말인지 1도 몰르겠다. 
+          <p>+ 박스에
+          사진도 넣어보았다.</p>
         </p>
 
         <strong>아주 아주 중요하다고 했다.</strong><br />
@@ -64,10 +73,10 @@
       </li>
     </ol>
 
-    <h1 style="text-align: center">[ display ]</h1>
+    <h1 style="text-align: center">[ DISPLAY ]</h1>
     <ol></ol>
 
-    <h2>position01</h2>
+    <h2>position 01</h2>
     <ol>
       <li>
         <a href="./doc/position01.html">position의 기초</a>
@@ -81,16 +90,31 @@
         <br /><em>2022.05.19</em>
       </li>
     </ol>
-    <h2>position02</h2>
+    <h2>position 02</h2>
     <ol>
       <li>
-        <a href="./doc/position02.html">position의 기초02</a>
+        <a href="./doc/position02.html">position의 기초 02</a>
         <p>
           span 태그로 메뉴버튼을 만들고 버튼을 눌렀을때 메뉴가 나오도록 이벤트를
           주었다. 그리고 메뉴가 나오면 그 버튼이 X로 바뀌게 만들었다. <br />
-          아직은 이해하기 어렵지만 움직이는 화면이 신기하다.
+          <p>아직은 이해하기 어렵지만 움직이는 화면이 신기하다.</p> 
         </p>
         <em>2022.05.19</em>
+      </li>
+    </ol>
+    <h2>position 03</h2>
+    <ol>
+      <li>
+        <a href="./doc/position03.html">position의 기초 03</a>
+        <p>
+          hover 태그를 이용해서 마우스를 사진 위에 가져다 놓으면 반응하도록
+          하였다. <br />
+          transform:scale(2); overflow: hidden; 태그를 사용해서 사진을 2배
+          커지게 동작하도록 하면서, 동시에 박스 바깥으로 넘치는 걸 없앴다.
+        </p>
+        <p>그리고 아이콘을 넣고 폰트도 바꾸는 방법을 배웠다.</p>
+        <p><strong> 기준점을 잡는 태그 - position: relative;</strong></p>
+        <em>2022.05.20</em>
       </li>
     </ol>
   </body>
