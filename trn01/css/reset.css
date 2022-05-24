@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* 제일 기본 */
-  font-size: inherit;
+  font-size: inherit; /* inherit는 부모요소를 그대로 따르겠다는 속성 */
   font-weight: inherit;
 }
 
@@ -24,4 +24,8 @@ a {
 body {
   line-height: 1;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+img {
+  vertical-align: middle;
 }
