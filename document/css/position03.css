@@ -1,3 +1,5 @@
+/* 높이는 특별한 경우가 아니면 auto */
+
 /* 폰트와 아이콘 */
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
