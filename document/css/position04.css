@@ -30,3 +30,36 @@ body {
     color: #fff;
     font-size: 30px;
 }
+
+.smile .on {
+position: absolute;
+top: 100%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 500px;
+height: 500px;
+background-color: #fff;
+border-radius: 50%;
+}
+
+.smile .on li {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+}
+
+.smile .on li:nth-child(1) {
+    top:100px;
+    left: 100px;
+}
+.smile .on li:nth-child(2) {
+    top:100px;
+    left: 100px;
+}
+.smile .on li:nth-child(3) {
+    top:100px;
+    left: 225px;
+}
