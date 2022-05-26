@@ -118,7 +118,11 @@ cursor: pointer;
     transform: rotate(90deg);
 }
 
-
+@keyframes sun_move {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .car {
     position: fixed;
@@ -209,8 +213,47 @@ right: 20px;
 }
 
 .road {
+    position: relative;
     height: 100px;
     margin: 0 auto;
     background: rgb(104, 93, 37);
 
 }
+
+.road .tile li {
+position: absolute;
+width: 100px;
+height: 15px;
+background: #000;
+top: 50%;
+}
+
+.road .tile li:nth-child(2) {
+    left: 200px;
+}
+.road .tile li:nth-child(3) {
+    left: 400px;
+}
+.road .tile li:nth-child(4) {
+    left: 600px;
+}
+.road .tile li:nth-child(5) {
+    left: 800px;
+}
+.road .tile li:nth-child(6) {
+    left: 1000px;
+}
+.road .tile li:nth-child(7) {
+    left: 1200px;
+}
+.road .tile li:nth-child(8) {
+    left: 1400px;
+}
+.road .tile li:nth-child(9) {
+    left: 1600px;
+}
+.road .tile li:nth-child(10) {
+    left: 1800px;
+}
+
+
