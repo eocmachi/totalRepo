@@ -1,6 +1,4 @@
 $(function () {
-
-
   $('.main_slider').on('init reInit afterChange', function(){
     var here = $('.slick-current');
     here
