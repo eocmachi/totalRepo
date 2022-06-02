@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML BASIC</title>
+
 </head>
 
 <body>
@@ -15,12 +16,56 @@
     <ul>
         <li>
             <a href="./doc/box01.html">기본 박스 01</a>
-            <p>기본적인 박스의 성질에 대한 이해 width height padding margin</p>
-            <p>width는 늘어났다. </p>
-        </li>
+            <p><strong> 기본적인 박스의 성질에 대한 이해 width height padding margin</strong></p>
+            <ol>
+                <li><p>박스는 기본적으로 width와 height가 auto이다.</p> </li>
+                <li><p>박스는 기본적으로 투명하고 y축으로 쌓여간다.</p> </li>
+                <li><p>박스는 기본적으로 block 옆에 block이 오지 못하게 한다.</p> </li>
+
+            </ol>
+        </li> <br>
         <li>
             <a href="./doc/box02.html">기본 박스 02</a>
-            <p>선택자에 대한 이해</p>
+            <p><strong> 선택자에 대한 이해</strong></p>
+            <ol>
+                <li><p> 모든 선택자는 *</p></li>
+                <li><p>:nth-child(N)= 부모안에 모든 요소 중 N번째 요소 <br/>
+                    A :nth-of-type(N)= 부모안에 A라는 요소 중 N번째 요소</p> </li> 
+                <li><p> # id는 . class 보다 상위 선택자이다 <br>
+                    id > class > 요소</p>
+                </li>
+                <li><p>
+                    인접 형제 선택자, 일반 형제 선택자 </p>
+                    <p>
+                    - 인접 형제 선택자의 문법 형태는 A + B<br>
+                    
+                    A 바로 뒤에 오는 B만 선택된다  </p>
+                    
+                    
+                    - 일반 형제 선택자의 문법 형태는 A ~ B<br>
+                    
+                    A 뒤에 오는 모든 B들이 선택된다
+                    
+                   
+                </li>
+
+            </ol>
+        </li>
+    </ul>
+ 
+    <hr />   
+
+    <h2>다단메뉴 만들기</h2>
+    <ul>
+        <li>
+            <a href="./doc/multi_menu01.html">다단메뉴 01</a>
+            <p>hover를 사용해서 메뉴에 커서를 가져다대면 하위메뉴가 뜨도록 하고 두번째 메뉴에 동글뱅이로 포인트를 줌</p>
+          
+        </li> <br>
+        <li>
+            <a href="./doc/multi_menu02.html">다단메뉴 02</a>
+            <p>다단메뉴 01과 비슷한 구조이지만 애니메이션을 주었다</p>
+            <p> opacity, visibility, display 차이점에 대해 배움</p>
         </li>
     </ul>
 </body>
