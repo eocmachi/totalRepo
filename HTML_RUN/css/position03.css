@@ -82,8 +82,8 @@ header i {
 .section03 .container figure {
     height: 100vh;
     filter: grayscale(1) brightness(0.4);
-
 }
+
 
 .section03 .container .left {
     background: url(../img/insta01.jpg) no-repeat center center/cover;
@@ -116,7 +116,6 @@ header i {
     line-height: 1.414;
 }
 
-.section05 .container figure {}
 
 .section05 .container .right {
     flex-direction: column;
@@ -128,6 +127,7 @@ header i {
     height: 100vh;
     text-align: right;
     background: url(../img/press0102.jpg) no-repeat center center/cover;
+
 }
 
 .section05 .container .right h2 {
@@ -139,9 +139,9 @@ header i {
 
 .section05 .container .right p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 100;
     margin: 0 0 40px 0;
-    line-height: 1.618;
+    line-height: 1.414;
 }
 
 .section06 .container .left {
@@ -204,7 +204,7 @@ footer address {
     transition: 0.5s;
 }
 
-.cover .on {
+.cover.on {
     height: 100vh;
 }
 
