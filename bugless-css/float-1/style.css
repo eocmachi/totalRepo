@@ -1,0 +1,105 @@
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    background-color: #ddd;
+  }
+  
+  a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+  }
+  
+  /* ▼ WHERE YOUR CODE BEGINS */
+
+  /* .nav {
+      padding-left: 10px;
+      position: absolute;
+      width: 550px;
+      margin: 400px 400px;
+      background-color: #fff;
+  }
+
+  .menu {
+      display: block;
+      width: 100px;
+      height: 50px;
+      float: left;
+      text-align: center;
+      padding-top: 13px;
+  }
+
+  .menu:nth-child(2) {
+      color: rgb(0, 115, 255);
+      font-weight: bolder;
+      border-bottom: 2px solid rgb(0, 115, 255);
+  }
+
+  .menu::after {
+      content: "";
+      display: block;
+      clear: left;
+      width: 550px;
+      height: 50px;
+  } 
+  leeeee */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    background-color: #ddd;
+  }
+  
+  a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+  }
+  
+  /* ▼ WHERE YOUR CODE BEGINS */
+
+  ul {
+      list-style-type: none;
+      padding-left: 0;
+      background-color: #fff;
+      border-bottom: 1px solid #E5EAEF
+  }
+
+.tap-menu {
+    max-width: 540px;
+}
+
+.tap-menu-item {
+    float: left;
+    padding-right: 16px;
+}
+
+.tap-menu-item.selected a {
+color: #2860E1;
+font-weight: 500;
+border-bottom: 2px solid #2860E1;
+}
+
+.tap-menu-item a {
+    display: block;
+    padding: 16px 20px;
+}
+
+.tap-menu::after {
+    content: "";
+    display: block;
+    clear: left;
+}
