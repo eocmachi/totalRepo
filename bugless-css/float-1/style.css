@@ -86,6 +86,7 @@
 .tap-nav-item a {
   display: block;
   padding: 16px 20px;
+  font-weight: 400;
 }
 
 .tap-nav-item.selected a {
