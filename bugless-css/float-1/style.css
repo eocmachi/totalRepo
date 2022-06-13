@@ -72,34 +72,32 @@
   /* ▼ WHERE YOUR CODE BEGINS */
 
   ul {
-      list-style-type: none;
-      padding-left: 0;
-      background-color: #fff;
-      border-bottom: 1px solid #E5EAEF
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #fff;
+    max-width: 540px;
+    margin: 300px auto;
   }
 
-.tap-menu {
-    max-width: 540px;
+.tap-nav-item {
+  float: left;
+  padding-right: 16px;
+}
+.tap-nav-item a {
+  display: block;
+  padding: 16px 20px;
+  font-weight: 400;
 }
 
-.tap-menu-item {
-    float: left;
-    padding-right: 16px;
+.tap-nav-item.selected a {
+  color: #2860E1;
+  font-weight: 500;
+  border-bottom: 2px solid #2860E1;
 }
 
-.tap-menu-item.selected a {
-color: #2860E1;
-font-weight: 500;
-border-bottom: 2px solid #2860E1;
+.tap-nav::after {
+  content: "";
+  display: block;
+  clear: left;
 }
 
-.tap-menu-item a {
-    display: block;
-    padding: 16px 20px;
-}
-
-.tap-menu::after {
-    content: "";
-    display: block;
-    clear: left;
-}
