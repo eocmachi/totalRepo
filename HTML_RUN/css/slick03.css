@@ -23,10 +23,14 @@
     position: relative;
 }
 
+.main_visual {
+    position: relative;
+}
+
 .main_slider figure {
     position: relative;
     height: 600px;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -50,10 +54,10 @@
     transform: translate(-50%, -50%);
     width: 1200px;
     color: #fff;
-    text-shadow: 0 0 3px #000;
+    text-shadow: 0 0 2px #000;
 }
 
-.main_slider .inner h2 {
+.main_slider figure .inner h2 {
     font-size: 55px;
     font-weight: 700;
     text-transform: uppercase;
@@ -68,12 +72,7 @@
     transition: 0.7s;
 }
 
-.main_slider figure.slick-current h2 {
-    color: rgb(255, 255, 255);
-    transition: 2s;
-}
-
-.main_slider .inner p {
+.main_slider figure .inner p {
     font-size: 15px;
     font-weight: 300;
     margin: 0 0 20px 0;
@@ -84,12 +83,12 @@
 .main_slider figure.on .inner p {
     transform: translateY(0);
     opacity: 1;
-    transition: 0.5s 1s;
+    transition: 0.7s 1s;
 }
 
-.main_slider .inner a {
+.main_slider figure .inner a {
     display: inline-block;
-    background-color: #333;
+    background: #333;
     padding: 5px 15px 8px 15px;
     transform: translateY(100px);
     opacity: 0;
@@ -111,7 +110,7 @@
     background-image: url(../img/num.png);
     background-position-y: 0;
     margin: 0 0 0 600px;
-    transition: 0.7s;
+    transition: 0.3s;
 }
 
 .main_visual .custom_dots {
@@ -120,7 +119,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 1200px;
-    background-color: #ddd;
+    background: #ddd;
     display: flex;
 }
 
@@ -146,7 +145,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color:rgb(56, 88, 77);
+    background: rgb(175, 200, 140);
 }
 
 .main_visual .custom_dots li.on::before {
@@ -154,7 +153,9 @@
     transition: 2s;
 }
 
+/* vertical-align % 값주기 */
 .main_visual i {
+    color: #fff;
     font-size: 30px;
-    vertical-align: middle;
+    vertical-align: -25%;
 }
