@@ -1,0 +1,96 @@
+/* * {
+    outline: 1px solid #f00;
+} */
+
+.Wrap {}
+
+
+/* header 시작 ---> */
+#header {
+    position: relative;
+}
+
+#header .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 120px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header .container nav>ul {
+    display: flex;
+}
+
+#header .container nav>ul>li>a {
+    padding: 0 45px;
+}
+
+#header .container span {
+    background-color: #FE6B00;
+    padding: 10px 20px;
+    border-radius: 300px;
+}
+
+.main_slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    opacity: 0.3;
+}
+
+.main_slider .slick-arrow:hover {
+    opacity: 1;
+    transition: border 0.5s;
+}
+
+
+.main_slider .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.main_slider .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* menu 시작 ---> */
+
+.menu {
+    padding: 100px;
+}
+
+.menu .content {
+    display: flex;
+}
+
+.menu .content p {
+    font-size: 30px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul>li>a {
+    font-size: 20px;
+}
+

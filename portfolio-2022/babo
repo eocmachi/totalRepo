@@ -10,3 +10,12 @@ margin을 아래쪽으로만 주기
 
 width auto로 주기
 width 넓이 주지 않기
+
+높이 절대 X
+
+
+* {
+            outline: 1px solid #f00;
+        }
+
+가이드 라인
