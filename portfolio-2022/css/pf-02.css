@@ -1,9 +1,8 @@
-/* * {
+  /* * {
     outline: 1px solid #f00;
-} */
+}   */
 
 .Wrap {}
-
 
 /* header 시작 ---> */
 #header {
@@ -18,19 +17,33 @@
     display: flex;
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
     line-height: 120px;
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 280px;
+    transition: 0.5s;
 }
+
+#header .container:hover {
+    background-color: #fff;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+#header .container a {
+    color: #fff;
+}
+
+#header .container:hover nav>ul>li>a {
+    color: #000;
+}
+
 
 #header .container nav>ul {
     display: flex;
 }
 
 #header .container nav>ul>li>a {
-    padding: 0 45px;
+    padding: 0 50px;
 }
 
 #header .container span {
@@ -39,6 +52,29 @@
     border-radius: 300px;
 }
 
+
+
+#header .list-item {
+display: none;
+padding-bottom: 30px;
+}
+
+#header .list-item a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#header .container:hover .list-item {
+    display: block;
+}
+
+#header .container:hover .list-item a {
+    color: #000;
+}
+ 
 .main_slider .slick-arrow {
     position: absolute;
     top: 50%;
@@ -53,14 +89,8 @@
     height: 100px;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
-    opacity: 0.3;
-}
 
-.main_slider .slick-arrow:hover {
-    opacity: 1;
-    transition: border 0.5s;
 }
-
 
 .main_slider .slick-prev {
     margin: 0 0 0 -700px;
@@ -72,25 +102,142 @@
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-/* menu 시작 ---> */
 
+/* menu 시작 ---> */
 .menu {
-    padding: 100px;
+    padding: 200px;
 }
 
 .menu .content {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .menu .content p {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .menu ul {
     display: flex;
+    align-items: center;
 }
 
 .menu ul>li>a {
     font-size: 20px;
+    padding: 0 20px;
 }
+
+.menu_slider figure {
+    text-align: center;
+}
+
+.menu_slider figure img {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.menu_slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid rgb(255, 0, 0);
+    border-left: 1px solid rgb(255, 0, 0);
+}
+
+.menu_slider .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu_slider .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.menu_slider strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.menu_slider span {
+    font-size: 14px;
+}
+
+/* taste 시작 ---> */
+.taste {
+    text-align: center;
+    padding: 100px 290px;
+}
+
+.taste-title {
+    margin-bottom: 35px;
+}
+
+.taste p {
+    margin-bottom: 80px;
+    font-size: 14px;
+}
+
+.taste .box {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.taste .box figure {
+    position: relative;
+}
+
+.taste .box figure img {
+    transition: all 0.2s linear;
+}
+
+.taste .box figure:hover img {
+    transform: scale(1.13);
+}
+
+.taste .box figure video {
+    transition: all 0.2s linear;
+}
+
+.taste .box figure:hover video {
+    transform: scale(1.13);
+}
+
+.taste .box figure span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 40px;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.taste .box figure:hover span {
+    opacity: 1;
+}
+
+/* notice 시작 ---> */
+.notice {
+    padding: 200px 280px;
+}
+
+
+
+
 
