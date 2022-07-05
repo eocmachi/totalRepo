@@ -1,6 +1,6 @@
-  /* * {
+ /* * {
     outline: 1px solid #f00;
-}   */
+}       */
 
 .Wrap {}
 
@@ -22,6 +22,7 @@
     margin: 0 auto;
     padding: 0 280px;
     transition: 0.5s;
+    z-index: 999;
 }
 
 #header .container:hover {
@@ -50,8 +51,8 @@
     background-color: #FE6B00;
     padding: 10px 20px;
     border-radius: 300px;
+   font-size: 16px;
 }
-
 
 
 #header .list-item {
@@ -105,7 +106,7 @@ padding-bottom: 30px;
 
 /* menu 시작 ---> */
 .menu {
-    padding: 200px;
+    padding: 150px 350px;
 }
 
 .menu .content {
@@ -125,17 +126,29 @@ padding-bottom: 30px;
 }
 
 .menu ul>li>a {
-    font-size: 20px;
+    font-size: 14px;
     padding: 0 20px;
 }
 
+.menu ul>li~li {
+    border-left: 1px solid #ddd;
+}
+
 .menu_slider figure {
+    position: relative;
     text-align: center;
+    padding: 0 10px;
 }
 
 .menu_slider figure img {
     display: block;
     margin-bottom: 30px;
+}
+
+.menu_slider .new-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .menu_slider .slick-arrow {
@@ -178,11 +191,16 @@ padding-bottom: 30px;
 /* taste 시작 ---> */
 .taste {
     text-align: center;
-    padding: 100px 290px;
+    padding: 0 350px;
 }
 
 .taste-title {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+}
+
+.taste-title img {
+    width: auto;
+    height: 60px;
 }
 
 .taste p {
@@ -237,6 +255,68 @@ padding-bottom: 30px;
     padding: 200px 280px;
 }
 
+
+
+/* follow 시작 ---> */
+.follow {
+    padding: 100px 350px;
+    justify-content: center;
+    text-align: center;
+}
+
+.follow h2 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.follow h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    transform: translate(-52%, -50%);
+    border: 6px solid #FE6B00;
+    width: 293px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: -1;
+}
+
+.follow span {
+    display: block;
+    margin-bottom: 80px;
+    color: #666;
+}
+
+.follow-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow-slider figure {
+    padding: 0 15px;
+}
+
+.follow-slider img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.follow-slider .slick-arrow {
+    font-size: 0;
+    border: none;
+    background: transparent;
+}   
+
+/* pizza 시작 ---> */
+.pizza {
+    background: url(../img/first-bg\ 1.jpg) no-repeat center center/cover;
+    height: 970px;
+}
 
 
 

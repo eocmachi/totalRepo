@@ -11,5 +11,11 @@ $(function () {
         autoplay: true,
         pauseOnHover: false,
     });
+    $('.follow-slider').slick({
+        slidesToShow: 3,
+        autoplay: true,
+        pauseOnHover: false,
+    });
+    
 
 })
