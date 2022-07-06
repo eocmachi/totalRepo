@@ -1,14 +1,30 @@
- /* * {
-    outline: 1px solid #f00;
-}       */
+ /* * { outline: 1px solid #f00;}       */
 
 .Wrap {}
 
 /* header 시작 ---> */
-#header {
-    position: relative;
+.main_slider video { width: 100%; height: auto; }
+
+.main_slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
 }
 
+.main_slider .slick-prev { margin: 0 0 0 -700px; transform: translate(-50%, -50%) rotate(-45deg); }
+.main_slider .slick-next { margin: 0 0 0 700px; transform: translate(-50%, -50%) rotate(135deg); }
+
+#header { position: relative; }
 #header .container {
     position: fixed;
     top: 0;
@@ -23,29 +39,21 @@
     padding: 0 280px;
     transition: 0.5s;
     z-index: 999;
+    letter-spacing: 0.02rem;
 }
 
-#header .container:hover {
-    background-color: #fff;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
-}
+#header .container:hover { background-color: #fff; box-shadow: 0 0 11px rgba(33,33,33,.2); }
 
-#header .container a {
-    color: #fff;
-}
+#header .container a { color: #fff; }
 
-#header .container:hover nav>ul>li>a {
-    color: #000;
-}
+#header .container:hover nav>ul>li>a { color: #000; }
 
 
-#header .container nav>ul {
-    display: flex;
-}
+#header .container nav>ul { display: flex; }
 
-#header .container nav>ul>li>a {
-    padding: 0 50px;
-}
+
+#header .container nav>ul>li>a { padding: 0 50px; }
+
 
 #header .container span {
     background-color: #FE6B00;
@@ -63,9 +71,9 @@ padding-bottom: 30px;
 #header .list-item a {
     display: block;
     text-align: center;
-    line-height: 50px;
-    font-size: 16px;
-    font-weight: 500;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 #header .container:hover .list-item {
@@ -76,38 +84,10 @@ padding-bottom: 30px;
     color: #000;
 }
  
-.main_slider .slick-arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 999;
-
-    font-size: 0;
-    border: none;
-    background: transparent;
-
-    width: 100px;
-    height: 100px;
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
-
-}
-
-.main_slider .slick-prev {
-    margin: 0 0 0 -700px;
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.main_slider .slick-next {
-    margin: 0 0 0 700px;
-    transform: translate(-50%, -50%) rotate(135deg);
-}
-
 
 /* menu 시작 ---> */
-.menu {
-    padding: 150px 350px;
-}
+.menu { padding: 150px 350px; }
+
 
 .menu .content {
     display: flex;
@@ -191,7 +171,7 @@ padding-bottom: 30px;
 /* taste 시작 ---> */
 .taste {
     text-align: center;
-    padding: 0 350px;
+    padding: 150px 350px;
 }
 
 .taste-title {
@@ -251,10 +231,11 @@ padding-bottom: 30px;
 }
 
 /* notice 시작 ---> */
-.notice {
-    padding: 200px 280px;
-}
+.notice {padding: 200px 280px; }
 
+
+.notice-title { display: flex;}
+.notice .box { display: flex; }
 
 
 /* follow 시작 ---> */
@@ -266,7 +247,7 @@ padding-bottom: 30px;
 
 .follow h2 {
     position: relative;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -275,17 +256,17 @@ padding-bottom: 30px;
     content: "";
     display: block;
     position: absolute;
-    top: 42px;
+    top: 33px;
     left: 50%;
-    transform: translate(-52%, -50%);
-    border: 6px solid #FE6B00;
-    width: 293px;
+    transform: translate(-53%, -50%);
+    border: 5px solid #FE6B00;
+    width: 240px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     z-index: -1;
 }
 
-.follow span {
+.follow a {
     display: block;
     margin-bottom: 80px;
     color: #666;
@@ -312,12 +293,55 @@ padding-bottom: 30px;
     background: transparent;
 }   
 
+
 /* pizza 시작 ---> */
-.pizza {
-    background: url(../img/first-bg\ 1.jpg) no-repeat center center/cover;
-    height: 970px;
+.pizza { position: relative; background: url(../img/Group.jpg) no-repeat center center/cover; height: 970px; color: #fff; }
+
+
+.left-box { padding: 170px 200px;}
+.left-box .title { margin: 0 0 40px;}
+.left-box h2 { font-size: 50px; font-weight: 300; margin: 0 0 150px; letter-spacing: -0.1rem;}
+.left-box h2 strong { font-weight: 700; letter-spacing: 0.02rem;}
+
+
+.photo { position: absolute; top: 15%; left: 49%; }
+.photo .photo-size { position: absolute; top: 3%; left: 50%; transform: translateX(-50%); }
+.pizza-piece span { position: absolute; top: 50%; left: 65%; background-color: #582C5F; padding: 28px 13px; border-radius: 50%; font-size: 20px; font-weight: 800; animation: heart 0.7s infinite;}
+
+
+@keyframes heart {
+    to {
+        transform: scale(1.1);
+        opacity: 1;
+    }
 }
 
+.pizza-piece p { position: absolute; top: 40%; left: 71%;  font-size: 22px; font-weight: 300; line-height: 30px; letter-spacing: -0.07rem; }
+.pizza-piece p strong { font-weight: 700; letter-spacing: 0.02rem; }
 
 
 
+
+/* event 시작 ---> */
+.event { background: url(../img/mv3-bg.jpg) no-repeat center center/cover; height: 500px; color: #fff;}
+.event-box { padding: 0 350px;}
+
+.pop-up { width: 279px; height:417px; }
+.model { width: 352px; height:478px; }
+
+
+/* footer 시작 ---> */
+#footer { padding: 50px 280px;  background-color: #F4F5F6;}
+#footer .box { display: flex; justify-content: space-between; }
+#footer ul { display: flex; }
+
+.policy { font-size: 16px;}
+.policy ul { margin: 20px 0 40px 0;}
+.policy li~li { border-left: 1px solid #ddd;}
+.policy a { padding: 0 30px; }
+.policy p { line-height: 30px; padding-left: 30px; font-size: 14px; }
+.policy strong { font-weight: 500;}
+
+
+.sns-icon { margin: 20px 0 0 0; }
+.sns-icon a { padding: 0 7px; }
