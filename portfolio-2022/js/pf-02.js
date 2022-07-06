@@ -16,6 +16,6 @@ $(function () {
         autoplay: true,
         pauseOnHover: false,
     });
-    
+
 
 })
