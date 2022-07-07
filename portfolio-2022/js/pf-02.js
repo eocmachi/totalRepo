@@ -19,10 +19,26 @@ $(function () {
 
     $(document).scroll(function() {
         var y = $(this).scrollTop();
-        if (y > 100) {
+        if (y > 400) {
           $('#header .container').addClass('on');
         } else {
           $('#header .container').removeClass('on');
+        }
+      });
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 400) {
+          $('#header .container a').addClass('on');
+        } else {
+          $('#header .container a').removeClass('on');
+        }
+      });
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 400) {
+          $('.contact').addClass('on');
+        } else {
+          $('.contact').removeClass('on');
         }
       });
 
