@@ -39,8 +39,10 @@
     padding: 0 280px;
     transition: 0.5s;
     z-index: 999;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.05rem;
 }
+
+#header .container.on { background-color: #fff; color:#000;}
 
 #header .container:hover { background-color: #fff; box-shadow: 0 0 11px rgba(33,33,33,.2); }
 
@@ -63,12 +65,12 @@
 }
 
 
-#header .list-item {
+#header .list-items {
 display: none;
 padding-bottom: 30px;
 }
 
-#header .list-item a {
+#header .list-items a {
     display: block;
     text-align: center;
     line-height: 40px;
@@ -76,11 +78,11 @@ padding-bottom: 30px;
     font-weight: 400;
 }
 
-#header .container:hover .list-item {
+#header .container:hover .list-items {
     display: block;
 }
 
-#header .container:hover .list-item a {
+#header .container:hover .list-items a {
     color: #000;
 }
  
@@ -174,9 +176,7 @@ padding-bottom: 30px;
     padding: 150px 350px;
 }
 
-.taste-title {
-    margin-bottom: 20px;
-}
+.taste-title { margin-bottom: 20px;  }
 
 .taste-title img {
     width: auto;
@@ -230,12 +230,23 @@ padding-bottom: 30px;
     opacity: 1;
 }
 
-/* notice 시작 ---> */
-.notice {padding: 200px 280px; }
+/* notice 시작 ---> */ 
+.notice { position: relative; padding: 150px 0; overflow: hidden;}
+.notice .bg { float: right; }
+.notice .content {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; margin: 0 0 0 100px; padding: 0 400px;}
+.notice .content p { font-size: 16px;  margin: 0 0 55px 0; padding: 20px 0 0 0;}
+
+.notice .content-title img { float: left; width: auto; height: 40px;}
+.notice .content-title h3 { float: left; font-size: 40px; font-weight: 700; margin: 0 5px 0 0 ;}
+.notice .content-title a { font-size: 14px; border: 1px solid #000; border-radius: 20px; line-height: 50px; padding: 4px 20px; }
+
+.content-title {display: flex; justify-content: space-between;}
+.content-list {display: flex; justify-content: space-between;}
+
+.time { line-height: 50px; font-size: 14px;  }
+.notice .content .content-list .list-item>li>a { display: block; font-size: 20px; font-weight: 700; border-bottom: 1px solid #000; padding: 0 150px 10px 0; background: url(../img/icon_arrow_right.svg) no-repeat 100% / 29px 29px; margin-bottom:29px;}
 
 
-.notice-title { display: flex;}
-.notice .box { display: flex; }
 
 
 /* follow 시작 ---> */
@@ -316,15 +327,15 @@ padding-bottom: 30px;
     }
 }
 
-.pizza-piece p { position: absolute; top: 40%; left: 71%;  font-size: 22px; font-weight: 300; line-height: 30px; letter-spacing: -0.07rem; }
+.pizza-piece p { position: absolute; top: 40%; left: 71%; font-size: 22px; font-weight: 300; line-height: 30px; letter-spacing: -0.07rem; opacity: 0;}
 .pizza-piece p strong { font-weight: 700; letter-spacing: 0.02rem; }
 
+.pizza-piece .hover:hover .target { opacity: 1; }
 
 
 
 /* event 시작 ---> */
 .event { background: url(../img/mv3-bg.jpg) no-repeat center center/cover; height: 500px; color: #fff;}
-.event-box { padding: 0 350px;}
 
 .pop-up { width: 279px; height:417px; }
 .model { width: 352px; height:478px; }

@@ -17,5 +17,14 @@ $(function () {
         pauseOnHover: false,
     });
 
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+          $('#header .container').addClass('on');
+        } else {
+          $('#header .container').removeClass('on');
+        }
+      });
+
 
 })

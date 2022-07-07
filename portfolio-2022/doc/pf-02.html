@@ -8,6 +8,7 @@
     <title>portfolio-02</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/pf-02.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
@@ -20,8 +21,12 @@
         <header id="header">
             <div class="main_slider">
                 <figure>
+                    <img src="../img/main_video.jpg" alt="">
+                </figure>
+                <figure>
                     <video src="../img/_고피자_크기조절.mp4" loop autoplay muted></video>
                 </figure>
+
                 <figure>
                     <img src="../img/mv8-bg.jpg" alt="">
                 </figure>
@@ -30,6 +35,9 @@
                 </figure>
                 <figure>
                     <img src="../img/mv6-bg.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="../img/mv9-bg01.jpg" alt="">
                 </figure>
             </div>
             <div class="container">
@@ -41,13 +49,13 @@
                 <nav>
                     <ul>
                         <li><a href="">브랜드</a>
-                            <ul class="list-item">
+                            <ul class="list-items">
                                 <li><a href="">브랜드 소개</a></li>
                                 <li><a href="">슬로건</a></li>
                             </ul>
                         </li>
                         <li><a href="">메뉴소개</a>
-                            <ul class="list-item">
+                            <ul class="list-items">
                                 <li><a href="">피자</a></li>
                                 <li><a href="">파스타</a></li>
                                 <li><a href="">치킨 박스</a></li>
@@ -55,14 +63,14 @@
                             </ul>
                         </li>
                         <li><a href="">프로모션</a>
-                            <ul class="list-item">
+                            <ul class="list-items">
                                 <li><a href="">이벤트ㆍ프로모션</a></li>
                                 <li><a href="">뉴스ㆍ공지사항</a></li>
                                 <li><a href="">광고영상</a></li>
                             </ul>
                         </li>
                         <li><a href="">매장안내</a>
-                            <ul class="list-item">
+                            <ul class="list-items">
                                 <li><a href="">프랜차이즈</a></li>
                                 <li><a href="">가맹관련FAQ</a></li>
                                 <li><a href="">가맹신청ㆍ문의</a></li>
@@ -70,7 +78,7 @@
                             </ul>
                         </li>
                         <li><a href="">커뮤니티</a>
-                            <ul class="list-item">
+                            <ul class="list-items">
                                 <li><a href="">기업 제휴</a></li>
                                 <li><a href="">고객 문의</a></li>
                             </ul>
@@ -192,60 +200,50 @@
                             <img class="photo-size" src="../img/first-unit.png" alt="">
                         </figure>
                     </div>
-                    <span>15cm</span>
-                    <p><strong>고피자의 1인 피자</strong> 는 <br>
+                    <span class="hover">15cm</span>
+                    <p class="target">
+                        <strong>고피자의 1인 피자</strong> 는 <br>
                         기존 피자의 사이즈만 줄인 것이 아니에요! <br>
                         완전히 새로운 타원형 형태의 <br>
-                        혼자 먹기 딱 좋은 <strong>5조각, 15cm</strong></p>
-                </div>
-            </section>
-
-            <section class="event">
-                <div class="event-box">
-                    <p>GOOPIZA</p>
-                    <strong>
-                        이벤트 / 할인 <br>
-                        안내
-                    </strong>
-                    <figure class="pop-up">
-                        <img src="../img/mv3_baemin_220428.png" alt="">
-                    </figure>
-                    <figure class="model">
-                        <img src="../img/mv3-model.png" alt="">
-                    </figure>
+                        혼자 먹기 딱 좋은
+                        <strong>5조각, 15cm</strong>
+                    </p>
                 </div>
             </section>
 
             <section class="notice">
-                <figure>
+                <figure class="bg">
                     <img src="../img/Group 41.jpg" alt="">
                 </figure>
+                <div class="content">
+                    <ul class="content-title">
+                        <li>
+                            <h3>What's New</h3>
+                            <img src="../img/menu-title-img.png" alt="">
 
-                <ul class="notice-title">
-                    <li><img src="../img/menu-title-img.png" alt=""><strong>What's New</strong> </li>
-                    <li><a href="">more</a></li>
-                </ul>
-                <p>GOPIZZA의 새로운 소식을 확인해보세요</p>
-                <ul class="box">
-                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/bY1VdGVUKJA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe></li>
-                    <li>
-                        <ul class="notice-list-item">
-                            <li><a href="">
-                                    tvN 드라마 ‘우리들의 블루스’ 제작 지원
-                                </a></li>
-                            <li><a href="">
-                                    샌드위치 브랜드 에그드랍, 신메뉴 ‘길거리 토스트’ 출시</a></li>
-                            <li><a href="">
-                                    에그드랍, 드라마 ‘우리들의 블루스’에 신제품 PPL 진행</a></li>
+                        </li>
+                        <li><a href="">more</a></li>
+                    </ul>
+                    <p>GOPIZZA의 새로운 소식을 확인해보세요</p>
+                    <div class="content-list">
+                        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/bY1VdGVUKJA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></div>
+                        <ul class="list-item">
+                            <li>
+                                <div class="time">2022-07-07</div>
+                                <a href="">tvN 드라마 ‘우리들의 블루스’ 제작 지원</a>
+                            </li>
+                            <li>
+                                <div class="time">2022-07-07</div> <a href="">tvN 드라마 ‘우리들의 블루스’ 제작 지원</a>
+                            </li>
+                            <li>
+                                <div class="time">2022-07-07</div> <a href="">tvN 드라마 ‘우리들의 블루스’ 제작 지원</a>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-
-
-
+                    </div>
+                </div>
             </section>
 
             <section class="follow">
@@ -309,6 +307,10 @@
 
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
