@@ -19,13 +19,19 @@
         const BOX2 = document.getElementById('box2');
         const BOX3 = document.getElementById('box3');
         console.log(BOX, typeof (BOX));
+
+        function 글자바꾸기2() {
+            BOX3.innerText = '나는 원래 친구가 없네^.^'
+            console.log(this);
+            //this는 window를 가르킴...
+        }
+
         const 글자바꾸기 = function () {
             this.innerText = 'blah blah blah'
         }
-        function 글자바꾸기2() {
-            BOX3.innerText = '나는 원래 친구가 없네^.^'
-        }
+
         BOX.addEventListener('click', 글자바꾸기);
+        //
         BOX2.onclick = function() {
             this.innerText = '갑자기 다들 blah blah~'
         }
