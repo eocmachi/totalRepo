@@ -1,6 +1,65 @@
 * { outline: 1px solid #f00; } 
 
-.Wrap {}
+.Wrap { color: #222222;}
 
 .container { width: 1170px; margin: 0 auto; }
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+
+/* header 시작 ---> */
+.hd-top .container { display: flex; justify-content: space-between; line-height: 120px; }
+
+.hd-top .container a { font-size: 14px; }
+
+.hd-top .top-left { display: flex; }
+
+.hd-top .top-left li:first-child::after {content: ""; display: inline-block; width: 1px; height: 12px; background-color: #E8E8E8; margin: 0 12px; }
+
+
+.hd-top .top-right { display: flex; }
+.hd-top .top-right li::after { content: ""; display: inline-block; width: 1px; height: 12px; background-color: #E8E8E8; margin: 0 12px; }
+.hd-top .top-right li:last-child:after { content: ""; display: none; }
+
+.hd-bt { border-top:1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; }
+
+.hd-bt .container { line-height: 60px; }
+
+.hd-bt .gnb ul { display: flex; justify-content: space-between; }
+.hd-bt .gnb li { border-left: 1px solid #E8E8E8; }
+.hd-bt .gnb li:last-child {border-right: 1px solid #E8E8E8; color: #F8981C; }
+.hd-bt .gnb a { font-size: 18px; font-weight: 500; padding: 0 63px; }
+
+
+/* main-slider 시작 ---> */
+
+.main-visual-slider .visual-01 { background: url(../img/visual-01.jpg) no-repeat; width: 100%; height: 70vh; position: relative; }
+.main-visual-slider .visual-01 img { position: absolute; top: 5%; left: 25%; }
+
+/* first-time 시작 ---> */
+.first-time { padding: 62px 0; color: #222;}
+.first-time .container { display: flex; justify-content: space-between; }
+
+.f-left-box h2 { font-size: 36px; font-weight: 700; line-height: 52px; margin-bottom: 8px; }
+.f-left-box p { font-weight: 400; font-size: 18px; color: rgba(136, 136, 136, 1); line-height: 26px; }
+
+.f-right-box { display: flex; gap: 106px; }
+.f-right-box img { display: block; margin: 0 0 16px; }
+.f-right-box strong { display: block; font-weight: 700; font-size: 20px; margin: 0 0 20px; text-align: center; }
+.f-right-box button { display: block; font-weight: 400; font-size: 14px; border: 1px solid rgba(232, 232, 232, 1); background-color: #fff; width: 80px; height: 30px; margin: 0 auto; }
+
+/* notice 시작 ---> */
+.notice {background-color: #F8981C; width: 100%; height: 120px; color: #fff; font-size: 22px; }
+.notice .container { display: flex; }
+
+.notice .inner {display: flex;}
+
+
+
+/* kid-video 시작 ---> */
+.kid-video {background: url(../img/contents_06_bg.gif) no-repeat; width: 100%; height: 100vh; }
 
