@@ -5,6 +5,7 @@ $(function () {
       autoplay: true,
       arrows: false,
       draggable: true,
+      dots: true,
       cssEase: 'linear'
     });
 
