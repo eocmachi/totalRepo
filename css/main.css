@@ -1,4 +1,4 @@
-/* * { outline: 1px solid #f00; }  */
+* { outline: 1px solid #f00; } 
 
 .Wrap { color: #222222; }
 
@@ -60,9 +60,10 @@ button {
 }
 
 .main-visual-slider .slick-dots li.slick-active {
-  width: 50px;
+  width: 35px;
   height: 8px;
   border-radius: 16px;
+  transform: translateY(-25%);
 }
 
 .main-visual-slider .slick-dots li::after {
@@ -90,11 +91,11 @@ button {
 
 .f-right-box { display: flex; gap: 106px; }
 .f-right-box img { display: block; margin: 0 0 20px; }
-.f-right-box strong { display: block; font-weight: 700; font-size: 20px; margin: 0 0 20px; text-align: center; letter-spacing: -1.2px; }
+.f-right-box strong { display: block; font-weight: 700; font-size: 18px; margin: 0 0 20px; text-align: center; letter-spacing: -1.2px; }
 .f-right-box button { display: block; font-weight: 400; font-size: 14px; border: 1px solid rgba(232, 232, 232, 1); background-color: #fff; width: 80px; height: 30px; margin: 0 auto; }
 
 /* notice 시작 ---> */
-.notice {position: relative; background-color: #F8981C; width: 100%; height: 120px; color: #fff; font-size: 22px; font-weight: 400; line-height: 120px; }
+.notice {position: relative; background-color: #F8981C; width: 100%; height: 120px; color: #fff; font-size: 20px; font-weight: 400; line-height: 120px; }
 
 .notice strong {margin-right: 100px;}
 .notice p {margin-right: 350px;}
@@ -113,7 +114,7 @@ button {
 /* experience 시작 ---> */
 .experience { background-color: #F5F4FA; padding: 150px 0;}
 
-.experience h2 { font-size: 40px; color: #C60751; font-weight: 700; margin-bottom: 40px; letter-spacing: -2px; }
+.experience h2 { font-size: 40px; color: #C60751; font-weight: 700; margin-bottom: 35px; letter-spacing: -2px; }
 
 
 .select-box { display: flex; margin-bottom: 80px; }
@@ -158,7 +159,6 @@ button {
 
 .card-slider .slick-dots li.slick-active::after {
   width: 100%;
-
 }
 
 
@@ -167,24 +167,31 @@ button {
 .application .form { width: 585px; height: 353px; }
 .application .container { display: flex; }
 
-.form { padding: 30px 70px; }
+.form { border: 1px solid #BDBDBD; padding: 30px 70px; border-top-left-radius: 16px; border-bottom-left-radius: 16px; }
+
+.form-top { margin-bottom: 30px; }
 
 .form-top h3 { font-size: 24px; font-weight: 700; margin-bottom: 22px; line-height: 35px;}
 .form-top strong { font-size: 18px; color: #888; font-weight: 700; line-height: 30px; }
+
+.form-top p { margin-left: 100px;}
 
 .form-bt { display: flex; justify-content: space-between; }
 .form-bt strong { display: block; }
 .form-bt button { font-size: 20px; color: #fff; background-color: #F8981C; border: none; padding: 14px 7px; }
 .form-bt button img { width: 25px; height: 25px; }
 
+.map iframe { border-top-right-radius: 16px; border-bottom-right-radius: 16px; }
 
 .call span { font-size: 14px; color: #333; font-weight: 500; }
 .call strong { font-size: 30px; color: rgba(248, 152, 28, 1); font-weight:700; }
 
+#name { margin-bottom: 26px; }
 #name strong { margin-right: 63px; }
-#number strong { margin-right: 46px; }
 #name input { width: 330px; height: 30px; }
 
+#number { margin-bottom: 10px; }
+#number strong { margin-right: 46px; }
 #number input { width: 100px; height: 30px; margin-left: 11px; }
 
 
