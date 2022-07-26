@@ -1,17 +1,20 @@
-import Nav from "./Nav";
-import Test from "./test";
-const App = () => {
-  //console.log('하하하')
-  return (
-  <>
-  <Test />    {/* 대문자로 써주는게 원칙 */}
-  <h1>ghghgh</h1>
-  <Nav />
-  <Test />
-  <Test />
-  {/* <h2>haaaaaaaaaaa</h2> */}
-  </>
-  ) 
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
+import Wrapper from "./Wrapper";
 
+
+const App = () => {
+  return (
+    <Wrapper>
+      <Header />
+      <Main woo="우영우" work="김밥먹기" />
+      <Main woo="김영우" work="노래하기" />
+      <Main woo="차영우" work="춤먹기" />
+      <Main woo="하영우" />
+      <Footer />
+    </Wrapper>
+  )
 }
+
 export default App;
