@@ -1,4 +1,4 @@
-* { outline: 1px solid #f00; } 
+/* * { outline: 1px solid #f00; }  */
 
 .Wrap { color: #222222; }
 
@@ -60,7 +60,7 @@ button {
 }
 
 .main-visual-slider .slick-dots li.slick-active {
-  width: 35px;
+  width: 70px;
   height: 8px;
   border-radius: 16px;
   transform: translateY(-25%);
@@ -77,7 +77,7 @@ button {
 
 .main-visual-slider .slick-dots li.slick-active::after {
   width: 100%;
-  transition: 2s;
+  transition: 10s;
 }
 
 
@@ -167,18 +167,66 @@ button {
 .application .form { width: 585px; height: 353px; }
 .application .container { display: flex; }
 
-.form { border: 1px solid #BDBDBD; padding: 30px 70px; border-top-left-radius: 16px; border-bottom-left-radius: 16px; }
+.form { border: 1px solid #BDBDBD; padding: 45px 70px; border-top-left-radius: 16px; border-bottom-left-radius: 16px; }
 
-.form-top { margin-bottom: 30px; }
+.form-top h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
 
-.form-top h3 { font-size: 24px; font-weight: 700; margin-bottom: 22px; line-height: 35px;}
-.form-top strong { font-size: 18px; color: #888; font-weight: 700; line-height: 30px; }
+.form-top label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #888888;
+}
 
-.form-top p { margin-left: 100px;}
+.form-top label>span {
+  font-size: 14px;
+  color: rgb(48, 48, 48);
+  font-weight: 400;
+}
+
+.form-top ul>.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-top ul>.number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  margin-bottom: 26px;
+}
+
+.form-top p {
+  margin: 5px 0 34px 95px;
+}
+
+#name {
+  width: 330px;
+  height: 29px;
+  margin-left: 76px;
+}
+
+#phone-number {
+  width: 100px;
+  height: 29px;
+  margin-left: 40px;
+}
+
+#number-box {
+  width: 100px;
+  height: 29px;
+}
 
 .form-bt { display: flex; justify-content: space-between; }
 .form-bt strong { display: block; }
-.form-bt button { font-size: 20px; color: #fff; background-color: #F8981C; border: none; padding: 14px 7px; }
+.form-bt button { font-size: 20px; color: #fff; background-color: #F8981C; border: none; padding: 14px 7px; border-radius: 5px; }
 .form-bt button img { width: 25px; height: 25px; }
 
 .map iframe { border-top-right-radius: 16px; border-bottom-right-radius: 16px; }
@@ -186,13 +234,3 @@ button {
 .call span { font-size: 14px; color: #333; font-weight: 500; }
 .call strong { font-size: 30px; color: rgba(248, 152, 28, 1); font-weight:700; }
 
-#name { margin-bottom: 26px; }
-#name strong { margin-right: 63px; }
-#name input { width: 330px; height: 30px; }
-
-#number { margin-bottom: 10px; }
-#number strong { margin-right: 46px; }
-#number input { width: 100px; height: 30px; margin-left: 11px; }
-
-
-#phone-number { width: 100px; height: 30px; background-color: #fff; border: 1px solid #ddd; }

@@ -5,7 +5,8 @@ $(function () {
       autoplay: true,
       arrows: false,
       draggable: true,
-      dots: true,
+      dots: false,
+      autoplaySpeed : 10000,  
       cssEase: 'linear'
     });
 
