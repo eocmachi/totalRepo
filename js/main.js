@@ -26,6 +26,31 @@ $(function () {
       nextArrow : $('.notice-nextArrow'), 
     });
 
+    $('.text-box').slick({
+      infinite: true,
+      autoplay: false,
+      arrows: false,
+      draggable: true,
+      dots: false,
+      fade: true, 
+      autoplaySpeed : 10000,  
+      cssEase: 'linear',
+      asNavFor: '.video-box',
+    });
+
+    $('.video-box').slick({
+      infinite: true,
+      autoplay: false,
+      arrows: false,
+      draggable: true,
+      dots: true,
+      fade: true, 
+      autoplaySpeed : 10000,  
+      cssEase: 'linear',
+      asNavFor: '.text-box',
+    });
+
+
     $('.card-slider').slick({
       autoplay: false,
       arrows: false,
