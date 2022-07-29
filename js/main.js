@@ -3,11 +3,14 @@ $(function () {
     $('.main-visual-slider').slick({
       infinite: true,
       autoplay: true,
-      arrows: false,
+      arrows: true,
       draggable: true,
       dots: false,
       autoplaySpeed : 10000,  
-      cssEase: 'linear'
+      cssEase: 'linear',
+
+      prevArrow : $('.visual-prevArrow'), 
+      nextArrow : $('.visual-nextArrow'), 
     });
 
     $('.notice .container').slick({

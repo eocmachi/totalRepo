@@ -12,6 +12,8 @@ button {
   }
 
 /* header 시작 ---> */
+
+
 .hd-top .container { display: flex; justify-content: space-between; line-height: 120px; }
 
 .hd-top .container a { font-size: 14px; color: #333;}
@@ -53,6 +55,9 @@ button {
 
 .hd-bt { position: relative; border-top:1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; }
 
+.hd-bt:hover .gnb-list { display: block; }
+
+
 
 
 .hd-bt .container { line-height: 60px; }
@@ -60,10 +65,37 @@ button {
 .hd-bt .gnb ul { display: flex; justify-content: space-between; }
 .hd-bt .gnb li { border-left: 1px solid #E8E8E8; }
 .hd-bt .gnb li:last-child {border-right: 1px solid #E8E8E8; color: #F8981C; }
-.hd-bt .gnb a { font-size: 18px; font-weight: 500; padding: 0 63px; }
+.hd-bt .gnb a { position: relative; font-size: 18px; font-weight: 500; padding: 0 63px; }
+.hd-bt .gnb>ul>li>a:after {
+  display: block;
+  height: 5px;
+  width: 0;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom:-80%;
+  transition: all 0.5s ease;
+  background: #F8981C;
+  transform: translateX(-50%);
+}
 
+.hd-bt .gnb>ul>li>a:hover::after {
+  width: 100%;
+}
+
+.gnb-list { position: absolute; top: 100%; left: 0; background: url(../img/gnb-bg.png); border-top: 1px solid #E8E8E8; z-index: 999; width: 100%; display: none; } 
+.gnb-list .container { padding: 30px 0; display: flex; line-height: 40px; text-align: center; font-size: 16px; }
+.gnb-list .container>ul { display: flex; flex-direction: column; margin-left: 45px;}
+.gnb-list .container>ul:nth-child(2) { margin-left: 85px; }
+.gnb-list .container>ul:nth-child(3) { margin-left: 90px; }
+.gnb-list .container>ul:nth-child(4) { margin-left: 85px; }
+.gnb-list .container>ul:nth-child(5) { margin-left: 85px; }
+.gnb-list .container>ul:nth-child(6) { margin-left: 110px; }
+.gnb-list .container>ul>li>a { font-size: 16px;  }
 
 /* main-slider 시작 ---> */
+
+
 
 .main-visual-slider .visual-01 { background: url(../img/visual-01.jpg) no-repeat; width: 100%; height: 70vh; position: relative; }
 .main-visual-slider .visual-01 img { position: absolute; top: 5%; left: 24%; animation: bounce 0.8s;
@@ -72,11 +104,41 @@ button {
 
 @keyframes bounce {
   from { transform: translate3d(0, 0, 0);     }
+
+  to   { transform: translate3d(0, 10px, 0); }
+
   to   { transform: translate3d(0, 20px, 0); }
 }
 
 .main-visual-slider .visual-02 { background: url(../img/visual-03.jpg) no-repeat; width: 100%; height: 70vh; position: relative; }
 .main-visual-slider .visual-02 img { position: absolute; top: 5%; left: 24%; }
+
+.visual-prevArrow {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  opacity: 0;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255,0.7);
+  border-radius: 50%;
+  padding: 25px;
+  transition: 0.5s;
+}
+  
+.visual-nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  opacity: 0;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255,0.7);
+  border-radius: 50%;
+  padding: 25px;
+  transition: 0.5s;
+  }
+
+.main-visual:hover .target>span { opacity: 1; }
+
 
 /* .main-visual-slider .slick-dots { position: absolute; bottom:50px; left: 50%; transform: translateX(-50%); cursor: pointer; }
 
@@ -121,7 +183,8 @@ button {
 .first-time { padding: 62px 0; color: #222;}
 .first-time .container { display: flex; justify-content: space-between; }
 
-.f-left-box h2 { font-size: 36px; font-weight: 700; line-height: 48px; margin-bottom: 18px; letter-spacing: -1.2px; }
+.f-left-box {display: flex; flex-direction: column; justify-content: center; }
+.f-left-box h2 { font-size: 32px; font-weight: 700; line-height: 45px; margin-bottom: 18px; letter-spacing: -1.2px; }
 .f-left-box p { font-weight: 400; font-size: 18px; color: rgba(136, 136, 136, 1); line-height: 26px; letter-spacing: -1.2px; }
 
 .f-right-box { display: flex; gap: 106px; }
@@ -155,13 +218,19 @@ button {
 .kid-video .text-box strong { font-size: 20px; font-weight: 700; line-height: 70px;}
 .kid-video .text-box p { font-size: 14px; font-weight: 400; line-height: 22px;}
 
+.kid-video .btn { position: absolute; bottom: 18%;  left: 29.1%; background-color: #F8981C; width: 80px; height: 80px; border-radius: 50%; justify-content: center; text-align: center; line-height: 80px; color: #fff; font-size: 15px; font-weight: 500; letter-spacing: 1.2px; }
+
 .kid-video .btn { position: absolute; bottom: 18%;  left: 29.5%; background-color: #F8981C; width: 80px; height: 80px; border-radius: 50%; justify-content: center; text-align: center; line-height: 80px; color: #fff; font-size: 15px; font-weight: 500; letter-spacing: 1.2px; }
+
 
 .video-box { position: relative; width: 826px; }
 .video-box img { width: 826px; height: 459px; display: block; border-radius: 16px; }
 .video-box .play-btn { background: url(../img/play\ btn.svg) no-repeat; width: 82.6px; height: 82px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border: none;}
 
+.video-box .slick-dots { position: absolute; bottom:7%; left: -41%; cursor: pointer; }
+
 .video-box .slick-dots { position: absolute; bottom:6%; left: -41%; cursor: pointer; }
+
 
 .video-box .slick-dots li {
   display: inline-block;
@@ -211,7 +280,10 @@ button {
 #tendency-select { width: 160px; font-size: 20px; border: none; margin-right: 20px; background-color:#F5F4FA; border-bottom: 1px solid #222; }
 
 .card-slider { display: flex; justify-content: space-between; }
+.card-slider img { border-radius: 16px; cursor: pointer; }
+
 .card-slider img { border-radius: 16px; }
+
 
 .card-slider .slick-dots { position: absolute; bottom:-50px; left: 50%; transform: translateX(-50%); cursor: pointer; }
 
@@ -229,11 +301,12 @@ button {
   display: none;
 }
 
-/* .card-slider .slick-dots li.slick-active {
-  width: 50px;
+.card-slider .slick-dots li.slick-active {
+  width: 25px;
   height: 8px;
   border-radius: 16px;
-} */
+  transform: translateY(-20%);
+}
 
 .card-slider .slick-dots li::after {
   content: "";
@@ -252,8 +325,15 @@ button {
 /* application 시작 ---> */
 .application { position: relative; background: url(../img/Group\ 42.jpg) no-repeat; padding: 150px 0; }
 
+.call-img { background: url(../img/main_contents_04_list_icon_16\ 2.png); position: absolute; top: 8%; left: 20%; width: 100px; height: 85px; animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; z-index: 1; }
+  .call-img:hover { animation: none; }
+.application .form { width: 585px; height: 353px; z-index: 2; }
+
 .call-img { background: url(../img/main_contents_04_list_icon_16\ 2.png); position: absolute; top: 8%; left: 20%; width: 100px; height: 85px; }
 .application .form { width: 585px; height: 353px; }
+
 .application .container { display: flex; }
 
 .form { border: 1px solid #BDBDBD; padding: 45px 70px; border-top-left-radius: 16px; border-bottom-left-radius: 16px; background-color: #fff;}
@@ -361,6 +441,57 @@ button {
 
 .call span { font-size: 14px; color: #333; font-weight: 500; }
 .call strong { font-size: 30px; color: rgba(248, 152, 28, 1); font-weight:700; }
+
+/* banner 시작 ---> */
+#container {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+#container::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/*photobanner*/
+
+.photobanner {
+  width: 8640px;
+}
+.photobanner img {
+  margin-left: 20px;
+  width: auto;
+  height: 30px;
+}
+
+
+/*keyframe animations*/
+.first {
+  animation: bannermove 50s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+      margin-left: 0px;
+  }
+
+  100% {
+      margin-left: -5746px;
+  }
+
+}
+
+
+
 
 /* ft-top 시작 ---> */
 .ft-top { background-color: #191B28; color: #fff; padding: 55px 0; text-align: center; }
