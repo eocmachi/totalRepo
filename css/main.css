@@ -1,0 +1,135 @@
+/* * {
+  outline: 1px solid rgb(36, 139, 218);
+} */
+
+.Wrap {}
+
+body {
+  background-color: #000000;
+  overflow-x: hidden; 
+/* swiper 가로 스크롤바 없애기 */
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* ----- header 시작 ----- */
+#header {
+  color: #fff;
+}
+
+#header .hd-top {
+  line-height: 40px;
+  border-bottom: 1px solid #121212;
+}
+
+#header .hd-top .container {
+  display: flex;
+}
+
+#header .hd-top .left-box {
+  display: flex;
+}
+#header .hd-top .right-box {
+  display: flex;
+}
+
+#header .hd-bt .container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  line-height: 100px;
+}
+
+#header .hd-bt .gnb>ul {
+  display: flex;
+}
+
+#header .hd-bt .gnb>ul>li>a {
+  padding: 0 20px;
+  text-align: right;
+}
+
+
+/* ----- main-visual 시작 ----- */
+.main-visual .visual-01 {
+  background: url(../img/visual_0323.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 85vh;
+}
+
+/* ----- biff-archive 시작 ----- */
+.biff-archive {
+  background: url(../img/bg.png);
+  position: relative;
+  padding: 120px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.biff-archive h2 {
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.biff-archive p {
+  font-size: 17px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 80px;
+} 
+
+.swiper-slide > p {
+  font-size: 20px;
+}
+
+.archive-swiper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 404px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 285px;
+  height: 404px;
+  margin-bottom: 15px;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  transform: translateX(50%);
+  color: #fff;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+/* ----- this-year 시작 ----- */
+.this-year {
+  color: #fff;
+}
+
+.this-year h2 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
