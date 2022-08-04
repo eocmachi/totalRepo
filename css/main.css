@@ -216,7 +216,7 @@ letter-spacing: 5px;
 
 .program-swiper .swiper-slide {
   width: 117px;
-  height: 600px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +233,7 @@ letter-spacing: 5px;
 
 .program-swiper .swiper-slide-active {
   width: 1170px;
-  height: 600px;
+  height: 650px;
   transform: translate3d(-117px, 0, 0) !important;
   filter: grayscale(0);
 }
