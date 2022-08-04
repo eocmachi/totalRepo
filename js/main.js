@@ -1,6 +1,21 @@
 $(function () {
+  
+  var visual = new Swiper(".main-visual-swiper", {
+    slidesPerView: "3",
+spaceBetween: 30,
+      effect: "fade",
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+    });
 
-    var swiper = new Swiper(".archive-swiper", {
+
+    var archive = new Swiper(".archive-swiper", {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
@@ -17,6 +32,31 @@ $(function () {
         prevEl: ".swiper-button-prev",
     },
     });
+
+    var program = new Swiper(".program-swiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      
+    });
+
+    var inner = new Swiper(".inner-swiper", {
+      slidesPerView: "3",
+  spaceBetween: 30,
+        effect: "fade",
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+      });
+
+      // program과 inner 슬라이더 연동 제어
+      program.controller.control = inner;
+      inner.controller.control = program;
   
   })
   

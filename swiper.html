@@ -18,7 +18,7 @@
       html,
       body {
         position: relative;
-        height: 100%;
+        height: 50%;
       }
 
       body {
@@ -32,15 +32,12 @@
 
       .swiper {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        height: 100%;
       }
 
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 300px;
-        height: 300px;
       }
 
       .swiper-slide img {
@@ -55,33 +52,23 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <strong>윤희에게</strong>
         </div>
         <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <strong>감독
+            임대형/LIM Daehyung</strong>
         </div>
         <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <strong>제작국가
+            Korea</strong>
         </div>
         <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <strong>윤희제작연도
+            2020에게</strong>
         </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
 
@@ -91,19 +78,16 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        spaceBetween: 30,
+        effect: "fade",
+        crossFade: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>
