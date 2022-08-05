@@ -408,6 +408,7 @@ border-radius: 50%;
   font-size: 15px;
   font-weight: 300;
   padding: 20px 0;
+  border-top: 1px solid #101010;
 }
 
 .ft-bt::after {
