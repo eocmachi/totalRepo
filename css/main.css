@@ -73,6 +73,18 @@ color: rgba(168, 168, 168, 0.9);
   text-align: right;
 }
 
+.hd-bt:hover .gnb-list { opacity: 1; }
+
+.gnb-list { position: absolute; top: 14%; left: 0;  z-index: 999; width: 100%; background-color: #000; border-top: 1px solid #101010; opacity: 0; transition: 0.3s;} 
+.gnb-list .list-box { width: 1170px; margin: 0 auto; padding: 30px 0; display: flex; line-height: 40px; text-align: center; font-size: 16px; }
+.gnb-list .list-box>ul { display: flex; flex-direction: column; margin-left: 45px;}
+.gnb-list .list-box>ul:nth-child(2) { margin-left: 85px; }
+.gnb-list .list-box>ul:nth-child(3) { margin-left: 90px; }
+.gnb-list .list-box>ul:nth-child(4) { margin-left: 85px; }
+.gnb-list .list-box>ul:nth-child(5) { margin-left: 85px; }
+.gnb-list .list-box>ul:nth-child(6) { margin-left: 110px; }
+.gnb-list .list-box>ul>li>a { font-size: 16px; line-height: 24px;  }
+
 
 /* ----- main-visual 시작 ----- */
 .main-visual-swiper {
@@ -118,6 +130,41 @@ left: 15%;
   width: 100%;
   height: 100%;
 }
+
+ .main-button-next {
+  background-color: rgba(255, 255, 255,0.5);
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+border-radius: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+ .main-button-prev {
+  background-color: rgba(255, 255, 255,0.5);
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 10px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.main-visual-swiper:hover .main-button-next { opacity: 1; }
+.main-visual-swiper:hover .main-button-prev { opacity: 1; }
+
+
 
 /* ----- biff-archive 시작 ----- */
 .biff-archive {
@@ -182,6 +229,41 @@ left: 15%;
   color: #fff;
 }
 
+.swiper-button-next {
+  background-color: rgba(255, 255, 255,0.5);
+  position: absolute;
+  top: 0;
+  right: 8%;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+border-radius: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+ .swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 8%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 10px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
 /* ----- program 시작 ----- */
 .program {
   /* background: url(../img/bg-1.png); */
@@ -237,6 +319,41 @@ letter-spacing: 5px;
   transform: translate3d(-117px, 0, 0) !important;
   filter: grayscale(0);
 }
+
+.program-button-next {
+  background-color: rgba(255, 255, 255,0.5);
+  position: absolute;
+  top: 50%;
+  right: 19%;
+  width:50px;
+  height: 50px;
+  padding: 10px;
+border-radius: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+  opacity: 0;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+ .program-button-prev {
+  background-color: rgba(255, 255, 255,0.5);
+  position: absolute;
+  top: 50%;
+  left:19%;
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  padding: 10px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  opacity: 0;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+.program-swiper:hover .program-button-next { opacity: 1; }
+.program-swiper:hover .program-button-prev { opacity: 1; }
 
 /* ----- inner 슬라이더 ----- */
 .inner-swiper {
