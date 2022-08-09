@@ -4,9 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll</title>
-    <style></style>
+    <style>
+      body {
+        background-color:#5f9ea0;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      button {
+        cursor: pointer;
+        margin: 30px 0;
+        background-color: #f0d264;
+        font-size: 18px;
+        padding: 10px 15px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+      }
+
+      button:active {
+        box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+      }
+
+      /* .rabbit {
+        transform: translateX(40px);
+      } */
+    </style>
   </head>
   <body>
-    <script></script>
+    <button class="button">Find a rabbit! 🐇</button>
+    
+    <img src="./img/carrot.png" alt="carrot" />
+    <img src="./img/carrot.png" alt="carrot" />
+    <img src="./img/carrot.png" alt="carrot" />
+    <img src="./img/carrot.png" alt="carrot" />
+    <img src="./img/carrot.png" alt="carrot" />
+    <img class="rabbit" src="./img/rabbit.png" alt="rabbit" />
+    <img src="./img/carrot.png" alt="carrot" />
+    <img src="./img/carrot.png" alt="carrot" />
+    
+    <script>
+      const button = document.querySelector('.button');
+      const rabbit = document.querySelector('.rabbit');
+
+      button.addEventListener('click', () => {
+        rabbit.scrollIntoView({behavior: "smooth"});
+      })
+
+      // 저 혼자했어요~!~~~ 저 혼자 했다구요 !!!
+
+    </script>
   </body>
 </html>
