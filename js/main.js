@@ -1,7 +1,6 @@
 const stickbars = new Swiper(".stickbars-swiper", {
-    slidesPerView: 5,
-    slidesPerGroup: 5,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 10,
     allowTouchMove: false,
     centeredSlides: true,
     speed: 1000,
@@ -10,6 +9,15 @@ const stickbars = new Swiper(".stickbars-swiper", {
     navigation: {
       nextEl: ".stickbars-next",
       prevEl: ".stickbars-prev",
+    },
+
+    breakpoints: {
+        
+      768: {
+        slidesPerView: 5,  //브라우저가 768보다 클 때
+        slidesPerGroup: 5,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -27,6 +35,9 @@ const pintProduct = new Swiper(".pintProduct-swiper", {
 
 const pintText = new Swiper(".pintText-swiper", {
   loop: true,
+  autoplay: {
+    delay: 5000,
+  },
   direction: 'vertical',
   pagination: {
     el: ".swiper-pagination",
