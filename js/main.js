@@ -17,6 +17,7 @@ const stickbars = new Swiper(".stickbars-swiper", {
         slidesPerView: 5,  //브라우저가 768보다 클 때
         slidesPerGroup: 5,
         spaceBetween: 30,
+
       },
     },
   });
