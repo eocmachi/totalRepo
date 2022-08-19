@@ -1,1 +1,1 @@
-# https://jigoooo.github.io/kidZania/
+https://jigoooo.github.io/kidZania/
