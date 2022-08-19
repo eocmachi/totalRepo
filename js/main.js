@@ -41,9 +41,13 @@ const pintText = new Swiper(".pintText-swiper", {
   autoplay: {
     delay: 5000,
   },
-  direction: "vertical",
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".pint-next ",
+    prevEl: ".pint-prev",
     clickable: true,
   },
 });
