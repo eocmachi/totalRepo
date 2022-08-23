@@ -1,1 +1,1 @@
-# Shopping-List
+https://jigoooo.github.io/Shopping-List/
