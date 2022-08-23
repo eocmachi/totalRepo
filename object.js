@@ -71,14 +71,14 @@ console.log(jigooo.random);
 // for (key in obj)
 // 모든 key들 출력
 console.clear(); //console창의 이전 것들 지우기
-for (key in jigooo) {
+for (let key in jigooo) {
 	console.log(key);
 }
 
 // for (value of iterable) 베열 리스트 
 const array = [1, 2, 4, 5];
-for (value of array) {
-	console.log(vlaue);
+for (let value of array) {
+	console.log(value);
 }
 
 // 7. Fun cloning
@@ -90,7 +90,7 @@ console.log(user.name);
 
 // old way
 const user3 = {};
-for (key in user) {
+for (let key in user) {
 	user3[key] = user[key];
 }
 console.log(user3);
@@ -104,5 +104,5 @@ const fruit1 = {color: 'red'};
 const fruit2 = {color: 'blue', size: 'big'};
 const mixed = Object.assign({}, fruit1, fruit2); 
 console.log(mixed.color); // blue
-consooe.log(mixed.size); // big
+console.log(mixed.size); // big
 // 뒤에 나오는 property가 앞에 것을 덮어씌움
