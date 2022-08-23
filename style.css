@@ -1,0 +1,111 @@
+/* * {
+    outline: 1px solid #f00;
+} */
+
+body {
+    background: url(bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+
+.List {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 570px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 5px 40px 0 rgb(0 0 0 / 8%);
+}
+
+.Header {
+    background-color: #7FB77E;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.items {
+    height: 500px;
+    padding: 30px;
+    color: #222;
+    overflow: auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item-row {
+    margin-bottom: 10px;
+}
+
+.check-box {
+    flex: 1;
+    width: 16px;
+    height: 16px;
+    transform: translateY(10%);
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #222;
+}
+
+.item-name {
+    flex: 8;
+    font-size: 20px;
+    text-align: left;
+}
+
+.delete-btn {
+    flex: 1;
+    font-size: 18px;
+}
+
+.devider {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(221, 221, 221, 0.7);
+    margin: 0 auto;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 30px;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.input-field::placeholder {
+    color: rgba(161, 161, 161, 0.7);
+}
+
+.add-btn {
+    width: 100%;
+    background-color: #7FB77E;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+}
