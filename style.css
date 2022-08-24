@@ -5,6 +5,7 @@
 body {
     background: url(bg.jpg) no-repeat center center/cover;
     height: 100vh;
+    font-family: 'Oswald', 'Noto Sans KR', sans-serif;
 }
 
 button {
@@ -34,12 +35,13 @@ input {
 }
 
 .Header {
-    background-color: #7FB77E;
-    color: #fff;
+    background-color: #FDEEDC;
+    color: #222;
     text-align: center;
     line-height: 70px;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .items {
@@ -95,7 +97,8 @@ input {
     width: 100%;
     padding: 10px 30px;
     border-top: 1px solid #ddd;
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 0.03em;
 }
 
 .input-field::placeholder {
@@ -104,8 +107,8 @@ input {
 
 .add-btn {
     width: 100%;
-    background-color: #7FB77E;
-    color: #fff;
+    background-color: #FDEEDC;
+    color: #222;
     font-size: 24px;
     line-height: 50px;
 }
