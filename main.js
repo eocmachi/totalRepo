@@ -1,25 +1,18 @@
-
 const items = document.querySelector(".items");
 const input = document.querySelector(".input-field");
 const addBtn = document.querySelector(".add-btn");
 
 function onAdd() {
-    // 1. 사용자가 input에 입력한 텍스트 받아옴
   const text = input.value;
   if (text === '') {
     input.focus();
     return;
   }
 
-  // 2. 새로운 아이템 만들고
   const item = createItem(text);
-  // 3. 추가
   items.appendChild(item);
-
-  // 4. 새로 추가된 아이템으로 스크롤링
   item.scrollIntoView({block:"center"});
-
-  // 5. input 초기화
+    
   input.value ='';
   input.focus();
 }
@@ -67,7 +60,6 @@ function createItem(text) {
   return itemRow;
 }
 
-// 텍스트를 입력하고 엔터키를 쳐도 입력되게 함
 input.addEventListener('keyup', (e) => {
     if (e.keyCode === 13) {
         onAdd();
