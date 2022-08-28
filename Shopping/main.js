@@ -1,68 +1,54 @@
-const items = document.querySelector('.list-items');
-const input = document.querySelector('.inputField');
-const addBtn = document.querySelector('.addBtn');
+'use strict';
+const items = document.querySelector(".items");
+const form = document.querySelector(".new-form");
+const input = document.querySelector(".input-field");
+const addBtn = document.querySelector(".add-btn");
 
-
-// 1. input 텍스트 받아오기  ㅇㅋ
-// 2. 받아온 텍스트로 새로운 아이템 줄 만들기  ㅇㅋ
-// 3. 만든 아이템줄 추가  ㅇㅋ
-// 4. 추가하고 나면 input 초기화, 포커싱 ㅇㅋ
-// 5. 체크박스 클릭하면 언더라인 생기기 스타일 추가
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  onAdd();
+});
 
 function onAdd() {
-    const text = input.value;
-    if (text === '') {
-        input.focus();
-        return; //아직까진 이해가 되지 않는다 이부분이,,,
-    }
-    console.log(text);
-
-    const item = createItem(text);
-    items.appendChild(item);
-    input.value = '';
+  const text = input.value;
+  if (text === '') {
     input.focus();
+    return;
+  }
+
+  const item = createItem(text);
+  items.appendChild(item);
+  item.scrollIntoView({ block:"center" });
+
+  input.value ='';
+  input.focus();
 }
 
-addBtn.addEventListener('click', () => {
-    onAdd();
-})
 
-
+let id = 0; // UUID
 function createItem(text) {
-    const itemRow = document.createElement('li');
-    itemRow.setAttribute('class', 'item-row');
+  const itemRow = document.createElement("li");
+  itemRow.setAttribute("class", "item-row");
+  itemRow.setAttribute("data-id", id);
 
-    const checkBox = document.createElement('input');
-    checkBox.setAttribute('type', 'checkbox');
-    checkBox.setAttribute('class', 'check-box');
-    checkBox.addEventListener('click', () => span.classList.toggle('checked'));
+  itemRow.innerHTML = `
+    <div class="item">
+      <input type="checkbox" class="check-box"></input>
+      <span class="item-name">${text}</span>
+      <button class="delete-btn">
+        <i class="fas fa-trash-alt" data-id=${id}></i>
+      </button>
+    </div>
+    <div class="devider"></div>`;
+    id++;
 
-    const span = document.createElement('span');
-    span.setAttribute('class', 'item-name');
-    span.innerText = text;
-
-    const deleteBtn = document.createElement('button');
-    deleteBtn.setAttribute('class', 'delete-btn');
-    deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
-    deleteBtn.addEventListener('click',()=> {
-        items.removeChild(itemRow)
-    })
-
-    const devider = document.createElement('div');
-    devider.setAttribute('class', 'devider');
-
-    itemRow.appendChild(checkBox);
-    itemRow.appendChild(span);
-    itemRow.appendChild(deleteBtn);
-    itemRow.appendChild(devider);
-
-    return itemRow;  // return 하는 이유가 뭐지......??
+  return itemRow;
 }
 
-input.addEventListener('keypress', (e) => {
-    if (e.keyCode === 13) {
-        onAdd();
-    } else {
-        return;
-    }
-})
+items.addEventListener('click', event => {
+  const id = event.target.dataset.id;
+  if(id && event.target.tagName === "I") {
+    const toBeDeleted = document.querySelector(`.item-row[data-id="${id}"]`);
+    toBeDeleted.remove();
+  }
+}) 
