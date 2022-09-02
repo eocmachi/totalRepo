@@ -5,6 +5,11 @@ const main = new Swiper(".main.swiper.mySwiper", {
     disableOnInteraction: false,
   },
   speed: 1000,
+  on: {
+    activeIndexChange: () => {
+      const active = document.querySelector('.main .swiper-slide-active');
+    }
+  }
 });
 
 const best = new Swiper(".best.swiper.mySwiper", {
@@ -14,6 +19,7 @@ const best = new Swiper(".best.swiper.mySwiper", {
   slidesPerGroup: 3,
   pagination: {
     el: ".best.swiper-pagination",
+    clickable: true,
   },
 });
 
@@ -22,8 +28,14 @@ const review = new Swiper(".review.swiper.mySwiper", {
   centeredSlides: true,
   slidesPerView: 2.65,
   spaceBetween: 30,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  speed: 1000,
   pagination: {
     el: ".review.swiper-pagination",
+    clickable: true,
   },
 });
 
@@ -35,4 +47,8 @@ window.addEventListener("scroll", () => {
   } else {
     Header.classList.remove("on");
   }
+});
+
+document.querySelector('.shopping_icon').addEventListener('click', ()=> {
+  alert('로그인 후 관심상품 등록이 가능합니다.')
 });
