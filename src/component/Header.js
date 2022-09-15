@@ -48,7 +48,7 @@ const Header = () => {
                         <li><a href="#!">주요프로젝트</a></li>
                         <li><a href="#!">IR</a></li>
                     </ul>
-                    <div className={'lang ' + (TG[0] ? 'on' : '')}>
+                    <div className={'lang' + (TG[0] ? 'on' : '')}>
                         <strong onClick={() => setTG([!TG[0], false])}><i className="xi-globus"></i> KOR <i className="xi-angle-down arrow"></i></strong>
                         <ul className="lang_box">
                             <li><a href="#!">KOR</a></li>
