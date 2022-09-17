@@ -3,6 +3,7 @@
 body {
     text-align: center;
     font-family: Pretendard, sans-serif;
+    background-color: #000;
 }
 
 button {
@@ -51,19 +52,26 @@ button {
     font-size: 32px;
     margin-top: 8px;
     visibility: hidden;
+    user-select: none;
+    cursor: auto;
 }
 
 .game_score {
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 50px;
     height: 50px;
     margin-top: 8px;
-    font-size: 46px;
+    font-size: 34px;
     border: 3px solid black;
     border-radius: 50%;
     background-color: darksalmon;
     color: white;
     visibility: hidden;
+    display: flex;
+    user-select: none;
+    cursor: auto;
 }
 
 .game_field {
@@ -102,4 +110,15 @@ button {
 .pop-up_message {
     display: block;
     font-size: 38px;
+}
+
+.carrot, 
+.bug {
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+
+.carrot:hover, 
+.bug:hover {
+    transform: scale(1.1);
 }
