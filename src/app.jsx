@@ -11,6 +11,8 @@ function App() {
       redirect: "follow",
     };
 
+    //fetch 부분 추가 
+    //깃허브에 올린다고 뺏음
 
       .then((response) => response.json())
       .then((result) => setVideos(result.items))
