@@ -11,9 +11,10 @@ function App() {
       redirect: "follow",
     };
 
-    //fetch 부분 추가 
-    //깃허브에 올린다고 뺏음
-
+    fetch(
+      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyDSXeVj5amm8EExwzrE9ubBHmN3Q4Uj-Xo",
+      requestOptions
+    )
       .then((response) => response.json())
       .then((result) => setVideos(result.items))
       .catch((error) => console.log("error", error));
