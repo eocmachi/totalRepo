@@ -31,7 +31,7 @@ function App() {
     };
 
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyDSXeVj5amm8EExwzrE9ubBHmN3Q4Uj-Xo",
+      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&regionCode=KR&key=AIzaSyDSXeVj5amm8EExwzrE9ubBHmN3Q4Uj-Xo",
       requestOptions
     )
       .then((response) => response.json())
