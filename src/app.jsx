@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useCallback } from "react";
 import styles from "./app.module.css";
 import SearchHeader from "./components/search_header/search_header";
 import VideoDetail from "./components/video_detail/video_detail";
@@ -11,18 +12,20 @@ function App({ youtube }) {
   const selectVideo = (video) => {
     setSelectedVideo(video);
   };
-  const search = (query) => {
+
+  //자식컴포넌트가 re-rendering 되는 것을 막기위해서 useCallback을 썼음.
+  const search = useCallback((query) => {
     setSelectedVideo(null);
     youtube
       .search(query) //
       .then((video) => setVideos(video));
-  };
+  }, [youtube]);
 
   useEffect(() => {
     youtube
       .mostPopular() //
       .then((items) => setVideos(items));
-  }, []);
+  }, [youtube]);
   return (
     <div className={styles.app}>
       <SearchHeader onSearch={search} />
