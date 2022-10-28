@@ -20,3 +20,4 @@ const VideoDetail = ({ video, video:{snippet} }) => (
 );
 
 export default VideoDetail;
+
