@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    width: 1500px;
     margin: 0 auto;
 }
 
@@ -20,6 +20,7 @@ body {
 .swiper {
     overflow: visible;
 }
+
 
 //Header ---> 
 .Header {
@@ -37,6 +38,8 @@ body {
         font-size: 12px;
         color: rgba(168, 168, 168, 0.9);
         transition: 0.5s all;
+        font-family: 'roboto', sans-serif;
+        letter-spacing: 0.02em;
 
         .container {
             display: flex;
@@ -64,14 +67,6 @@ body {
         }
     }
 
-    .hd-top.on {
-        line-height: 0vh;
-
-        .container {
-            opacity: 0;
-        }
-    }
-
     .hd-bt {
         .container {
             display: flex;
@@ -84,6 +79,13 @@ body {
                     display: flex;
 
                     li {
+                        transition: 0.3s;
+
+                        &:hover {
+                            scale: 0.99;
+                            opacity: 0.9;
+                        }
+
                         a {
                             padding: 0 20px;
                             text-align: right;
@@ -104,6 +106,21 @@ body {
     }
 }
 
+//Header.on ---> 
+.Header.on {
+    .hd-top {
+        line-height: 0vh;
+
+        .container {
+            opacity: 0;
+        }
+    }
+
+    .hd-bt {
+        border-bottom: 1px solid rgb(221, 221, 221, 0.07);
+    }
+}
+
 // MainVisual --->
 .MainVisual {
     .main-swiper {
@@ -121,10 +138,54 @@ body {
 
 }
 
+// archive --->
+.archive {
+    background: url(../../public/images/bg.png) no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+
+    h2 {
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 17px;
+        font-family: 'roboto', sans-serif;
+
+        font-weight: 500;
+        margin-bottom: 80px;
+    }
+
+    .archive-swiper {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 285px;
+        height: 404px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
 // Program --->
 .program {
     position: relative;
     color: #fff;
+    padding: 50px 0;
 
     .container {
         display: flex;
@@ -139,6 +200,7 @@ body {
 
         span {
             a {
+                font-size: 12px;
                 color: #d82f36;
                 font-family: 'Oswald', sans-serif;
                 letter-spacing: 5px;
@@ -147,52 +209,45 @@ body {
     }
 
     .program-swiper {
-        width: 1170px;
-        margin-left: -42px;
-        margin-bottom: 22px;
+        margin-left: -836px;
+        height: 453.59px;
+        overflow: visible;
+ 
+        img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
 
-        // .swiper-wrapper {
-        //     margin-left: 117px;
-        // }
-
-        // .swiper-slide01.swiper-slide-prev {
-        //     margin-left: 525px;
-        // }
-        // .swiper-slide02.swiper-slide-prev {
-        //     margin-left: 525px;
-        // }
-        // .swiper-slide03.swiper-slide-prev {
-        //     margin-left: 525px;
-        // }
-        // .swiper-slide04.swiper-slide-prev {
-        //     margin-left: 525px;
-        // }
-        // .swiper-slide05.swiper-slide-prev {
-        //     margin-left: 525px;
-        // }
-
-        .swiper-slide {
-            width: 117px;
-            height: 650px;
+        .textbox {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: translate3d(-117px, 0, 0) !important;
-            filter: grayscale(100%);
+            flex-direction: column;
+            background-color: #222;
+            justify-content: space-between;
+            padding: 25px 30px;
 
-            img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              }
-          }
+            .tit {
+                font-size: 1.5rem;
+                color: #d82f36;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
 
-          .swiper-slide-active {
-            width: 1170px;
-            height: 650px;
-            transform: translate3d(-117px, 0, 0) !important;
-            filter: grayscale(0);
-          }
-      }
+            .title {
+                font-size: 2.6rem;
+                margin-bottom: 10px;
+            }
+
+            .director {
+                font-size: 1.6rem;
+                // opacity: 0.5;
+                color: #aaa;
+            }
+        }
+    }
+}
+
+//Footer ---> 
+.footer {
+    color: white;
 }

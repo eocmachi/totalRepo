@@ -3,9 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import "swiper/css/effect-fade";
 
-const DB = [
+import SwiperCore, { EffectFade, Navigation, Pagination } from "swiper";
+
+const MV = [
   {
     id: 1,
     title: "YouTube\nClone Coding",
@@ -22,41 +24,26 @@ const DB = [
     id: 4,
     title: "Find Golden\nSnitch",
   },
-  {
-    id: 5,
-    title: "Find Golden\nSnitch",
-  },
-  {
-    id: 6,
-    title: "Find Golden\nSnitch",
-  },
 ];
-const Program = () => {
-  return (
-    <section className="program">
-      <div class="container">
-        <h2>2022 공식상영작</h2>
-        <span>
-          <a href="">MORE</a>
-        </span>
-      </div>
 
+const MainVisual = () => {
+  return (
+    <section className="MainVisual section">
       <Swiper
-        slidesPerView={"auto"}
-        centeredSlides={true}
-        spaceBetween={30}
+        loop={true}
+        effect={"fade"}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        modules={[Navigation, Pagination]}
+        modules={[EffectFade, Navigation, Pagination]}
         pagination={{ clickable: true }}
-        className="program-swiper"
+        className="main-swiper"
       >
-        {DB.map((slide, idx) => (
-          <SwiperSlide className={"swiper-slide0" + (idx + 1)}>
+        {MV.map((slide, idx) => (
+          <SwiperSlide className="swiper-slide">
             <img
               src={
                 process.env.PUBLIC_URL +
-                "./images/program__0" +
+                "./images/visual__0" +
                 (idx + 1) +
                 ".jpg"
               }
@@ -78,4 +65,4 @@ const Program = () => {
   );
 };
 
-export default Program;
+export default MainVisual;

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const hide = useRef();
@@ -11,44 +12,44 @@ const Header = () => {
     });
   }, []);
   return (
-    <header className="Header">
-      <div class="hd-top" ref={hide}>
+    <header className="Header" ref={hide}>
+      <div class="hd-top">
         <div class="container">
           <ul class="left-box">
             <li class="biff">
-              <a href="">BIFF</a>
+              <Link to="/">BIFF</Link>
             </li>
             <li>
-              <a href="">Asian Contents & Film Market</a>
+              <Link to="/">Asian Contents & Film Market</Link>
             </li>
             <li>
-              <a href="">APM</a>
+              <Link to="/">APM</Link>
             </li>
             <li>
-              <a href="">BAFA</a>
+              <Link to="/">BAFA</Link>
             </li>
             <li>
-              <a href="">ACF</a>
+              <Link to="/">ACF</Link>
             </li>
             <li>
-              <a href="">Community BIFF</a>
+              <Link to="/">Community BIFF</Link>
             </li>
             <li>
-              <a href="">Forum BIFF</a>
+              <Link to="/">Forum BIFF</Link>
             </li>
             <li>
-              <a href=""> PRESS Service</a>
+              <Link to="/">PRESS Service</Link>
             </li>
           </ul>
           <ul class="right-box">
             <li>
-              <a href="">로그인</a>
+              <Link to="/">로그인</Link>
             </li>
             <li>
-              <a href="">1:1 문의</a>
+              <Link to="/">1:1 문의</Link>
             </li>
             <li>
-              <a href="">ENG</a>
+              <Link to="/">ENG</Link>
             </li>
           </ul>
         </div>
@@ -56,29 +57,29 @@ const Header = () => {
       <div class="hd-bt">
         <div class="container">
           <h1>
-            <a href="">
+            <Link to="/">
               <img src={process.env.PUBLIC_URL + "./images/logo.svg"} alt="" />
-            </a>
+            </Link>
           </h1>
           <nav class="gnb">
             <ul>
               <li>
-                <a href="">부산국제영화제</a>
+                <Link to="/page01">부산국제영화제</Link>
               </li>
               <li>
-                <a href="">출품/신청안내</a>
+                <Link to="/page02">2022 BIFF</Link>
               </li>
               <li>
-                <a href="">커뮤니티</a>
+                <Link to="/page03">공식상영작</Link>
               </li>
               <li>
-                <a href="">역대영화제</a>
+                <Link to="/page04">역대영화제</Link>
               </li>
               <li>
-                <a href="">스태프채용</a>
+                <Link to="/page05">공지사항</Link>
               </li>
               <li>
-                <a href="">자원봉사자모집</a>
+                <Link to="/page06"># 작품 검색</Link>
               </li>
             </ul>
           </nav>

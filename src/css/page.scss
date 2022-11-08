@@ -1,0 +1,37 @@
+// page03 ---> 
+.section03 {
+    color: #fff;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 70px;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 100px;
+
+            li {
+                a {
+                    position: relative;
+                    padding: 15px;
+                    font-size: 18px;
+                }
+
+                
+            }
+        }
+    }
+ 
+}
