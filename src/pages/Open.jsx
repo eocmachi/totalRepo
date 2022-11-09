@@ -2,27 +2,28 @@ import React from "react";
 
 const DB = [
   {
-    id: 2,
-    title: "윤희에게",
-    director: "임대형",
-    tit: "아시아영화의 창",
+    id: 8,
+    title: "바람의 향기",
+    director: "하디 모하게흐",
+    tit: "개막작",
   },
   {
-    id: 3,
-    title: "미나리",
-    director: "정이삭",
-    tit: "아시아영화의 창",
+    id: 11,
+    title: "한 남자",
+    director: "이시카와 케이",
+    tit: "폐막작",
   },
 ];
-const Window = () => {
+
+const Open = () => {
   return (
-    <div className="window grid">
+    <div className="open">
       <div className="container">
         {DB.map((it, idx) => (
           <div className="card">
             <img
               src={
-                process.env.PUBLIC_URL + "../images/program__0" + it.id + ".jpg"
+                process.env.PUBLIC_URL + "./images/program__0" + it.id + ".jpg"
               }
               alt=""
             />
@@ -38,4 +39,4 @@ const Window = () => {
   );
 };
 
-export default Window;
+export default Open;

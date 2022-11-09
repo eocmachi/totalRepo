@@ -4,8 +4,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import { Link } from "react-router-dom";
 
-import SwiperCore, { EffectFade, Navigation, Pagination } from "swiper";
+import SwiperCore, {
+  Autoplay,
+  EffectFade,
+  Navigation,
+  Pagination,
+} from "swiper";
 
 const MV = [
   {
@@ -31,10 +37,14 @@ const MainVisual = () => {
     <section className="MainVisual section">
       <Swiper
         loop={true}
+        autoplay={{
+          delay: 6000,
+          disableOnInteraction: true,
+        }}
         effect={"fade"}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        modules={[EffectFade, Navigation, Pagination]}
+        modules={[Autoplay, EffectFade, Navigation, Pagination]}
         pagination={{ clickable: true }}
         className="main-swiper"
       >
@@ -49,6 +59,13 @@ const MainVisual = () => {
               }
               alt=""
             />
+            <div class="inner-text">
+              <span>제27회 부산국제영화제</span>
+              <strong>수상작 및 수상자</strong>
+              <button>
+                <Link to="/page02">🡒</Link>
+              </button>
+            </div>
           </SwiperSlide>
         ))}
 

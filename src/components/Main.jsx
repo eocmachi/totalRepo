@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <div className="Main">
       <MainVisual />
-      <Archive />
       <Program />
+      <Archive />
     </div>
   );
 };

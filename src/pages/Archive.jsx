@@ -4,7 +4,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import React, { useRef, useState } from "react";
 
-import SwiperCore, { EffectCoverflow, Navigation } from "swiper";
+import SwiperCore, { Autoplay, EffectCoverflow, Navigation } from "swiper";
 
 const DB = [
   {
@@ -66,7 +66,11 @@ const Archive = () => {
       </div>
       <Swiper
         effect={"coverflow"}
-        grabCursor={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
+        // grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{
@@ -77,7 +81,7 @@ const Archive = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Navigation]}
+        modules={[Autoplay, EffectCoverflow, Navigation]}
         class="archive-swiper"
       >
         {DB.map((ar, idx) => (
