@@ -17,7 +17,7 @@ const Page03 = () => {
               to="/page03"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              # 개·폐막작
+              • 개·폐막작
             </NavLink>
           </li>
           <li>
@@ -25,7 +25,7 @@ const Page03 = () => {
               to="/page03/today"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              # 한국영화의 오늘
+              • 한국영화의 오늘
             </NavLink>
           </li>
           <li>
@@ -33,7 +33,7 @@ const Page03 = () => {
               to="/page03/window"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              # 아시아영화의 창
+              • 아시아영화의 창
             </NavLink>
           </li>
           <li>
@@ -41,7 +41,7 @@ const Page03 = () => {
               to="/page03/worldcinema"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              # 월드시네마
+              • 월드시네마
             </NavLink>
           </li>
           <li>
@@ -49,7 +49,7 @@ const Page03 = () => {
               to="/page03/wideAngle"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              # 와이드 앵글
+              • 와이드 앵글
             </NavLink>
           </li>
         </ul>

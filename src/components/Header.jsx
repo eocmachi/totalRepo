@@ -76,10 +76,10 @@ const Header = () => {
                 <Link to="/page04">역대영화제</Link>
               </li>
               <li>
-                <Link to="/page05">공지사항</Link>
+                <Link to="/">공지사항</Link>
               </li>
               <li>
-                <Link to="/page06"># 작품 검색</Link>
+                <Link to="/"># 작품 검색</Link>
               </li>
             </ul>
           </nav>

@@ -38,7 +38,7 @@ const MainVisual = () => {
       <Swiper
         loop={true}
         autoplay={{
-          delay: 6000,
+          delay: 5000,
           disableOnInteraction: true,
         }}
         effect={"fade"}

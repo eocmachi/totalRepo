@@ -3,13 +3,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 import SwiperCore, { Autoplay, EffectCoverflow, Navigation } from "swiper";
 
 const DB = [
   {
     id: 1,
-    title: "제 27th, 2022",
+    title: "제 27회, 2022",
   },
   {
     id: 2,
@@ -86,15 +87,17 @@ const Archive = () => {
       >
         {DB.map((ar, idx) => (
           <SwiperSlide className="swiper-slide">
-            <img
-              src={
-                process.env.PUBLIC_URL +
-                "./images/poster__0" +
-                (idx + 1) +
-                ".jpg"
-              }
-              alt=""
-            />
+            <Link to="/page04">
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "./images/poster__0" +
+                  (idx + 1) +
+                  ".jpg"
+                }
+                alt=""
+              />
+            </Link>
             <p>{ar.title}</p>
           </SwiperSlide>
         ))}

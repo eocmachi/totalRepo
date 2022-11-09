@@ -2,7 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { useRef, useState } from "react";
+import SwiperCore, { Navigation } from "swiper";
 
 const DB = [
   {
@@ -63,16 +64,37 @@ const DB = [
   {
     id: 12,
     title: "제 16회, 2012",
-    des:
-      "제16회 부산국제영화제의 공식 포스터는 아날로그적 감수성을 담은 세계적 거장 압바스 키아로스타미 감독의 사진 '담 [The Wall]' 을 원화로, 최순대 부산국제영화제 미술감독이 디자인 한 작품이다.\n\n가을날, 담벼락 너머 노랗게 물들어 가는 나뭇잎의 화사함과 담벼락에 비친 나뭇잎 그림자가 주는 은은한 분위기는 축제의 화려함, 그리고 여유로움과 잘 어울리고 있다. 현대를 대표하는 거장감독으로 손꼽히는 압바스 키아로스타미 감독은 사진작가로도 널리 알려져 있으며, 여러 차례 사진전을 가지기도 했다. 부산국제영화제를 세 번이나 방문하기도 한 압바스 키아로스타미 감독은 부산국제영화제에 대한 애정의 표현으로 자신의 사진을 기꺼이 공식포스터의 원화로 제공하였다.",
+    des: "제16회 부산국제영화제의 공식 포스터는 아날로그적 감수성을 담은 세계적 거장 압바스 키아로스타미 감독의 사진 '담 [The Wall]' 을 원화로, 최순대 부산국제영화제 미술감독이 디자인 한 작품이다.\n\n가을날, 담벼락 너머 노랗게 물들어 가는 나뭇잎의 화사함과 담벼락에 비친 나뭇잎 그림자가 주는 은은한 분위기는 축제의 화려함, 그리고 여유로움과 잘 어울리고 있다. 현대를 대표하는 거장감독으로 손꼽히는 압바스 키아로스타미 감독은 사진작가로도 널리 알려져 있으며, 여러 차례 사진전을 가지기도 했다. 부산국제영화제를 세 번이나 방문하기도 한 압바스 키아로스타미 감독은 부산국제영화제에 대한 애정의 표현으로 자신의 사진을 기꺼이 공식포스터의 원화로 제공하였다.",
   },
 ];
 const Page04 = () => {
+  const [swiper, setSwiper] = useState(null);
+  const [mainImageIndex, setmainImageIndex] = useState(0);
+
+  SwiperCore.use([Navigation]);
+
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+
+  const swiperParams = {
+    navigation: {
+      prevEl: navigationPrevRef.current,
+      nextEl: navigationNextRef.current,
+    },
+    onBeforeInit: (swiper) => {
+      swiper.params.navigation.prevEl = navigationPrevRef.current;
+      swiper.params.navigation.nextEl = navigationNextRef.current;
+      swiper.activeIndex = mainImageIndex;
+      swiper.navigation.update();
+    },
+    onSwiper: setSwiper,
+    onSlideChange: (e) => setmainImageIndex(e.activeIndex),
+  };
   return (
     <section className="page04">
       <div className="container">
         <h1>역대영화제</h1>
-        <Swiper>
+        <Swiper {...swiperParams} ref={setSwiper} modules={[Navigation]}>
           {DB.map((it, idx) => (
             <SwiperSlide>
               <div className="content">
@@ -95,6 +117,14 @@ const Page04 = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="swiper-button">
+          <button ref={navigationPrevRef} className="prev">
+            🡐
+          </button>
+          <button ref={navigationNextRef} className="next">
+            🡒
+          </button>
+        </div>
       </div>
     </section>
   );
