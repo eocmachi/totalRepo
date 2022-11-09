@@ -9,7 +9,7 @@ import SwiperCore, { Autoplay, EffectCoverflow, Navigation } from "swiper";
 const DB = [
   {
     id: 1,
-    title: "제 27회, 2022",
+    title: "제 27th, 2022",
   },
   {
     id: 2,

@@ -62,9 +62,9 @@ const MainVisual = () => {
             <div class="inner-text">
               <span>제27회 부산국제영화제</span>
               <strong>수상작 및 수상자</strong>
-              <button>
-                <Link to="/page02">🡒</Link>
-              </button>
+              <Link to="/page02">
+                <button>🡒</button>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

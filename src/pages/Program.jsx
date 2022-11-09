@@ -93,7 +93,7 @@ const DB = [
 ];
 const Program = () => {
   return (
-    <section className="program section">
+    <section className="program">
       <div class="container">
         <h2>2022 BIFF 공식상영작</h2>
         <span>

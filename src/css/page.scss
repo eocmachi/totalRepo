@@ -239,3 +239,65 @@
     }
  
 }
+
+// page04 ---> 
+.page04 {
+    background-color: #fff;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+        padding: 200px 0;
+
+        .content {
+            display: flex;
+            white-space: pre-wrap;
+
+            .poster {
+                width: 50%;
+
+                img {
+                    display: block;
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+
+            .textbox {
+                width: 50%;
+                padding: 30px;
+
+                h4 {
+                    position: relative;
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: #222;
+                    margin-bottom: 30px;
+                    padding-bottom: 40px;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 40px;
+                        height: 3px;
+                        background-color: #d82f36;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 2.7rem;
+                }
+            }
+        }
+    }
+}
