@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DB = [
   {
@@ -21,17 +22,29 @@ const Open = () => {
       <div className="container">
         {DB.map((it, idx) => (
           <div className="card">
-            <img
-              src={
-                process.env.PUBLIC_URL + "./images/program__0" + it.id + ".jpg"
-              }
-              alt=""
-            />
-            <div className="textbox">
-              <span className="tit">{it.tit}</span>
-              <span className="title">{it.title}</span>
-              <span className="director">{it.director}</span>
-            </div>
+            <Link to={"/detailPage/0" + it.id}>
+              <div
+                className="card"
+                onClick={() => {
+                  console.log(it.id);
+                }}
+              >
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "../images/program__0" +
+                    it.id +
+                    ".jpg"
+                  }
+                  alt=""
+                />
+                <div className="textbox">
+                  <span className="tit">{it.tit}</span>
+                  <span className="title">{it.title}</span>
+                  <span className="director">{it.director}</span>
+                </div>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

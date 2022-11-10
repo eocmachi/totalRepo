@@ -19,6 +19,8 @@ import Gonglo from "./pages/Gonglo";
 import Actor from "./pages/Actor";
 import WinnerList from "./pages/WinnerList";
 import Asia from "./pages/Asia";
+import DetailPage from "./pages/DetailPage";
+
 
 const App = () => {
   return (
@@ -43,6 +45,7 @@ const App = () => {
         <Route path="/page04" element={<Page04 />} />
         <Route path="/page05" element={<Page05 />} />
         <Route path="/page06" element={<Page06 />} />
+        <Route path="/detailPage/:itm" element={<DetailPage />} />
       </Routes>
       {/* <Footer /> */}
     </div>

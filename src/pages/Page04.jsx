@@ -94,7 +94,13 @@ const Page04 = () => {
     <section className="page04">
       <div className="container">
         <h1>역대영화제</h1>
-        <Swiper {...swiperParams} ref={setSwiper} modules={[Navigation]}>
+        <Swiper
+          {...swiperParams}
+          ref={setSwiper}
+          modules={[Navigation]}
+          slidesPerView={1}
+          spaceBetween={50}
+        >
           {DB.map((it, idx) => (
             <SwiperSlide>
               <div className="content">
