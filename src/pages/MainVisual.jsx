@@ -42,14 +42,14 @@ const MainVisual = () => {
           disableOnInteraction: true,
         }}
         effect={"fade"}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         pagination={{ clickable: true }}
         className="main-swiper"
       >
         {MV.map((slide, idx) => (
-          <SwiperSlide className="swiper-slide">
+          <SwiperSlide className="swiper-slide" key={slide.id}>
             <img
               src={
                 process.env.PUBLIC_URL +

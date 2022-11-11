@@ -3,10 +3,11 @@ import "../css/page.scss";
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
-const Page03 = () => {
+const Page03 = ({ item }) => {
   const activeStyle = {
     color: "#d82f36",
   };
+
   return (
     <section className="page03">
       <div className="content">
@@ -20,6 +21,7 @@ const Page03 = () => {
               • 개·폐막작
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/page03/today"
@@ -38,10 +40,10 @@ const Page03 = () => {
           </li>
           <li>
             <NavLink
-              to="/page03/worldcinema"
+              to="/page03/new"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              • 월드시네마
+              • 뉴 커런츠
             </NavLink>
           </li>
           <li>

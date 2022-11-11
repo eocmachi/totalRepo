@@ -86,7 +86,7 @@ const Archive = () => {
         class="archive-swiper"
       >
         {DB.map((ar, idx) => (
-          <SwiperSlide className="swiper-slide">
+          <SwiperSlide className="swiper-slide" key={ar.id}>
             <Link to="/page04">
               <img
                 src={

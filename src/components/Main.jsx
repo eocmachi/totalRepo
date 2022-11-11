@@ -3,11 +3,11 @@ import Archive from "../pages/Archive";
 import MainVisual from "../pages/MainVisual";
 import Program from "../pages/Program";
 
-const Main = () => {
+const Main = ({ item }) => {
   return (
     <div className="Main">
       <MainVisual />
-      <Program />
+      <Program item={item} />
       <Archive />
     </div>
   );
