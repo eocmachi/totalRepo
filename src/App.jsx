@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Login from "./components/login/login";
 
-const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+const App = ({authService}) => {
+  return <Login authService={authService}/>;
+};
 
-export default App
+export default App;
