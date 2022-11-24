@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Editor from "../editor/editor";
 import Footer from "../footer/footer";
@@ -7,6 +7,41 @@ import Preview from "../preview/preview";
 import styles from "./maker.module.css";
 
 const Maker = ({ authService }) => {
+  const [cards, setCards] = useState([
+    {
+      id: "1",
+      name: "WooYoungWoo",
+      company: "Samsung",
+      theme: "light",
+      title: "Software Engineer",
+      email: "wooyoungwoo@gmail.com",
+      message: "woo to the young to the woo",
+      fileName: "wooyoungwoo",
+      fileURL: "wooyoungwoo.png",
+    },
+    {
+      id: "2",
+      name: "WooYoungWo2",
+      company: "Samsung",
+      theme: "light",
+      title: "Software Engineer",
+      email: "wooyoungwoo@gmail.com",
+      message: "woo to the young to the woo",
+      fileName: "wooyoungwoo",
+      fileURL: "wooyoungwoo.png",
+    },
+    {
+      id: "3",
+      name: "WooYoungWo3",
+      company: "Samsung",
+      theme: "light",
+      title: "Software Engineer",
+      email: "wooyoungwoo@gmail.com",
+      message: "woo to the young to the woo",
+      fileName: "wooyoungwoo",
+      fileURL: "wooyoungwoo.png",
+    },
+  ]);
   const navigate = useNavigate();
   const onLogout = () => {
     authService.logout();
@@ -24,8 +59,8 @@ const Maker = ({ authService }) => {
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <Editor />
-        <Preview />
+        <Editor cards={cards} />
+        <Preview cards={cards} />
       </div>
       <Footer />
     </section>
