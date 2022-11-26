@@ -12,12 +12,12 @@ const Maker = ({ authService }) => {
       id: "1",
       name: "WooYoungWoo",
       company: "Samsung",
-      theme: "light",
+      theme: "dark",
       title: "Software Engineer",
       email: "wooyoungwoo@gmail.com",
       message: "woo to the young to the woo",
       fileName: "wooyoungwoo",
-      fileURL: "wooyoungwoo.png",
+      fileURL: null,
     },
     {
       id: "2",
@@ -34,12 +34,13 @@ const Maker = ({ authService }) => {
       id: "3",
       name: "WooYoungWo3",
       company: "Samsung",
-      theme: "light",
+      theme: "colorful",
       title: "Software Engineer",
       email: "wooyoungwoo@gmail.com",
       message: "woo to the young to the woo",
       fileName: "wooyoungwoo",
-      fileURL: "wooyoungwoo.png",
+      fileURL: null,
+
     },
   ]);
   const navigate = useNavigate();
