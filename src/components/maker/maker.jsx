@@ -40,7 +40,6 @@ const Maker = ({ authService }) => {
       message: "woo to the young to the woo",
       fileName: "wooyoungwoo",
       fileURL: null,
-
     },
   ]);
   const navigate = useNavigate();
@@ -56,11 +55,16 @@ const Maker = ({ authService }) => {
     });
   });
 
+  const addCard = (card) => {
+    const updated = [...cards, card];
+    setCards(updated);
+  };
+
   return (
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <Editor cards={cards} />
+        <Editor cards={cards} addCard={addCard} />
         <Preview cards={cards} />
       </div>
       <Footer />
