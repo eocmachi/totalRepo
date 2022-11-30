@@ -6,10 +6,10 @@ import styles from "./login.module.css";
 
 const Login = ({ authService }) => {
   const navigate = useNavigate();
-  const goToMaker = (useId) => {
+  const goToMaker = (userId) => {
     navigate({
       pathname: "/maker",
-      state: { id: useId },
+      state: { id: userId },
     });
   };
   const onLogin = (event) => {
