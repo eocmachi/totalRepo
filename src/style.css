@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+.name {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ddd089;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
