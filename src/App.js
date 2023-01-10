@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Threee />
-      <div className="name">portfolio 2023</div>
+      
     </>
   );
 };
