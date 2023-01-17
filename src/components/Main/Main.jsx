@@ -70,7 +70,6 @@ const Main = () => {
         <motion.div
           className="item"
           transition={{ delay: 0.4, type: "spring" }}
-
           initial="hidden"
           animate="visible"
           exit="exit"
@@ -92,7 +91,6 @@ const Main = () => {
         <motion.div
           className="item"
           transition={{ delay: 0.5, type: "spring" }}
-
           initial="hidden"
           animate="visible"
           exit="exit"
@@ -113,7 +111,6 @@ const Main = () => {
         <motion.div
           className="item"
           transition={{ delay: 0.6, type: "spring" }}
-
           initial="hidden"
           animate="visible"
           exit="exit"
@@ -122,7 +119,11 @@ const Main = () => {
           <a href="mailto:h00kk@naver.com">
             <img
               className="item-bg"
+<<<<<<< HEAD
               src={process.env.PUBLIC_URL + "/images/bg00.jpg"}
+=======
+              src={process.env.PUBLIC_URL + "/images/bg04.jpg"}
+>>>>>>> 5300628d624622d473af1819b9b19075f1fd145d
               alt=""
             />
             <div className="inner">
