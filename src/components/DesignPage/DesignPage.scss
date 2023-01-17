@@ -9,6 +9,7 @@
         background-color: rgba(207, 212, 225, 0.5);
 
         li {
+            display: flex;
             padding: 15px 50px;
             overflow: hidden;
             text-overflow: ellipsis;
