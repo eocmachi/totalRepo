@@ -22,7 +22,7 @@ const Header = () => {
         </li>
         <li className="hd-title">
           <div>
-            <span className="sec">2023</span> Portfolio
+            <span className="sec">2023</span>Portfolio
           </div>
         </li>
         <li className="pv-btn">

@@ -119,11 +119,7 @@ const Main = () => {
           <a href="mailto:h00kk@naver.com">
             <img
               className="item-bg"
-<<<<<<< HEAD
-              src={process.env.PUBLIC_URL + "/images/bg00.jpg"}
-=======
-              src={process.env.PUBLIC_URL + "/images/bg04.jpg"}
->>>>>>> 5300628d624622d473af1819b9b19075f1fd145d
+              src={process.env.PUBLIC_URL + "/images/bg08.jpg"}
               alt=""
             />
             <div className="inner">
