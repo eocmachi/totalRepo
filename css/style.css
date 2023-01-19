@@ -18,6 +18,12 @@ button {
   cursor: pointer;
 }
 
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
 /* Header  */
 .hd-top {
   line-height: 50px;
@@ -75,9 +81,8 @@ button {
   padding: 0;
 }
 
-
 /* main-visual  */
-.visual-items {
+.main.swiper {
   position: relative;
   width: 80%;
   margin: 0 auto;
@@ -152,6 +157,7 @@ button {
 
 /* jaseng-cure  */
 .jaseng-cure {
+  position: relative;
   padding: 100px 0;
   text-align: center;
   background: linear-gradient(#ffffff 64.5%, #f6f9fd 35.5%);
@@ -172,6 +178,7 @@ button {
 
 .swiper-wrapper {
   display: flex;
+  overflow: visible;
 }
 
 .card .swiper-slide {
@@ -200,9 +207,39 @@ button {
   padding: 0 30px;
 }
 
+.cure-next {
+  position: absolute;
+  top: 60%;
+  left: 14%;
+  cursor: pointer;
+  font-size: 60px;
+  color: rgb(137, 137, 137);
+  transform: translateY(-60%);
+  z-index: 99;
+}
+
+.cure-prev {
+  position: absolute;
+  top: 60%;
+  right: 14%;
+  transform: translateY(-60%);
+  cursor: pointer;
+  font-size: 60px;
+  color: rgb(137, 137, 137);
+  z-index: 99;
+}
+
+.cure-prev:hover {
+  color: rgb(0, 0, 0);
+}
+
+.cure-next:hover {
+  color: rgb(0, 0, 0);
+}
+
 /* jaseng-map  */
 .jaseng-map {
-  padding: 100px 0;
+  padding: 50px 0 100px;
   background-color: #f6f9fd;
 }
 
@@ -210,6 +247,17 @@ button {
   display: flex;
   justify-content: space-between;
   padding: 0 150px;
+}
+
+.jaseng-map .map-img {
+  position: relative;
+}
+
+.jaseng-map .map-target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
 }
 
 .map-title {
@@ -246,11 +294,12 @@ button {
 .map__items dt::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100px;
-  height: 1px;
-  background-color: #000;
+  height: 2px;
+  border-radius: 15px;
+  background-color: #002f87;
 }
 
 .map__items .dd {
@@ -278,6 +327,7 @@ button {
 
 .jaseng-booking span {
   font-size: 12px;
+  letter-spacing: 0.08rem;
 }
 
 .inputBox div {
@@ -311,6 +361,20 @@ button {
   grid-column-end: 3;
 }
 
+.inputBox input {
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 5px; */
+  color: #fff;
+  font-size: 18px;
+  line-height: 60px;
+  padding: 0 30px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
 .submit-btn {
   width: 246px;
   height: 131px;
@@ -332,6 +396,7 @@ button {
 
 /* --- jaseng-review  --- */
 .jaseng-review {
+  position: relative;
   padding: 100px 0;
   width: 80%;
   margin: auto;
@@ -345,7 +410,7 @@ button {
   font-size: 24px;
   margin-bottom: 30px;
   transform: translateY(-220%);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
 }
 
@@ -406,6 +471,38 @@ button {
 .slide-text {
   padding: 30px;
   letter-spacing: 0.04em;
+}
+
+.review-next {
+  position: absolute;
+  bottom: 7px;
+  left: 45%;
+  width: 20px;
+  z-index: 99;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.review-next:hover {
+  scale: 1.1;
+}
+
+.review-prev {
+  position: absolute;
+  bottom: 7px;
+  right: 45%;
+  width: 20px;
+  z-index: 99;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.review-prev:hover {
+  scale: 1.1;
+}
+
+.swiper-pagination {
+  font-size: 14px;
 }
 
 /* jaseng-info */
@@ -527,16 +624,6 @@ button {
   flex: 1;
 }
 
-.policy li::before {
-  content: "";
-  width: 1px;
-  height: 3px;
-  background-color: #ddd;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .ft-bt .container {
   display: flex;
   justify-content: space-between;
@@ -568,13 +655,13 @@ button {
 }
 
 .ft-bt .right-box {
-display: flex;
+  display: flex;
 }
 
 .ft-bt .right-box .sns {
-display: flex;
-gap: 12px;
-margin: 6px 20px;
+  display: flex;
+  gap: 12px;
+  margin: 6px 20px;
 }
 
 .copyright {
@@ -603,7 +690,7 @@ margin: 6px 20px;
   position: absolute;
   top: 50%;
   right: 10%;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 
 .ft-bt .family-site.on::after {
