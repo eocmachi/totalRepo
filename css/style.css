@@ -2,6 +2,10 @@
   outline: 1px solid #f00;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Pretendard, sans-serif;
 }
@@ -754,4 +758,23 @@ input::placeholder {
       border: none;
       background: #002f87;
       color: #fff;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 60px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f8981c;
+  color: #fff;
+  cursor: pointer;
+  padding: 11px 14px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 5px 12px 3px rgb(0 0 0 / 15%);
+  transition: 0.5s;
 }

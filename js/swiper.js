@@ -1,5 +1,4 @@
 window.addEventListener("DOMContentLoaded", () => {
-
   const btn = document.querySelector(".family-site");
 
   function handleBtnClick() {
@@ -56,33 +55,32 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  
   // 팝업창
-  const LINK_LI = document.querySelectorAll('.ft_top .right li');
-  const LINK_CON = document.querySelectorAll('.ft_top .content .link');
+  const LINK_LI = document.querySelectorAll(".ft_top .right li");
+  const LINK_CON = document.querySelectorAll(".ft_top .content .link");
 
   LINK_LI.forEach((it, idx) => {
-    it.addEventListener('click', () => {
-        if (it.classList.contains('on')) {
-            it.classList.remove('on');
-            LINK_CON[idx].classList.remove('on');
-        } else {
-            LINK_LI.forEach(el => el.classList.remove('on'));
-            it.classList.add('on');
-            LINK_CON.forEach(el => el.classList.remove('on'));
-            LINK_CON[idx].classList.add('on');
-        }
-    })
-});
+    it.addEventListener("click", () => {
+      if (it.classList.contains("on")) {
+        it.classList.remove("on");
+        LINK_CON[idx].classList.remove("on");
+      } else {
+        LINK_LI.forEach((el) => el.classList.remove("on"));
+        it.classList.add("on");
+        LINK_CON.forEach((el) => el.classList.remove("on"));
+        LINK_CON[idx].classList.add("on");
+      }
+    });
+  });
 
-const COOKIE = document.cookie;
-if (!COOKIE) {
-    document.querySelector('.popup').style.display = 'block';
-}
+  const COOKIE = document.cookie;
+  if (!COOKIE) {
+    document.querySelector(".popup").style.display = "block";
+  }
 
-document.querySelector('.popup button').addEventListener('click', () => {
-    document.querySelector('.popup').style.display = 'none';
-});
+  document.querySelector(".popup button").addEventListener("click", () => {
+    document.querySelector(".popup").style.display = "none";
+  });
 
   document.querySelector(".popup input").addEventListener("change", () => {
     // setCookie('name', 'popup', 1)
@@ -96,4 +94,24 @@ document.querySelector('.popup button').addEventListener('click', () => {
   document.querySelector(".popup").addEventListener("wheel", (e) => {
     e.preventDefault();
   });
+
 });
+
+const mybutton = document.getElementById("myBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
