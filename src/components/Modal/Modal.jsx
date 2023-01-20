@@ -80,35 +80,35 @@ const Modal = ({ setModalOpen }) => {
                 <div className="svg-wrppaer">
                   <div className="html">
                     <img
-                      src={process.env.PUBLIC_URL + "./images/html.svg"}
+                      src={process.env.PUBLIC_URL + "/images/html.svg"}
                       alt=""
                     />
                     <span>HTML5</span>
                   </div>
                   <div className="css">
                     <img
-                      src={process.env.PUBLIC_URL + "./images/css.svg"}
+                      src={process.env.PUBLIC_URL + "/images/css.svg"}
                       alt=""
                     />
                     <span>CSS3</span>
                   </div>
                   <div className="js">
                     <img
-                      src={process.env.PUBLIC_URL + "./images/js.svg"}
+                      src={process.env.PUBLIC_URL + "/images/js.svg"}
                       alt=""
                     />
                     <span>JavaScript</span>
                   </div>
                   <div className="sass">
                     <img
-                      src={process.env.PUBLIC_URL + "./images/sass.svg"}
+                      src={process.env.PUBLIC_URL + "/images/sass.svg"}
                       alt=""
                     />
                     <span>SASS</span>
                   </div>
                   <div className="react">
                     <img
-                      src={process.env.PUBLIC_URL + "./images/react.svg"}
+                      src={process.env.PUBLIC_URL + "/images/react.svg"}
                       alt=""
                     />
                     <span>REACT</span>
@@ -120,14 +120,14 @@ const Modal = ({ setModalOpen }) => {
                 <div className="svg-wrppaer">
                   <div className="firebase">
                     <img
-                      src={process.env.PUBLIC_URL + "./images/firebase.svg"}
+                      src={process.env.PUBLIC_URL + "/images/firebase.svg"}
                       alt=""
                     />
                     <span>FIREBASE</span>
                   </div>
                   <div className="node">
                     <img
-                      src={process.env.PUBLIC_URL + "./images/node.svg"}
+                      src={process.env.PUBLIC_URL + "/images/node.svg"}
                       alt=""
                     />
                     <span>Node.js</span>
@@ -146,7 +146,7 @@ const Modal = ({ setModalOpen }) => {
                 }
               >
                 <img
-                  src={process.env.PUBLIC_URL + "./images/github.png"}
+                  src={process.env.PUBLIC_URL + "/images/github.png"}
                   alt=""
                 />
                 <span className="name">GITHUB</span>
