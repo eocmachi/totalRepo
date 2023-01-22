@@ -13,7 +13,7 @@ $(function () {
       pauseOnHover: false,
   });
   $('.follow-slider').slick({
-      slidesToShow: 3,
+      slidesToShow: 5,
       autoplay: true,
       pauseOnHover: false,
   });
