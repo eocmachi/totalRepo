@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import "./css/Main.scss";
 import { Route, Routes } from "react-router-dom";
 import Main from "./components/Main";
-// import Footer from "./components/Footer";
 import Page03 from "./pages/Page03";
 import Page04 from "./pages/Page04";
 import Page02 from "./pages/Page02";
@@ -21,6 +20,7 @@ import WinnerList from "./pages/WinnerList";
 import Asia from "./pages/Asia";
 import Detail from "./pages/Detail";
 import { movies } from "./data";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [item, setItem] = useState([]);
@@ -54,7 +54,7 @@ const App = () => {
         <Route path="/page06" element={<Page06 />} />
         <Route path="/detail/:id" element={<Detail item={item} />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

@@ -3,7 +3,7 @@
 // }
 
 body {
-    background-color: #000000;
+    background-color: #151515;
     overflow-x: hidden;
 }
 
@@ -30,11 +30,11 @@ body {
     right: 0;
     color: #fff;
     z-index: 99;
-    background-color: #000000;
+    background-color: #151515;
 
     .hd-top {
         line-height: 40px;
-        border-bottom: 1px solid #101010;
+        border-bottom: 1px solid rgb(221, 221, 221, 0.1);
         font-size: 12px;
         color: rgba(168, 168, 168, 0.9);
         transition: 0.5s all;
@@ -72,7 +72,14 @@ body {
             display: flex;
             justify-content: space-between;
             font-size: 17px;
-            line-height: 100px;
+            line-height: 80px;
+            align-items: center;
+
+            .logo-img {
+                display: block;
+                width: 220px;
+                object-fit: cover;
+            }
 
             .gnb {
                 ul {
@@ -116,9 +123,12 @@ body {
         }
     }
 
-    .hd-bt {
-        border-bottom: 1px solid rgb(221, 221, 221, 0.1);
-    }
+    // .hd-bt {
+    //     // border-bottom: 1px solid rgb(221, 221, 221, 0.1);
+    //     // .container {
+    //     //     line-height: 70px;
+    //     // }
+    // }
 }
 
 // MainVisual --->
@@ -129,6 +139,7 @@ body {
 
         .swiper-slide {
             position: relative;
+
             img {
                 display: block;
                 width: 100%;
@@ -146,18 +157,18 @@ body {
                     color: #fff;
                     line-height: 1.8;
                     font-weight: 500;
-                  }
+                }
 
-                  strong {
+                strong {
                     display: block;
                     font-size: 60px;
                     color: #fff;
                     line-height: 1.6;
                     font-weight: bold;
                     margin-bottom: 20px;
-                  }
+                }
 
-                  button {
+                button {
                     font-weight: 900;
                     color: #fff;
                     border: 1.5px solid #fff;
@@ -167,15 +178,15 @@ body {
 
                     &:hover {
                         background-color: #d82f36;
-                        border: 1.5px solid rgba(216, 47, 54,0);
+                        border: 1.5px solid rgba(216, 47, 54, 0);
                     }
 
                     &:active {
                         scale: 0.9;
                     }
-                  }
-
                 }
+
+            }
         }
     }
 
@@ -256,7 +267,7 @@ body {
         margin-left: -836px;
         height: 453.59px;
         overflow: visible;
- 
+
         img {
             width: 100%;
             height: 80%;
@@ -294,4 +305,104 @@ body {
 //Footer ---> 
 .Footer {
     color: white;
+
+    .ft-bt {
+        position: relative;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        padding: 20px 0;
+        border-top: 1px solid rgb(221, 221, 221, 0.1);
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(221, 221, 221, 0.1);
+            top: 27%;
+            left: 0;
+        }
+
+        .top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 35px;
+            padding: 0 15px;
+
+            ul {
+                display: flex;
+
+                li {
+                    &:first-child {
+                        a {
+                            &::after {
+                                display: none;
+
+                            }
+                        }
+                    }
+                }
+
+                strong {
+                    font-weight: 500;
+                }
+
+                a {
+                    position: relative;
+                    padding: 0 50px;
+
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 12px;
+                        background-color: rgb(13, 13, 13);
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                    }
+                }
+            }
+
+            .logo-box {
+                display: flex;
+                gap: 30px;
+
+                img {
+                    display: block;
+                    width: auto;
+                    height: 30px;
+                    object-fit: cover;
+                    filter: grayscale(50%);
+                }
+            }
+        }
+
+        .bt-content {
+            padding: 0 30px;
+            
+            .inner-text {
+                font-size: 14px;
+                margin-left: 30px;
+
+                ul {
+                    li {
+                        line-height: 40px;
+                        letter-spacing: 0.02rem;
+
+                        p {
+                            font-size: 12px;
+                            color: rgba(202, 202, 202, 0.5);
+                            font-weight: 300;
+                            padding: 10px 0;
+                            letter-spacing: 0.05rem;
+                        }
+                    }
+                }
+            }
+        } 
+    }
 }

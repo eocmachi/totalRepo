@@ -58,7 +58,7 @@ const Header = () => {
         <div class="container">
           <h1>
             <Link to="/">
-              <img src={process.env.PUBLIC_URL + "./images/logo.svg"} alt="" />
+              <img className="logo-img" src={process.env.PUBLIC_URL + "./images/logo.svg"} alt="" />
             </Link>
           </h1>
           <nav class="gnb">
