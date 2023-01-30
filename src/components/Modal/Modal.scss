@@ -81,16 +81,21 @@
                 padding: 0 30px;
 
                 .intro-des {
+                    text-align: center;
+                    margin: 0 auto;
+
                     .pov {
-                        margin-bottom: 25px;
+                        margin-bottom: 35px;
 
                         .eng {
                             margin-bottom: 10px;
                             font-size: 20px;
                             font-weight: 900;
+                            color: #F8F4EA;
+                            letter-spacing: 0.03rem;
 
-                            .ori {
-                                letter-spacing: 0.1rem;
+                            span {
+                                color: #DDD089;
                             }
                         }
 

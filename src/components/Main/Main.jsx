@@ -7,26 +7,26 @@ import { motion } from "framer-motion";
 const data = [
   {
     id: 0,
-    title: "REACT\nPROJECT",
-    tit: "Clone & Ideas",
-    path: "react",
+    title: "MY\nPROJECT",
+    tit: "clone & ideas",
+    path: "project",
   },
   {
     id: 1,
     title: "WEB\nPUBLISHING",
-    tit: "Javascript",
+    tit: "javascript",
     path: "javascript",
   },
   {
     id: 2,
     title: "FRONT-END\nDEVELOPER",
-    tit: "Who am i",
+    tit: "who am i",
     path: "",
   },
   {
     id: 3,
     title: "CONTACT\nME",
-    tit: "Thank you !",
+    tit: "thank you !",
   },
 ];
 

@@ -15,7 +15,7 @@ const DB = [
   {
     id: 2,
     title: "hanwha",
-    url: "https://zoseeee.github.io/hince/",
+    url: "https://zoseeee.github.io/hanwha/",
   },
 
   {
@@ -26,7 +26,7 @@ const DB = [
   {
     id: 4,
     title: "gopizza",
-    url: "https://zoseeee.github.io/jakomo/",
+    url: "https://zoseeee.github.io/GOPIZZA/",
   },
   {
     id: 5,

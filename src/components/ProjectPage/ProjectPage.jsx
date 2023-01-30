@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ReactPage.scss";
+import "./ProjectPage.scss";
 import { motion } from "framer-motion";
 
 const RD = [
@@ -9,7 +9,7 @@ const RD = [
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해서 사용자가 google 과 github를 통해 로그인 할수있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://delicate-longma-d20402.netlify.app/",
   },
   {
     id: 1,
@@ -25,7 +25,7 @@ const RD = [
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해서 사용자가 google 과 github를 통해 로그인 할수있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다. 또한 cloudinary를 이용하여 사용자의 이미지를 저장을 할 수 있도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://zoseeee.github.io/YouTube/",
   },
   {
     id: 3,
@@ -41,11 +41,11 @@ const RD = [
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해서 사용자가 google 과 github를 통해 로그인 할수있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다. 또한 cloudinary를 이용하여 사용자의 이미지를 저장을 할 수 있도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://zoseeee.github.io/portfolio/",
   },
 ];
 
-const ReactPage = () => {
+const ProjectPage = () => {
   const [index, setIndex] = useState(0);
 
   const variants = {
@@ -55,7 +55,7 @@ const ReactPage = () => {
   };
 
   return (
-    <section className="react-page">
+    <section className="project-page">
       <ul className="tab-menu">
         <li># 태그</li>
         {RD.map((item) => (
@@ -131,4 +131,4 @@ const ReactPage = () => {
   );
 };
 
-export default ReactPage;
+export default ProjectPage;

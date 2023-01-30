@@ -1,6 +1,5 @@
 import "./Preview.scss";
 import { motion } from "framer-motion";
-import React, { useEffect, useRef } from "react";
 
 const RD = [
   {
@@ -9,7 +8,7 @@ const RD = [
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해서 사용자가 google 과 github를 통해 로그인 할수있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://delicate-longma-d20402.netlify.app/",
   },
   {
     id: 1,
@@ -25,7 +24,7 @@ const RD = [
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해서 사용자가 google 과 github를 통해 로그인 할수있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다. 또한 cloudinary를 이용하여 사용자의 이미지를 저장을 할 수 있도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://zoseeee.github.io/YouTube/",
   },
   {
     id: 3,
@@ -41,7 +40,7 @@ const RD = [
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해서 사용자가 google 과 github를 통해 로그인 할수있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다. 또한 cloudinary를 이용하여 사용자의 이미지를 저장을 할 수 있도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://zoseeee.github.io/portfolio/",
   },
 ];
 const DB = [
@@ -58,7 +57,7 @@ const DB = [
   {
     id: 2,
     title: "hanwha",
-    url: "https://zoseeee.github.io/hince/",
+    url: "https://zoseeee.github.io/hanwha/",
   },
 
   {
@@ -69,7 +68,7 @@ const DB = [
   {
     id: 4,
     title: "gopizza",
-    url: "https://zoseeee.github.io/jakomo/",
+    url: "https://zoseeee.github.io/GOPIZZA/",
   },
   {
     id: 5,
@@ -84,21 +83,6 @@ const DB = [
 ];
 
 const Preview = ({ setPreviewOpen }) => {
-  const previewRef = useRef(null);
-
-  useEffect(() => {
-    const handler = (e) => {
-      if (previewRef.current && !previewRef.current.contains(e.target)) {
-        setPreviewOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  });
-
   const variants = {
     hidden: { x: 50, opacity: 0 },
     visible: { x: 0, opacity: 1 },
@@ -108,7 +92,6 @@ const Preview = ({ setPreviewOpen }) => {
   return (
     <motion.div
       className="preview"
-      ref={previewRef}
       initial="hidden"
       animate="visible"
       exit="exit"

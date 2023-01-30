@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import DesignPage from "./components/DesignPage/DesignPage";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
-import ReactPage from "./components/ReactPage/ReactPage";
+import ProjectPage from "./components/ProjectPage/ProjectPage";
 import "./css/app.scss";
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/react" element={<ReactPage />} />
+        <Route path="/project" element={<ProjectPage />} />
         <Route path="/javascript" element={<DesignPage />} />
       </Routes>
     </div>
