@@ -1,11 +1,9 @@
-@value makerBlack, makerWhite from "../../common/colors.css";
-
 .form {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    border-top: 1px solid makerBlack;
-    border-left: 1px solid makerBlack;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
     margin-bottom: 1em;
 }
 
@@ -14,9 +12,9 @@
     width: 100%;
     border: 0;
     padding: 0.5em;
-    border-bottom: 1px solid makerBlack;
-    border-right: 1px solid makerBlack;
-    background-color: makerWhite;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #fff;
 }
 
 .input, .select {

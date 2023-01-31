@@ -1,5 +1,3 @@
-@value makerBlack, makerWheat, makerWhite, makerColorful, makerShadow from "../../common/colors.css";
-
 .card {
   display: flex;
   align-items: center;
@@ -8,22 +6,28 @@
   background-color: beige;
   margin-bottom: 0.5em;
   padding: 0.2em 0;
-  box-shadow: 6px 6px 8px 0px makerShadow;
+  box-shadow: 6px 6px 8px 0px rgba(217, 217, 217, 1);
   max-width: 30rem;
 }
 
 .card.dark {
-  background-color: makerBlack;
-  color: makerWhite;
+  background-color: black;
+  color: white;
 }
 
 .card.light {
-  background-color: makerWhite;
-  color: makerBlack;
+  background-color: white;
+  color: black;
 }
 
 .card.colorful {
-  background: makerColorful;
+  background: linear-gradient(
+    166deg,
+    rgba(237, 193, 211, 1) 0%,
+    rgba(212, 149, 161, 1) 60%,
+    rgba(162, 63, 63, 1) 100%,
+    rgba(127, 188, 242, 1) 100%
+  );
 }
 
 .avatar {
@@ -36,13 +40,13 @@
 }
 
 .info {
-    width: 100%;
+  width: 100%;
 }
 
 .name,
-.company,
+.job,
 .email,
-.title,
+.country,
 .message {
   margin: 0;
   font-size: 0.8rem;
@@ -53,15 +57,15 @@
   font-size: 1.2rem;
 }
 
-.company {
+.job {
   margin-bottom: 1em;
 }
 
-.company::after {
+.job::after {
   content: "";
   display: block;
   width: 90%;
   height: 2px;
-  background-color: makerWheat;
+  background-color: wheat;
   transform: translateY(0.5em);
 }

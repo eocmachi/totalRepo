@@ -5,14 +5,13 @@ import styles from "./card_edit_form.module.css";
 const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
   const formRef = useRef();
   const nameRef = useRef();
-  const companyRef = useRef();
+  const jobRef = useRef();
   const themeRef = useRef();
-  const titleRef = useRef();
+  const countryRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
 
-  const { name, company, title, email, message, theme, fileName,  } =
-    card;
+  const { name, job, country, email, message, theme, fileName } = card;
 
   const onFileChange = (file) => {
     updateCard({
@@ -35,6 +34,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
   const onSubmit = () => {
     deleteCard(card);
   };
+
   return (
     <form ref={formRef} className={styles.form}>
       <input
@@ -46,11 +46,11 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       />
       <input
-        ref={companyRef}
+        ref={jobRef}
         className={styles.input}
         type="text"
-        name="company"
-        value={company}
+        name="job"
+        value={job}
         onChange={onChange}
       />
       <select
@@ -65,11 +65,11 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         <option value="colorful">colorful</option>
       </select>
       <input
-        ref={titleRef}
+        ref={countryRef}
         className={styles.input}
         type="text"
-        name="title"
-        value={title}
+        name="country"
+        value={country}
         onChange={onChange}
       />
       <input

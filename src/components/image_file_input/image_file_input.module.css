@@ -1,5 +1,3 @@
-@value makerLightGrey, makerPink, makerLightPink from "../../common/colors.css";
-
 .container {
   width: 100%;
   height: 100%;
@@ -23,11 +21,11 @@
 }
 
 .button.grey {
-  background-color: makerLightGrey;
+  background-color: #ddd;
 }
 
 .button.pink {
-  background-color: makerLightPink;
+  background-color: #ffeae8;
 }
 
 .button:hover {
@@ -38,8 +36,8 @@
     width: 1.5em;
     height: 1.5em;
     border-radius: 50%;
-    border: 1px solid makerLightGrey;
-    border-top: 3px solid makerPink;
+    border: 1px solid #e8e7e6;
+    border-top: 3px solid pink;
     animation: spin 2s linear infinite;
 
     @keyframes spin {

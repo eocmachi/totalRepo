@@ -5,9 +5,9 @@ import styles from "./card_add_form.module.css";
 const CardAddForm = memo(({ FileInput, onAdd }) => {
   const formRef = useRef();
   const nameRef = useRef();
-  const companyRef = useRef();
+  const jobRef = useRef();
   const themeRef = useRef();
-  const titleRef = useRef();
+  const countryRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
   const [file, setFile] = useState({ fileName: null, fileURL: null });
@@ -23,9 +23,9 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
     const card = {
       id: Date.now(), //uuid
       name: nameRef.current.value || "",
-      company: companyRef.current.value || "",
+      job: jobRef.current.value || "",
       theme: themeRef.current.value,
-      title: titleRef.current.value || "",
+      country: countryRef.current.value || "",
       email: emailRef.current.value || "",
       message: messageRef.current.value || "",
       fileName: file.fileName || "",
@@ -45,11 +45,11 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
         placeholder="Name"
       />
       <input
-        ref={companyRef}
+        ref={jobRef}
         className={styles.input}
         type="text"
-        name="company"
-        placeholder="Company"
+        name="job"
+        placeholder="Job"
       />
       <select
         ref={themeRef}
@@ -62,11 +62,11 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
         <option placeholder="colorful">colorful</option>
       </select>
       <input
-        ref={titleRef}
+        ref={countryRef}
         className={styles.input}
         type="text"
-        name="title"
-        placeholder="Title"
+        name="country"
+        placeholder="Country"
       />
       <input
         ref={emailRef}
