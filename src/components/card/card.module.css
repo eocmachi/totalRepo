@@ -4,19 +4,19 @@
   width: 100%;
   border-radius: 1em;
   background-color: beige;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   padding: 0.2em 0;
-  box-shadow: 6px 6px 8px 0px rgba(217, 217, 217, 1);
+  /* box-shadow: 6px 6px 8px 0px rgba(217, 217, 217, 1); */
   max-width: 30rem;
 }
 
 .card.dark {
-  background-color: black;
+  background-color: #222;
   color: white;
 }
 
 .card.light {
-  background-color: white;
+  background-color: rgb(244, 244, 231);
   color: black;
 }
 
@@ -51,6 +51,12 @@
   margin: 0;
   font-size: 0.8rem;
   margin-bottom: 0.2em;
+}
+
+.message {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .name {
