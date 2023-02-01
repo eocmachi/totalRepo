@@ -16,19 +16,15 @@ import SwiperCore, {
 const MV = [
   {
     id: 1,
-    title: "YouTube\nClone Coding",
   },
   {
     id: 2,
-    title: "2022 BIFF",
   },
   {
     id: 3,
-    title: "나이키 Nike",
   },
   {
     id: 4,
-    title: "Find Golden\nSnitch",
   },
 ];
 

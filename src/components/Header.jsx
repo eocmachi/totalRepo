@@ -6,7 +6,7 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let sct = window.scrollY;
-      sct > 100
+      sct > 0
         ? hide.current.classList.add("on")
         : hide.current.classList.remove("on");
     });
