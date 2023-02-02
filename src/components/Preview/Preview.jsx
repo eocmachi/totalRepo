@@ -16,7 +16,7 @@ const RD = [
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해 사용자가 google 과 github를 통해 로그인 할 수 있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://classy-madeleine-f766d7.netlify.app/",
   },
   {
     id: 2,
@@ -28,11 +28,11 @@ const RD = [
   },
   {
     id: 3,
-    title: "Business Card Maker",
+    title: "Metaverse Card Maker",
     description:
       "본 프로젝트는 React를 이용하여, 홈, 로그인, 포켓몬 게임, 트레이너 등록 등의 페이지로 구성되어 있는 Web Aplication Project 입니다. firebase를 통해서 사용자가 google 과 github를 통해 로그인 할수있으며, 사용자의 정보를 firebase에 realtime database에 저장하여 실시간으로 등록 및 수정이 가능하도록 구현하였습니다. 또한 cloudinary를 이용하여 사용자의 이미지를 저장을 할 수 있도록 구현하였습니다.",
     tools: " react / react-router-dom / scss ",
-    url: "https://zoseeee.github.io/BIFF/",
+    url: "https://rococo-lamington-8b84b3.netlify.app/",
   },
   {
     id: 4,

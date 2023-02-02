@@ -57,7 +57,7 @@ const Main = () => {
           <Link to={data[0].path}>
             <img
               className="item-bg"
-              src={process.env.PUBLIC_URL + "/images/bg03.jpg"}
+              src={process.env.PUBLIC_URL + "/images/bg01.jpg"}
               alt=""
             />
             <div className="inner">
@@ -78,7 +78,7 @@ const Main = () => {
           <Link to={data[1].path}>
             <img
               className="item-bg"
-              src={process.env.PUBLIC_URL + "/images/bg01.jpg"}
+              src={process.env.PUBLIC_URL + "/images/bg02.jpg"}
               alt=""
             />
             <div className="inner">
@@ -99,7 +99,7 @@ const Main = () => {
         >
           <img
             className="item-bg"
-            src={process.env.PUBLIC_URL + "/images/bg06.jpg"}
+            src={process.env.PUBLIC_URL + "/images/bg03.jpg"}
             alt=""
           />
           <div className="inner">
@@ -119,7 +119,7 @@ const Main = () => {
           <a href="mailto:h00kk@naver.com">
             <img
               className="item-bg"
-              src={process.env.PUBLIC_URL + "/images/bg08.jpg"}
+              src={process.env.PUBLIC_URL + "/images/bg04.jpg"}
               alt=""
             />
             <div className="inner">

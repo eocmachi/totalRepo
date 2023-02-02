@@ -12,16 +12,17 @@
     .modal {
         width: 800px;
         height: 600px;
-        background-color: #1D1C24;
+        background: url(../../../public/images/home_bg.png) no-repeat center center/cover;
+        // background-color: #f5f5f5;
         border-radius: 10px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        color: #F8F4EA;
+        color: #222;
 
         .modal-header {
             position: relative;
-            background-color: #343338;
+            background-color: #F3F4F4;
             height: 55px;
             text-align: center;
             box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
@@ -46,6 +47,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    transition: 0.3s;
                 }
 
                 &:hover {
@@ -59,7 +61,7 @@
             overflow-y: scroll;
             -ms-overflow-style: none;
             font-size: 16px;
-
+          
             &::-webkit-scrollbar {
                 display: none;
             }
@@ -72,36 +74,31 @@
             h3 {
                 text-align: right;
                 min-width: 180px;
-                font-size: 28px;
-                font-weight: 600;
+                font-size: 20px;
+                font-weight: 800;
                 margin-right: 50px;
             }
 
             .intro {
                 padding: 0 30px;
+                font-weight: 700;
 
                 .intro-des {
-                    text-align: center;
+                    // text-align: center;
                     margin: 0 auto;
 
                     .pov {
-                        margin-bottom: 35px;
+                        margin-bottom: 30px;
 
                         .eng {
-                            margin-bottom: 10px;
-                            font-size: 20px;
+                            font-size: 17px;
                             font-weight: 900;
-                            color: #F8F4EA;
+                            // color: #F8F4EA;
                             letter-spacing: 0.03rem;
 
                             span {
-                                color: #DDD089;
+                                color: #F55050;
                             }
-                        }
-
-                        .kor {
-                            font-size: 14px;
-                            color: #DDD089;
                         }
                     }
 
@@ -112,8 +109,11 @@
             }
 
             .education {
+                font-weight: 600;
+
                 .edu-list {
                     li {
+                        font-size: 15px;
                         margin-bottom: 20px;
                         line-height: 2rem;
                     }
@@ -121,23 +121,25 @@
             }
 
             .skills {
+                font-weight: 700;
+
                 .title {
                     display: block;
-                    margin-bottom: 20px;
-                    font-size: 17px;
-                    font-weight: 600;
-                    letter-spacing: 0.1rem;
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: 0.03rem;
                 }
 
                 .front-end {
-                    margin-bottom: 40px;
+                    margin-bottom: 50px;
                 }
 
                 .svg-wrppaer {
                     display: flex;
                     text-align: center;
-                    font-size: 14px;
-                    letter-spacing: 0.05rem;
+                    font-size: 13px;
+                    letter-spacing: 0.02rem;
 
                     div {
                         margin-right: 40px;
@@ -163,7 +165,8 @@
                 .github {
                     display: flex;
                     align-items: center;
-                    font-weight: 700;
+                    font-size: 14px;
+                    font-weight: 800;
                     letter-spacing: 0.3rem;
                     cursor: pointer;
                 }

@@ -26,6 +26,10 @@
                 .xi-flash {
                     font-size: 25px;
                     transition: 0.2s;
+
+                    &:active {
+                        scale: 0.9;
+                    }
                 }
             }
         }
@@ -45,6 +49,15 @@
             font-size: 25px;
             text-align: right;
             z-index: 100;
+
+            .xi-snowy, 
+            .xi-cloudy {
+                transition: 0.2s;
+
+                &:active {
+                    scale: 0.9;
+                }
+            }
         }
     }
 }

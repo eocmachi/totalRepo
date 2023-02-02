@@ -18,15 +18,15 @@
             cursor: pointer;
 
             &:first-child {
-                margin-top: 120px;
+                margin: 120px 0 10px;
                 font-weight: 700;
                 color: #8F93A1;
                 cursor: default;
             }
 
             .list-icon {
-                margin-right: 10px;
-                color: #0081B4;
+                margin-right: 12px;
+                color: #579BB1;
             }
         }
     }

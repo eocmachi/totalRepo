@@ -12,6 +12,7 @@
             position: relative;
             flex: 1;
             cursor: pointer;
+            overflow: hidden;
 
             &:last-child {
                 &::after {

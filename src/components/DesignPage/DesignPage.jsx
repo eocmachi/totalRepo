@@ -50,14 +50,14 @@ const DesignPage = () => {
   return (
     <section className="design">
       <ul className="tab-menu">
-        <li># github code</li>
+        <li># WEB PUBLISHING</li>
         {DB.map((item) => (
           <li
             key={item.id}
-            onClick={() => window.open(`${item.github}`, "_blank")}
+            onClick={() => window.open(`${item.url}`, "_blank")}
           >
             <span className="list-icon">
-              <i className="xi-time"></i>
+              <i className="xi-folder-open"></i>
             </span>
             {item.title}
           </li>

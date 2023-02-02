@@ -49,17 +49,15 @@ const Modal = ({ setModalOpen }) => {
             <div className="intro-des">
               <div className="pov">
                 <div className="eng">
-                  I want to be a <span>developer</span> , not a coder.
+                  I want to be a <span>developer</span>, not a coder.
                 </div>
-                {/* <div className="kor">“ 독창성 : 유일무이한 ”</div> */}
               </div>
               <p className="des">
                 안녕하세요, 저는 실패를 원동력으로 꾸준히 성장하는 프론트엔드
                 개발자 이정응입니다.
                 <br />
                 저는 ❝ 도전은 반드시 자신의 세계를 넓히게 마련이다. ❞ 라는 말을
-                좋아합니다. <br /> 새로운 지식과 기술을 배우고, 배운
-                것을 응용하고, <br /> 다른 분들과 공유하여 저의 개발 세계를 넓히고자
+                좋아합니다. <br /> 새로운 지식과 기술을 배우고, 응용하고, 공유하여 저의 개발 세계를 넓히고자
                 노력하고 있습니다.
               </p>
             </div>
