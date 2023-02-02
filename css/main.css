@@ -11,9 +11,7 @@ button {
     cursor: pointer;
   }
 
-/* header 시작 ---> */
-
-
+/* header  ---> */
 .hd-top .container { display: flex; justify-content: space-between; line-height: 120px; }
 
 .hd-top .container a { font-size: 14px; color: #333;}
@@ -93,10 +91,8 @@ button {
 .gnb-list .container>ul:nth-child(6) { margin-left: 110px; }
 .gnb-list .container>ul>li>a { font-size: 16px;  }
 
-/* main-slider 시작 ---> */
 
-
-
+/* main-slider  ---> */
 .main-visual-slider .visual-01 { background: url(../img/visual-01.jpg) no-repeat; width: 100%; height: 70vh; position: relative; }
 .main-visual-slider .visual-01 img { position: absolute; top: 5%; left: 24%; animation: bounce 0.8s;
   animation-direction: alternate;
@@ -140,46 +136,7 @@ button {
 .main-visual:hover .target>span { opacity: 1; }
 
 
-/* .main-visual-slider .slick-dots { position: absolute; bottom:50px; left: 50%; transform: translateX(-50%); cursor: pointer; }
-
-.main-visual-slider .slick-dots li {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin: 0 6px;
-  
-}
-
-.main-visual-slider .slick-dots li button {
-  display: none;
-}
-
-.main-visual-slider .slick-dots li.slick-active {
-  width: 70px;
-  height: 8px;
-  border-radius: 16px;
-  transform: translateY(-25%);
-}
-
-.main-visual-slider .slick-dots li::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 100%;
-  background-color: #F8981C;
-  border-radius: 10px;
-}
-
-.main-visual-slider .slick-dots li.slick-active::after {
-  width: 100%;
-  transition: 10s;
-} */
-
-
-
-/* first-time 시작 ---> */
+/* first-time  ---> */
 .first-time { padding: 62px 0; color: #222;}
 .first-time .container { display: flex; justify-content: space-between; }
 
@@ -192,7 +149,7 @@ button {
 .f-right-box strong { display: block; font-weight: 700; font-size: 18px; margin: 0 0 20px; text-align: center; letter-spacing: -1.2px; }
 .f-right-box button { display: block; font-weight: 400; font-size: 14px; border: 1px solid rgba(232, 232, 232, 1); background-color: #fff; width: 80px; height: 30px; margin: 0 auto; }
 
-/* notice 시작 ---> */
+/* notice  ---> */
 .notice {position: relative; background-color: #F8981C; width: 100%; height: 120px; color: #fff; font-size: 20px; font-weight: 400; line-height: 120px; }
 
 .notice strong {margin-right: 100px;}
@@ -206,7 +163,7 @@ button {
 .notice-nextArrow { position: absolute; top:-15px; right: 365px; cursor: pointer;}
 
 
-/* kid-video 시작 ---> */
+/* kid-video  ---> */
 .kid-video { position: relative; background: url(../img/Group\ 41.jpg) no-repeat; width: 100%; height: auto; }
 
 .kid-video .container { display: flex; padding: 130px 0; justify-content: space-between;  }
@@ -266,7 +223,7 @@ button {
   width: 100%;
 }
 
-/* experience 시작 ---> */
+/* experience  ---> */
 .experience { background: url(../img/ex-bg.jpg); position: relative;  padding: 150px 0;}
 
 .experience h2 { font-size: 40px; color: #C60751; font-weight: 700; margin-bottom: 45px; letter-spacing: -2px; }
@@ -322,7 +279,7 @@ button {
 }
 
 
-/* application 시작 ---> */
+/* application  ---> */
 .application { position: relative; background: url(../img/Group\ 42.jpg) no-repeat; padding: 150px 0; }
 
 .call-img { background: url(../img/main_contents_04_list_icon_16\ 2.png); position: absolute; top: 8%; left: 20%; width: 100px; height: 85px; animation: bounce 0.8s;
@@ -442,7 +399,7 @@ button {
 .call span { font-size: 14px; color: #333; font-weight: 500; }
 .call strong { font-size: 30px; color: rgba(248, 152, 28, 1); font-weight:700; }
 
-/* banner 시작 ---> */
+/* banner  ---> */
 #container {
   position: relative;
   width: 100%;
@@ -463,7 +420,6 @@ button {
 
 
 /*photobanner*/
-
 .photobanner {
   width: 8640px;
 }
@@ -492,8 +448,7 @@ button {
 
 
 
-
-/* ft-top 시작 ---> */
+/* ft-top  ---> */
 .ft-top { background-color: #191B28; color: #fff; padding: 55px 0; text-align: center; }
 .ft-top .container { display: flex; align-items: flex-start; justify-content: space-around; }
 
@@ -522,7 +477,7 @@ button {
 .ft-top .container dd { font-size: 14px; font-weight: 200; margin-bottom: 12px; }
 
 
-/* ft-bottom 시작 ---> */
+/* ft-bottom  ---> */
 .ft-bt { position: relative; background-color: #000; color: #fff; font-size: 15px;  font-weight: 300; padding: 20px 0; }
 
 .ft-bt::after {
