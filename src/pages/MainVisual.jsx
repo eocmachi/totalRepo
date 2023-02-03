@@ -21,6 +21,9 @@ const MV = [
   {
     id: 4,
   },
+  {
+    id: 5,
+  },
 ];
 
 const MainVisual = () => {
@@ -79,7 +82,7 @@ const MainVisual = () => {
             <div class="inner-text">
               <span>제27회 부산국제영화제</span>
               <strong>수상작 및 수상자</strong>
-              <Link to="/page02">
+              <Link to="/page02/thisYear">
                 <button>🡒</button>
               </Link>
             </div>

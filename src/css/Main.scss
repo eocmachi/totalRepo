@@ -1,6 +1,6 @@
-// * {
-//     outline: 1px solid #d82f36;
-// }
+* {
+    outline: 1px solid #d82f36;
+}
 
 body {
     background-color: #111;
@@ -88,7 +88,6 @@ body {
                         transition: 0.3s;
 
                         &:hover {
-                            scale: 0.99;
                             opacity: 0.9;
                         }
 
@@ -304,21 +303,49 @@ body {
 
     .container {
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
 
-        h2 {
-            font-size: 34px;
-            font-family: 'Lato', sans-serif;
-            font-weight: 700;
-            margin-bottom: 50px;
+        .left {
+            display: flex;
+            gap: 10px;
+
+            h2 {
+                font-size: 34px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                margin-bottom: 50px;
+            }
+
+            span {
+                a {
+                    font-size: 12px;
+                    color: #d82f36;
+                    font-family: 'Oswald', sans-serif;
+                    letter-spacing: 5px;
+                }
+            }
         }
+            
+        .swiper-button {
+            display: flex;
+            gap: 20px;
 
-        span {
-            a {
-                font-size: 12px;
-                color: #d82f36;
-                font-family: 'Oswald', sans-serif;
-                letter-spacing: 5px;
+            .prev, 
+            .next {
+                background-color: #e5e5e5;
+                border-radius: 50%;
+                height: 35px;
+                width: 35px;
+                font-weight: 900;
+
+                &:hover {
+                    background-color: rgb(189, 189, 189);
+                }
+            }
+
+            .xi-angle-left-min,
+            .xi-angle-right-min {
+                font-weight: 700;
             }
         }
     }
@@ -386,6 +413,7 @@ body {
                 color: #222;
                 background-color: #ddd;
                 border-radius: 50%;
+                cursor: pointer;
 
                 .xi-plus {
                     font-size: 11px;
@@ -499,7 +527,6 @@ body {
                     width: auto;
                     height: 30px;
                     object-fit: cover;
-                    filter: grayscale(50%);
                 }
             }
         }

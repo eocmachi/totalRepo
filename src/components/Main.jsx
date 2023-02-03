@@ -4,13 +4,13 @@ import MainVisual from "../pages/MainVisual";
 import News from "../pages/News";
 import Program from "../pages/Program";
 
-const Main = ({ item }) => {
+const Main = ({ item, list }) => {
   return (
     <div className="Main">
       <MainVisual />
       <Program item={item} />
       <News />
-      <Archive />
+      <Archive list={list} />
     </div>
   );
 };

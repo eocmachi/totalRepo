@@ -28,7 +28,7 @@ const Detail = ({ item }) => {
             <p className="genre">{matchItm.genre}</p>
           </div>
           <button>
-            <Link to="/page03">
+            <Link to="/page03/open">
               <i className="xi-bars">
                 <span>목록으로</span>
               </i>

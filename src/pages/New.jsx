@@ -1,104 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const DB = [
-  {
-    id: 3,
-    title: "에브리씽 에브리웨어 올 앳 원스",
-    lng: "Everything Everywhere All at Once",
-    genre: "SF/판타지 · 코미디/유머/블랙코미디/풍자 · 액션/무협",
-    director: "Dan KWAN 댄 콴, Daniel SCHEINERT 다니엘 쉐이너트",
-    note: "중국계 중년여성 에벌린의 인생은 복잡다단하다. 운영하는 빨래방은 국세청의 까다로운 감사를 받고, 남편은 그녀 몰래 이혼 서류를 준비한다. 하나뿐인 딸은 커밍아웃 후 동성애자 애인을 보수적인 할아버지에게 소개하겠다며 고집을 피운다. 어느 날, 에벌린은 국세청 사무실에서 감사를 받다 자신의 전생들이 연결 된 ‘멀티버스’ 세계에 빠진다. 어리둥절한 에벌린은 무엇이 현실인지도 모른 채 딸의 형체를 한 악의 신 ‘조부투파키’로 부터 세상을 구해야 하는 처지가 되는데... 올해 미국에서 개봉된 영화 중 단연 최고 화제작으로 꼽히는 <에브리씽 에브리웨어 올 앳 원스>는 sci-fi, 코미디, 드라마, 화려한 무술 액션까지 오락영화가 가질 수 있는 모든 장르를 총망라한 작품이다. 주인공역으로 수 많은 장르를 소화하는 양자경의 매력에 푹 빠질 수밖에 없는 이 작품은, 올해SXSW에서 처음 소개되면서부터 특히 젊은 층으로부터 폭발적인 반응을 얻었다.",
-    tit: "뉴 커런츠",
-    nation: "United States",
-    year: "2022",
-    time: "140min",
-    format: "DCP",
-  },
-
-  {
-    id: 6,
-    title: "내가 꿈꾸는 나라",
-    lng: "My Imaginary Country",
-    genre: "정치 · 역사/전쟁",
-    director: "고레에다 히로카즈",
-    note: "영화는 살바도르 아옌데를 향한 민중의 환호로 시작한다. 하지만 쿠데타는 삶과 변화의 꿈을 산산이 깨버렸다. 2019년 10월, 칠레가 다시 폭발했다. <칠레 전투>(1975, 1976, 1979)에서 그랬듯, 사회의 변혁을 기록하는 구즈만의 카메라는 ‘두 번째 혁명이 가능한지, 자본주의로 치닫던 국가의 영혼이 어떻게 깨어났는지’ 질문한다. 그는 전혀 다른 세대를 명확하게 인지한다. 그들에겐 정파적 지도자가 없으며, 특정 이데올로기의 지배 없이 공동의 꿈을 향해 한 몸으로 저항한다. 그리고 새로운 혁명의 중심에는 여성의 목소리가 있음을 아는 구즈만은 오로지 여성을 대상으로 인터뷰한다. 구즈만은 체제의 변화라는 희망을 앞두고 다시는 <칠레 전투>(1975, 1976, 1979)의 시간이 반복되는 일이 벌어지지 않기를 바란다. 그러므로 이건 노대가의 간절한 기도에 다름 아니다. (이용철)",
-    tit: "뉴 커런츠",
-    nation: "France/Chile",
-    year: "2022",
-    time: "83min",
-    format: "DCP",
-  },
-  {
-    id: 7,
-    title: "브로커",
-    lng: "Broker",
-    genre: "",
-    director: "고레에다 히로카즈",
-    note: "고레에다 히로카즈의 가족 이야기는 전환과 확장의 길을 걸어왔다. <브로커>에서 그는 대안 가족의 가능성을 탐색한다. 미혼모 소영(이지은)은 자신의 아이 우성을 베이비박스에 두고 가고, 상현(송강호)과 동수(강동원)는 우성을 데려다 아기를 원하는 이에게 팔려고 하는데, 다음 날 소영이 우성을 다시 찾으러 오면서 혼란에 빠진다. 하지만 소영 또한 우성에게 좋은 부모를 찾아 주기로 결심하면서 그들은 함께 여정에 오른다. 이 상황을 모두 지켜보던 형사 수진(배두나)이 그들을 바짝 뒤쫓는다. <브로커>는 소영과 우성, 상현과 동수가 대안 가족을 이루는 과정을 온정 어린 시선으로 바라본다. (홍은미)",
-    tit: "뉴 커런츠",
-    nation: "Korea",
-    year: "2022",
-    time: "130min",
-    format: "DCP",
-  },
-  {
-    id: 13,
-    title: "글리치",
-    lng: "Glitch",
-    genre: "모험 · SF/판타지 · 여성 ",
-    director: "노덕",
-    note: "홍지효(전여빈)의 주변에는 오래전부터 외계인이 어슬렁거려 왔다. 애인(이동휘)이 실종되는 사건이 벌어지자 홍지효는 미스터리 동호회를 찾아 사건의 실마리를 찾으려 하고, 거기에서 중학교 동창 허보라(나나)를 만난다. 둘은 이제 기막힌 모험을 시작한다. <글리치>는 빛나는 조합의 결과물이다. 화제의 시리즈물 <인간수업>(2020)의 진한새 작가와 스튜디오 329 제작사가 다시 뭉쳤고, 신선한 장르 감각을 지닌 노덕 감독이 가세했다. 전여빈과 나나가 연기해내는 캐릭터들은 엉뚱하면서도 귀엽다. 흥미로운 서사 전개뿐만 아니라 창의적인 시각적 아이디어들도 돋보인다. <글리치>는 모험물이자, SF물이고, 미스터리 물이면서, 코미디이기도 한, 장르적 매력 덩어리다. 10부작 중 4부를 상영한다. (정한석)",
-    tit: "뉴 커런츠",
-    nation: "Korea",
-    year: "2022",
-    time: "189min",
-    format: "DCP",
-  },
-  {
-    id: 17,
-    title: "부서지는 파도",
-    lng: "When the Waves are Gone",
-    genre:
-      "범죄/폭력 · 심리/미스터리/서스펜스/스릴러 · 분노/복수 · 인권/노동/사회 ",
-    director: "라브 디아즈",
-    note: "미제사건을 해결하는 유능한 경관인 에르메스는 마약과의 전쟁이 시작되자 직업에서의 모순을 느끼게 된다. 하루에도 여러번 길거리에서 처단된 소위 “마약 범죄자”의 시신을 목도하며 스트레스성 피부염에 시달린다. 게다가 자주 집을 비운 사이 바람을 피게 된 아내와 자신의 동료 경찰을 폭행하기에 이른다. 또다른 남자 프리모는 복역중 뒷배를 봐주는 윗선에 의해 조기출소한다. 조울증과 분노조절장애를 겪는 그는 자신만의 방식으로 과거를 청산하고자 하지만, 가장 자유를 만끽하는 순간에도 통제불능에 빠진다. 절제된 흑백화면과 롱테이크는 은밀하고도 개인적인 시간과 대화를 타임캡슐에 담듯 녹여내며 두 남자의 관계를 드러낸다. 그리고 온갖 아이러니와 모순을 내재한 현대사회에서 정의가 폭력으로 구현될 수 있는가를 질문하고 있다. (박성호)",
-    tit: "뉴 커런츠",
-    nation: "Philippines/France/Portugal/Denmark",
-    year: "2022",
-    time: "188min",
-    format: "DCP",
-  },
-];
-const New = () => {
+const New = ({ item }) => {
   return (
     <div className="new grid">
       <div className="container">
-        {DB.map((it, idx) => (
-          <Link to={"/detail/" + it.id}>
-            <div
-              className="card"
-              onClick={() => {
-                console.log(it.id);
-              }}
-            >
-              <img
-                src={
-                  process.env.PUBLIC_URL +
-                  "../images/program__0" +
-                  it.id +
-                  ".jpg"
-                }
-                alt=""
-              />
-              <div className="textbox">
-                <span className="tit">{it.tit}</span>
-                <span className="title">{it.title}</span>
-                <span className="director">{it.director}</span>
+        {item
+          .filter((it) => it.tit === "뉴 커런츠")
+          .map((it, idx) => (
+            <Link to={"/detail/" + it.id}>
+              <div
+                className="card"
+                onClick={() => {
+                  console.log(it.id);
+                }}
+              >
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "../images/program__0" +
+                    it.id +
+                    ".jpg"
+                  }
+                  alt=""
+                />
+                <div className="textbox">
+                  <span className="tit">{it.tit}</span>
+                  <span className="title">{it.title}</span>
+                  <span className="director">{it.director}</span>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
       </div>
     </div>
   );
