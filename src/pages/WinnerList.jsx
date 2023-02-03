@@ -9,7 +9,6 @@ const WinnerList = () => {
     const url = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${key}&itemPerPage=50&movieTypeCd=220102`;
     const getMovie = async () => {
       const res = await axios.get(url);
-      console.log(res.data.movieListResult.movieList);
       const MovieList = res.data.movieListResult.movieList.map((it) => {
         return {
           movieNm: it.movieNm,
@@ -23,8 +22,6 @@ const WinnerList = () => {
     };
     getMovie();
   }, []);
-
-  console.log(items);
 
   return (
     <div className="winnerList">
@@ -43,16 +40,17 @@ const WinnerList = () => {
               <tr>
                 <td>
                   <span className="title">&lt; {it.movieNm} &gt;</span>
-                  {/* <span>{it.movieNmEn}</span> */}
                   <span>
-                    {it.directors.map((i) => (
+                    {it.directors.map((i, index) => (
                       <div>{i.peopleNm} | 감독</div>
                     ))}
                   </span>
                 </td>
                 <td>{it.prdtYear}</td>
                 <td>{it.genreAlt}</td>
-                <td><button>수상소감</button></td>
+                <td>
+                  <button>수상소감</button>
+                </td>
               </tr>
             ))}
           </tbody>

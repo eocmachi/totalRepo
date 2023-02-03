@@ -67,17 +67,17 @@ const Header = () => {
                 <Link to="/page01">부산국제영화제</Link>
               </li>
               <li>
-                <Link to="/page02">2022 BIFF</Link>
+                <Link to="/page02/thisYear">2022 BIFF</Link>
               </li>
               <li>
-                <Link to="/page03">공식상영작</Link>
+                <Link to="/page03/open">공식상영작</Link>
               </li>
               <li>
                 <Link to="/page04">역대영화제</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/">공지사항</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/"># 작품 검색</Link>
               </li>

@@ -2,16 +2,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
-import SwiperCore, {
-  Autoplay,
-  EffectFade,
-  Navigation,
-  Pagination,
-} from "swiper";
+import SwiperCore, { Autoplay, EffectFade, Navigation } from "swiper";
 
 const MV = [
   {
@@ -29,19 +24,45 @@ const MV = [
 ];
 
 const MainVisual = () => {
+  const [IDX, setIDX] = useState();
+  useEffect(() => {
+    setIDX(0);
+  }, []);
+
+  const [swiper, setSwiper] = useState(null);
+  const [mainImageIndex, setmainImageIndex] = useState(0);
+
+  SwiperCore.use([Navigation]);
+
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+
+  const swiperParams = {
+    navigation: {
+      prevEl: navigationPrevRef.current,
+      nextEl: navigationNextRef.current,
+    },
+    onBeforeInit: (swiper) => {
+      swiper.params.navigation.prevEl = navigationPrevRef.current;
+      swiper.params.navigation.nextEl = navigationNextRef.current;
+      swiper.activeIndex = mainImageIndex;
+      swiper.navigation.update();
+    },
+    onSwiper: setSwiper,
+    onSlideChange: (e) => setmainImageIndex(e.activeIndex),
+  };
   return (
     <section className="MainVisual section">
       <Swiper
+        {...swiperParams}
+        ref={setSwiper}
         loop={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: true,
         }}
         effect={"fade"}
-        // onSlideChange={() => console.log("slide change")}
-        // onSwiper={(swiper) => console.log(swiper)}
-        modules={[Autoplay, EffectFade, Navigation, Pagination]}
-        pagination={{ clickable: true }}
+        modules={[Autoplay, EffectFade, Navigation]}
         className="main-swiper"
       >
         {MV.map((slide, idx) => (
@@ -64,15 +85,18 @@ const MainVisual = () => {
             </div>
           </SwiperSlide>
         ))}
-
-        {/* <div className="swiper-button">
-          <button ref={navigationPrevRef} className="prev">
-            🡐
-          </button>
-          <button ref={navigationNextRef} className="next">
-            🡒
-          </button>
-        </div> */}
+        <button ref={navigationPrevRef} className="prevBtn">
+          <img
+            alt="prevButton"
+            src={process.env.PUBLIC_URL + "/images/icon_arrow_prev.png"}
+          />
+        </button>
+        <button ref={navigationNextRef} className="nextBtn">
+          <img
+            alt="NextButton"
+            src={process.env.PUBLIC_URL + "/images/icon_arrow_next.png"}
+          />
+        </button>
       </Swiper>
     </section>
   );

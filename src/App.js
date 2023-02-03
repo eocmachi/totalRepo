@@ -29,7 +29,6 @@ const App = () => {
     setItem(movies);
   }, []);
 
-  console.log(movies);
   return (
     <div className="wrapper">
       <Header />
@@ -37,13 +36,13 @@ const App = () => {
         <Route path="/" element={<Main item={item} />} />
         <Route path="/page01" element={<Page01 />} />
         <Route path="/page02" element={<Page02 />}>
-          <Route path="" element={<Asia />} />
+          <Route path="thisYear" element={<Asia />} />
           <Route path="gonlo" element={<Gonglo />} />
           <Route path="actor" element={<Actor />} />
           <Route path="winnerList" element={<WinnerList />} />
         </Route>
         <Route path="/page03" element={<Page03 />}>
-          <Route path="" element={<Open />} />
+          <Route path="open" element={<Open />} />
           <Route path="today" element={<Today />} />
           <Route path="window" element={<Window />} />
           <Route path="new" element={<New />} />

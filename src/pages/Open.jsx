@@ -38,12 +38,7 @@ const Open = () => {
         {DB.map((it, idx) => (
           <div className="card">
             <Link to={"/detail/" + it.id}>
-              <div
-                className="card"
-                onClick={() => {
-                  console.log(it.id);
-                }}
-              >
+              <div className="card">
                 <img
                   src={
                     process.env.PUBLIC_URL +

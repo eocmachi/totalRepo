@@ -17,7 +17,7 @@ const Page02 = () => {
         <ul>
           <li>
             <NavLink
-              to="/page02"
+              to="/page02/thisYear"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               • 올해의 아시아영화인상

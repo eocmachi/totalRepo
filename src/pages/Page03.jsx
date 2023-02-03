@@ -15,7 +15,7 @@ const Page03 = ({ item }) => {
         <ul>
           <li>
             <NavLink
-              to="/page03"
+              to="/page03/open"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               • 개·폐막작
