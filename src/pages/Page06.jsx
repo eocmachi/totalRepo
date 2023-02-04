@@ -18,7 +18,7 @@ const Page06 = () => {
 
   const allMovie = async () => {
     const res = await axios.get(
-      `http://www.omdbapi.com?s=${text}&apikey=56fdcf4a`
+      `https://www.omdbapi.com?s=${text}&apikey=56fdcf4a`
     );
     console.log(res.data);
     setList(res.data.Search);

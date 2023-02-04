@@ -6,7 +6,7 @@ const WinnerList = () => {
 
   useEffect(() => {
     const key = process.env.REACT_APP_KOBIS_API_KEY;
-    const url = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${key}&itemPerPage=50&movieTypeCd=220102`;
+    const url = `https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${key}&itemPerPage=50&movieTypeCd=220102`;
     const getMovie = async () => {
       const res = await axios.get(url);
       const MovieList = res.data.movieListResult.movieList.map((it) => {
