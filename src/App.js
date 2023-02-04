@@ -7,6 +7,7 @@ import Page03 from "./pages/Page03";
 import Page04 from "./pages/Page04";
 import Page02 from "./pages/Page02";
 import Page01 from "./pages/Page01";
+import Page05 from "./pages/Page05";
 import Open from "./pages/Open";
 import Today from "./pages/Today";
 import Window from "./pages/Window";
@@ -19,6 +20,7 @@ import Asia from "./pages/Asia";
 import Detail from "./pages/Detail";
 import { movies, DB } from "./data";
 import Footer from "./components/Footer";
+import Page06 from "./pages/Page06";
 
 const App = () => {
   const [item, setItem] = useState([]);
@@ -52,6 +54,8 @@ const App = () => {
           <Route path="wideAngle" element={<WideAngle item={item} />} />
         </Route>
         <Route path="/page04" element={<Page04 list={archiveList} />} />
+        <Route path="/page05" element={<Page05 />} />
+        <Route path="/page06" element={<Page06 />} />
         <Route path="/detail/:id" element={<Detail item={item} />} />
       </Routes>
       <Footer />

@@ -224,7 +224,6 @@ body {
             color: #f5f5f5;
             font-size: 14px;
             font-weight: 500;
-
         }
 
         .nextBtn {
@@ -257,7 +256,7 @@ body {
     position: relative;
     color: #fff;
     text-align: center;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
 
     h2 {
         font-size: 40px;
@@ -275,6 +274,7 @@ body {
     }
 
     .archive-swiper {
+        overflow: visible;
         width: 1170px;
         margin: 0 auto;
     }
@@ -328,7 +328,7 @@ body {
             
         .swiper-button {
             display: flex;
-            gap: 20px;
+            gap: 15px;
 
             .prev, 
             .next {
@@ -337,6 +337,7 @@ body {
                 height: 35px;
                 width: 35px;
                 font-weight: 900;
+                transition: 0.3s;
 
                 &:hover {
                     background-color: rgb(189, 189, 189);
@@ -414,11 +415,21 @@ body {
                 background-color: #ddd;
                 border-radius: 50%;
                 cursor: pointer;
+                transition: 0.3s;
 
                 .xi-plus {
                     font-size: 11px;
                     font-weight: 900;
                     padding: 8px;
+                    transition: transform 0.2s;
+
+                    &:hover {
+                        transform: rotate(90deg);
+                    }
+                }
+
+                &:hover {
+                    background-color: rgb(189, 189, 189);
                 }
             }
         }

@@ -4,12 +4,12 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import { Link } from "react-router-dom";
 
-import SwiperCore, { Autoplay, EffectCoverflow, Navigation } from "swiper";
+import { Autoplay, EffectCoverflow, Navigation } from "swiper";
 
 const Archive = ({ list }) => {
   return (
     <section className="archive">
-      <div class="container">
+      <div className="container">
         <h2>BIFF Archive</h2>
         <p>역대 영화제 (2022 ~ 2011)</p>
       </div>
@@ -30,7 +30,7 @@ const Archive = ({ list }) => {
         }}
         pagination={true}
         modules={[Autoplay, EffectCoverflow, Navigation]}
-        class="archive-swiper"
+        className="archive-swiper"
       >
         {list.map((ar, idx) => (
           <SwiperSlide className="swiper-slide" key={ar.id}>

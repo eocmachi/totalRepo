@@ -8,7 +8,7 @@ const Today = ({ item }) => {
         {item
           .filter((it) => it.tit === "한국영화의 오늘")
           .map((it, idx) => (
-            <Link to={"/detail/" + it.id}>
+            <Link key={it.id} to={"/detail/" + it.id}>
               <div
                 className="card"
                 onClick={() => {

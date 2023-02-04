@@ -37,11 +37,11 @@ const WinnerList = () => {
           </thead>
           <tbody>
             {items.map((it) => (
-              <tr>
+              <tr key={it.id}>
                 <td>
                   <span className="title">&lt; {it.movieNm} &gt;</span>
                   <span>
-                    {it.directors.map((i, index) => (
+                    {it.directors.map((i) => (
                       <div>{i.peopleNm} | 감독</div>
                     ))}
                   </span>

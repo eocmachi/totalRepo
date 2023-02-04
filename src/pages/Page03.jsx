@@ -11,7 +11,7 @@ const Page03 = ({ item }) => {
   return (
     <section className="page03">
       <div className="content">
-        <h1>공식상영작</h1>
+        <h2>공식상영작</h2>
         <ul>
           <li>
             <NavLink

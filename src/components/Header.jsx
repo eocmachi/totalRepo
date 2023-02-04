@@ -13,10 +13,10 @@ const Header = () => {
   }, []);
   return (
     <header className="Header" ref={hide}>
-      <div class="hd-top">
-        <div class="container">
-          <ul class="left-box">
-            <li class="biff">
+      <div className="hd-top">
+        <div className="container">
+          <ul className="left-box">
+            <li className="biff">
               <Link to="/">BIFF</Link>
             </li>
             <li>
@@ -41,7 +41,7 @@ const Header = () => {
               <Link to="/">PRESS Service</Link>
             </li>
           </ul>
-          <ul class="right-box">
+          <ul className="right-box">
             <li>
               <Link to="/">로그인</Link>
             </li>
@@ -54,14 +54,18 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div class="hd-bt">
-        <div class="container">
+      <div className="hd-bt">
+        <div className="container">
           <h1>
             <Link to="/">
-              <img className="logo-img" src={process.env.PUBLIC_URL + "./images/logo.svg"} alt="" />
+              <img
+                className="logo-img"
+                src={process.env.PUBLIC_URL + "./images/logo.svg"}
+                alt=""
+              />
             </Link>
           </h1>
-          <nav class="gnb">
+          <nav className="gnb">
             <ul>
               <li>
                 <Link to="/page01">부산국제영화제</Link>
@@ -75,11 +79,11 @@ const Header = () => {
               <li>
                 <Link to="/page04">역대영화제</Link>
               </li>
-              {/* <li>
-                <Link to="/">공지사항</Link>
-              </li> */}
               <li>
-                <Link to="/"># 작품 검색</Link>
+                <Link to="/page05">커뮤니티</Link>
+              </li>
+              <li>
+                <Link to="/page06"># 작품 검색</Link>
               </li>
             </ul>
           </nav>

@@ -7,8 +7,8 @@ const Window = ({ item }) => {
       <div className="container">
         {item
           .filter((it) => it.tit === "아시아영화의 창")
-          .map((it, idx) => (
-            <Link to={"/detail/" + it.id}>
+          .map((it) => (
+            <Link key={it.id} to={"/detail/" + it.id}>
               <div
                 className="card"
                 onClick={() => {

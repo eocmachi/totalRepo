@@ -25,7 +25,7 @@ const Program = ({ item }) => {
   };
   return (
     <section className="program">
-      <div class="container">
+      <div className="container">
         <div className="left">
           <h2>2022 BIFF 공식상영작</h2>
           <span>

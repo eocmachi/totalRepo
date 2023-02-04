@@ -8,7 +8,7 @@ const Open = ({ item }) => {
         {item
           .filter((it) => it.tit === "개막작" || it.tit === "폐막작")
           .map((it, idx) => (
-            <div className="card">
+            <div key={it.id} className="card">
               <Link to={"/detail/" + it.id}>
                 <div className="card">
                   <img

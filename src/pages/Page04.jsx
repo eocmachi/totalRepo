@@ -31,7 +31,7 @@ const Page04 = ({ list }) => {
   return (
     <section className="page04">
       <div className="container">
-        <h1>역대영화제</h1>
+        <h2>역대영화제</h2>
         <Swiper
           {...swiperParams}
           ref={setSwiper}
@@ -40,7 +40,7 @@ const Page04 = ({ list }) => {
           spaceBetween={50}
         >
           {list.map((it, idx) => (
-            <SwiperSlide>
+            <SwiperSlide key={it.id}>
               <div className="content">
                 <div className="poster">
                   <img

@@ -4,7 +4,7 @@ const Page01 = () => {
   return (
     <section className="page01">
       <div className="container">
-        <h1>부산국제영화제 소개</h1>
+        <h2>부산국제영화제 소개</h2>
         <figure className="start">
           <img src={process.env.PUBLIC_URL + "./images/intro_01.jpg"} alt="" />
           <h4>부산국제영화제의 시작</h4>

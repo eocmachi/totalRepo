@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="Footer">
-      <div class="ft-bt">
-        <div class="top-content container">
+      <div className="ft-bt">
+        <div className="top-content container">
           <ul>
             <li>
               <Link to="/">부서별 연락처</Link>
@@ -26,7 +26,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <div class="logo-box">
+          <div className="logo-box">
             <Link to="/">
               <img
                 src={process.env.PUBLIC_URL + "./images/logo_01.png"}
@@ -47,8 +47,8 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div class="bt-content container">
-          <div class="inner-text">
+        <div className="bt-content container">
+          <div className="inner-text">
             <ul>
               <li>
                 부산사무국(48058) 부산광역시 해운대구 수영강변대로 120
