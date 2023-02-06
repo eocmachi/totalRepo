@@ -12,7 +12,7 @@
 
 ## 📝 사용기술
 
-<img src="https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react.js&logoColor=white"/> <img src="https://img.shields.io/badge/Emotion-D36AC2?style=for-the-badge&logoColor=f776AB"/> <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"> <img src="https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=scss&logoColor=white">
+<img src="https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" /> <img src="https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=scss&logoColor=white" />
 
 <br>
 
