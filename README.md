@@ -12,13 +12,15 @@
 
 ## 📝 사용기술
 
-<img src="https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" /> <img src="https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=scss&logoColor=white" />
+<img src="https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" /> <img src="https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white" />
 
 <br>
 
 ## 📍 주요 기능
 
 #### 1. 로그인 
+
+* firebase에 admin의 uid를 설정하여 <br> admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
 
 <br>
 
