@@ -1,4 +1,4 @@
-<img src="./public/images/brand01.png" align="right" />
+<img src="./public/images/gentle.png" align="right" />
 
 # GENTLE MONSTER [![GENTLE MONSTER](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://delicate-longma-d20402.netlify.app/)
 > A curated list of awesome READMEs
