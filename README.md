@@ -1,22 +1,22 @@
 <img src="./public/images/github.png" align="right" />
 
 # GENTLE MONSTER [![GENTLE MONSTER](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://delicate-longma-d20402.netlify.app/)
-> A curated list of awesome READMEs
+> A curated list of gentle-monster READMEs
 
-Elements in beautiful READMEs include, but are not limited to: images, screenshots, GIFs, text formatting, etc.
+젠틀몬스터의 페이지를 블라블라하였습니다.
 
-
+<br>
 ## 목차
 
-* [소개](#tada-소개)
-* [프론트엔드 전반](#프론트엔드-전반)
-* [HTML](#page_with_curl-html)
-* [CSS](#lipstick-css)
+* [소개](#소개)
+* [구현 사항](#프론트엔드-전반)
+* [HTML](#html)
+* [CSS](#css)
 
 
 <br>
 
-## :tada: 소개
+## 소개
 
 취업 전 반드시 알아야 한다고 생각하는 프론트엔드 분야의 기초지식들을 모아놓았습니다. 실제 면접질문들과 구글링을 통해 검색한 필수지식 및 질문들을 통해서 하나하나 정리했습니다.
 
@@ -26,16 +26,16 @@ Elements in beautiful READMEs include, but are not limited to: images, screensho
 
 <br>
 
-## 프론트엔드 전반
+## 구현 사항
 
 <br>
 
-## :page_with_curl: HTML
+## HTML
 
 
 <br>
 
-## :lipstick: CSS
+## CSS
 
 
 
