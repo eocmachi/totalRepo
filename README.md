@@ -1,5 +1,3 @@
-<img src="./public/images/github.png" align="right" />
-
 # GENTLE MONSTER [![GENTLE MONSTER](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://delicate-longma-d20402.netlify.app/)
 > A curated list of gentle-monster READMEs
 
@@ -10,9 +8,7 @@
 ## 목차
 
 * [소개](#소개)
-* [구현 사항](#구현-사항)
-* [HTML](#html)
-* [CSS](#css)
+* [주요 기능](#주요-기능)
 
 
 <br>
@@ -27,17 +23,6 @@
 
 <br>
 
-## 구현 사항
+## 주요 기능
 
 <br>
-
-## HTML
-
-
-<br>
-
-## CSS
-
-
-
-
