@@ -6,9 +6,7 @@
 * [프론트엔드 전반](#computer-프론트엔드-전반)
 * [HTML](#page_with_curl-html)
 * [CSS](#lipstick-css)
-* [Javascript](#fire-javascript)
-* [네트워크](#chart_with_upwards_trend-네트워크)
-* [보안](#lock-보안)
+
 
 <br>
 
@@ -35,20 +33,5 @@
 
 
 
-<br>
-
-## :fire: Javascript
-
-
-
-<br>
-
-## :chart_with_upwards_trend: 네트워크
-
-
-
-<br>
-
-## :lock: 보안
 
 
