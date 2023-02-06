@@ -17,7 +17,7 @@
 
 #### 2. 새로운 제품 등록
 
-* firebase에 admin의 uid를 설정하여 admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
+* firebase에 admin의 uid를 설정하여 <br> admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
 
 <img src="./public/images/github01.png" alt=" " />
 
