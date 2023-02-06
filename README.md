@@ -5,8 +5,7 @@
 
 ## 👀 프로젝트 소개
 
-젠틀몬스터 공식사이트를 참고하여 만든 쇼핑몰 사이트입니다. <br>
-[배포 사이트](https://delicate-longma-d20402.netlify.app/) 
+젠틀몬스터 공식사이트를 참고하여 만든 쇼핑몰 사이트입니다. [배포 사이트](https://delicate-longma-d20402.netlify.app/) 
 
 <br>
 
