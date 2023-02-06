@@ -9,7 +9,7 @@ Elements in beautiful READMEs include, but are not limited to: images, screensho
 ## 목차
 
 * [소개](#tada-소개)
-* [프론트엔드 전반](#computer-프론트엔드-전반)
+* [프론트엔드 전반](#프론트엔드-전반)
 * [HTML](#page_with_curl-html)
 * [CSS](#lipstick-css)
 
@@ -26,7 +26,7 @@ Elements in beautiful READMEs include, but are not limited to: images, screensho
 
 <br>
 
-## :computer: 프론트엔드 전반
+## 프론트엔드 전반
 
 <br>
 
