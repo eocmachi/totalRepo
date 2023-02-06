@@ -3,7 +3,9 @@
 # GENTLE MONSTER [![GENTLE MONSTER](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://delicate-longma-d20402.netlify.app/)
 > A curated list of gentle-monster READMEs
 
-젠틀몬스터의 페이지를 블라블라하였습니다.
+
+<br>
+
 
 ## 목차
 
