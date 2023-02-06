@@ -5,14 +5,14 @@
 
 ## 👀 프로젝트 소개
 
-젠틀몬스터 공식사이트를 참고하여 만든 쇼핑몰 사이트입니다. 
+젠틀몬스터 공식사이트를 참고하여 만든 쇼핑몰 사이트입니다. (포트폴리오용으로 제작되었.)
 * [배포 사이트](https://delicate-longma-d20402.netlify.app/) 
 
 <br>
 
 ## 📝 사용기술
 
-<img src="https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" /> <img src="https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white" />
+<img src="https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white" /> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" /> 
 
 <br>
 
