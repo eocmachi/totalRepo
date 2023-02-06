@@ -1,19 +1,9 @@
 # GENTLE MONSTER [![GENTLE MONSTER](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://delicate-longma-d20402.netlify.app/)
 > A curated list of gentle-monster READMEs
 
-
 <br>
 
-
-## 목차
-
-* [소개](#소개)
-* [주요 기능](#주요-기능)
-
-
-<br>
-
-## 소개
+## 👀 프로젝트 소개
 
 취업 전 반드시 알아야 한다고 생각하는 프론트엔드 분야의 기초지식들을 모아놓았습니다. 실제 면접질문들과 구글링을 통해 검색한 필수지식 및 질문들을 통해서 하나하나 정리했습니다.
 
@@ -23,6 +13,11 @@
 
 <br>
 
-## 주요 기능
+## ⭐ 주요 기능
 
+* 기능1
+* 기능2
+* 기능3
+* 기능4
+* 기능5
 <br>
