@@ -20,34 +20,45 @@
 
 #### 1. 로그인 
 
-* firebase에 admin 사용자의 uid를 설정하여 <br> admin으로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
+* firebase의 `onAuthStateChanged`를 사용하여 사용자의 로그인 상태를 관리할 수 있도록 하였습니다. callback 함수에 updatedUser를 전달받을 수 있도록 하였습니다.
+    
+    ```jsx
+    export function onUserStateChange(callback) {
+      onAuthStateChanged(auth, async (user) => {
+        const updatedUser = user ? await adminUser(user) : user;
+        callback(updatedUser);
+      });
+    }
+    ```
 
 <br>
 
 #### 2. 새로운 제품 등록
 
-* admin 아이디, 비밀번호 입니다.
-```
-아이디: teest0208@gmail.com
-비밀번호: test1234@@
-```
-* firebase에 admin의 uid를 설정하여 <br> admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
+* `admin` 아이디, 비밀번호 입니다.
+    
+    ```
+    아이디: teest0208@gmail.com
+    비밀번호: test1234@@
+    ```
+    
+* firebase에 admin의 **uid**를 지정하여 admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
 
 <img src="./public/images/github01.png" alt=" " />
 
-* 등록된 제품은 firebase와 cloudinary에서 수정, 관리가 가능하도록 하였습니다.
+* 등록된 제품은 **firebase**와 **cloudinary**에서 수정, 관리가 가능하도록 하였습니다.
 
 <br>
 
 #### 3. 장바구니
 
 * firebase의 실시간 데이터베이스의 set()을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
-
-```jsx
-export async function addOrUpdateToCart(userId, product) {
-  return set(ref(database, `carts/${userId}/${product.id}`), product);
-}
-```
+    
+    ```jsx
+    export async function addOrUpdateToCart(userId, product) {
+      return set(ref(database, `carts/${userId}/${product.id}`), product);
+    }
+    ```
 
 <br>
 
