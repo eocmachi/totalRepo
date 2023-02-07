@@ -20,6 +20,8 @@
 
 #### 1. 로그인 
 
+<img src="./public/images/github03.png" alt=" " />
+
 * firebase의 사용자의 로그인 상태를 관리하는 **onAuthStateChanged( )**를 사용하여 기존에 로그인 한 user를 기억하고 새로운 user가 로그인 할 경우, callback 함수에 updatedUser를 전달받을 수 있도록 하였습니다. 
     
     ```jsx
@@ -44,13 +46,15 @@
     
 * firebase에 admin의 **uid**를 지정하여 admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
 
-<img src="./public/images/github01.png" alt=" " />
+<img src="./public/images/github.png" alt=" " />
 
 * 등록된 제품은 **firebase**와 **cloudinary**에서 수정, 관리가 가능하도록 하였습니다.
 
 <br>
 
 #### 3. 장바구니
+
+<img src="./public/images/github02.png" alt=" " />
 
 * firebase의 실시간 데이터베이스의 **set( )**을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
     
