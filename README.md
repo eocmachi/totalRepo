@@ -51,3 +51,10 @@
     
 
 <br>
+
+### 3. 작품 상세페이지 구현
+
+- react-router를 이용해서 `path="/detail/:id"` 경로 설정하여 작품 상세 페이지를 구현하였습니다.
+    
+    <img src="./public/images/github03.png" alt=" " />
+    
