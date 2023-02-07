@@ -49,14 +49,21 @@ const Page06 = () => {
               <li className="movie-item">
                 {item.Poster === "N/A" ? (
                   <img
-                   className="no-image"
+                    className="no-image"
                     src={process.env.PUBLIC_URL + "./images/noimage.jpg"}
                     alt=""
                   />
                 ) : (
                   <img src={item.Poster} alt="" />
                 )}
-                <p>{item.Title}</p>
+                <div className="movie-des">
+                  <div className="type">
+                    <span>{item.Type}</span>
+                  </div>
+                  <p className="title">
+                    {item.Title} <span>({item.Year})</span>
+                  </p>
+                </div>
               </li>
             ))}
         </ul>
