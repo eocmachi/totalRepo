@@ -1,71 +1,60 @@
-# Getting Started with Create React App
+# 2022 BIFF [![2022 BIFF](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://classy-madeleine-f766d7.netlify.app/)
+> A curated list of 2022 BIFF READMEs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+## 👀 프로젝트 소개
 
-In the project directory, you can run:
+2022 부산국제영화제 공식사이트를 참고하여 만든 사이트입니다. (포트폴리오용으로 제작되었습니다.)
 
-### `npm start`
+- [배포 사이트](https://classy-madeleine-f766d7.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📍 주요 기능
 
-### `npm test`
+### 1. 영화진흥위원회 API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./public/images/github01.png" alt=" " />
 
-### `npm run build`
+- axios를 이용해서 **영화진흥위원회 api**를 호출하여 작품 리스트를 받아왔습니다.
+    
+    ```jsx
+    useEffect(() => {
+        const key = process.env.REACT_APP_KOBIS_API_KEY;
+        const url = `https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${key}&itemPerPage=50&movieTypeCd=220102`;
+        const getMovie = async () => {
+          const res = await axios.get(url);
+          const MovieList = res.data.movieListResult.movieList.map((it) => {
+            return {
+              movieNm: it.movieNm,
+              movieNmEn: it.movieNmEn,
+              prdtYear: it.prdtYear,
+              directors: it.directors,
+              genreAlt: it.genreAlt,
+            };
+          });
+          setItems(MovieList);
+        };
+        getMovie();
+      }, []);
+    ```
+    
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. OMDb API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- axios를 이용해서 **omdb api**를 호출하여 `#작품 검색 페이지`를 구현하였습니다.
+    
+    <img src="./public/images/github02.png" alt=" " />
+    
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. 작품 상세페이지 구현
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# biff_react
+- react-router를 이용해서 `path="/detail/:id"` 경로 설정하여 작품 상세 페이지를 구현하였습니다.
+    
+    <img src="./public/images/github03.png" alt=" " />
+    
