@@ -22,7 +22,7 @@
 
 <img src="./public/images/github03.png" alt=" " />
 
-* firebase의 사용자의 로그인 상태를 관리하는 **onAuthStateChanged( )**를 사용하여 기존에 로그인 한 user를 기억하고 새로운 user가 로그인 할 경우, callback 함수에 updatedUser를 전달받을 수 있도록 하였습니다. 
+* firebase의 사용자의 로그인 상태를 관리하는 **onAuthStateChanged()**를 사용하여 기존에 로그인 한 user를 기억하고 새로운 user가 로그인 할 경우, callback 함수에 updatedUser를 전달받을 수 있도록 하였습니다. 
     
     ```jsx
     export function onUserStateChange(callback) {
@@ -56,7 +56,7 @@
 
 <img src="./public/images/github02.png" alt=" " />
 
-* firebase의 실시간 데이터베이스의 **set( )**을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
+* firebase의 실시간 데이터베이스의 **set()**을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
     
     ```jsx
     export async function addOrUpdateToCart(userId, product) {
