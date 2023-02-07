@@ -38,11 +38,9 @@
 
 * firebase의 실시간 데이터베이스의 set()을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
 
-<pre><code>
-    export async function addOrUpdateToCart(userId, product) {
-    return set(ref(database, `carts/${userId}/${product.id}`), product);
-    } 
-</code></pre>
+<pre><code> export async function addOrUpdateToCart(userId, product) {
+        return set(ref(database, `carts/${userId}/${product.id}`), product);
+    } </code></pre>
    
 
 <br>
