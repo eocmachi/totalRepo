@@ -1,71 +1,69 @@
-# Getting Started with Create React App
+# GENTLE MONSTER [![GENTLE MONSTER](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://delicate-longma-d20402.netlify.app/)
+> A curated list of gentle-monster READMEs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+## 👀 프로젝트 소개
 
-In the project directory, you can run:
+젠틀몬스터 공식사이트를 참고하여 만든 쇼핑몰 사이트입니다. (포트폴리오용으로 제작되었습니다.)
+* [배포 사이트](https://delicate-longma-d20402.netlify.app/) 
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📝 사용기술
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white" /> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" /> 
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📍 주요 기능
 
-### `npm run build`
+#### 1. 로그인 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* firebase의 사용자의 로그인 상태를 관리하는 **onAuthStateChanged( )**를 사용하여 기존에 로그인 한 user를 기억하고 새로운 user가 로그인 할 경우, callback 함수에 updatedUser를 전달받을 수 있도록 하였습니다. 
+    
+    ```jsx
+    export function onUserStateChange(callback) {
+      onAuthStateChanged(auth, async (user) => {
+        const updatedUser = user ? await adminUser(user) : user;
+        callback(updatedUser);
+      });
+    }
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 2. 새로운 제품 등록
 
-### `npm run eject`
+* `admin` 아이디, 비밀번호 입니다.
+    
+    ```
+    아이디: teest0208@gmail.com
+    비밀번호: test1234@@
+    ```
+    
+* firebase에 admin의 **uid**를 지정하여 admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="./public/images/github01.png" alt=" " />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* 등록된 제품은 **firebase**와 **cloudinary**에서 수정, 관리가 가능하도록 하였습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### 3. 장바구니
 
-## Learn More
+* firebase의 실시간 데이터베이스의 **set( )**을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
+    
+    ```jsx
+    export async function addOrUpdateToCart(userId, product) {
+      return set(ref(database, `carts/${userId}/${product.id}`), product);
+    }
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 4. 제품 상세보기
 
-### Code Splitting
+* react-router를 사용해 제품 id를 주소 경로로 설정하고 `useLocation( )`로 현재 페이지의 객체 정보를 얻어올 수 있도록 하였습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# gentle-monster
+<br>
