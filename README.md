@@ -13,7 +13,7 @@
 
 ## 📝 사용기술
 
-<img src="[https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white](https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white)"/> <img src="[https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white](https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white)" /> <img src="[https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)" /> <img src="[https://img.shields.io/badge/React-Query-%23039BE5.svg?style=for-the-badge&logo=react-query](https://img.shields.io/badge/Axios-%23039BE5.svg?style=for-the-badge&logo=axios)" />
+<img src="[https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white](https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white)"/> <img src="[https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white](https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white)" />
 
 <br>
 
