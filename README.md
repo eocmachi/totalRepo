@@ -11,12 +11,6 @@
 
 <br>
 
-## 📝 사용기술
-
-<img src="[https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white](https://img.shields.io/badge/React.js-3178C6?style=for-the-badge&logo=react&logoColor=white)"/> <img src="[https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white](https://img.shields.io/badge/-scss-FF4785?style=for-the-badge&logo=sass&logoColor=white)" />
-
-<br>
-
 ## 📍 주요 기능
 
 ### 1. 영화진흥위원회 API
