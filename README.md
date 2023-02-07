@@ -26,6 +26,11 @@
 
 #### 2. 새로운 제품 등록
 
+* admin 아이디, 비밀번호 입니다.
+```
+아이디: teest0208@gmail.com
+비밀번호: test1234@@
+```
 * firebase에 admin의 uid를 설정하여 <br> admin 사용자로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
 
 <img src="./public/images/github01.png" alt=" " />
@@ -38,10 +43,11 @@
 
 * firebase의 실시간 데이터베이스의 set()을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
 
-<pre><code> export async function addOrUpdateToCart(userId, product) {
-        return set(ref(database, `carts/${userId}/${product.id}`), product);
-    } </code></pre>
-   
+```jsx
+export async function addOrUpdateToCart(userId, product) {
+  return set(ref(database, `carts/${userId}/${product.id}`), product);
+}
+```
 
 <br>
 
