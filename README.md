@@ -20,7 +20,7 @@
 
 #### 1. 로그인 
 
-* firebase의 `onAuthStateChanged`를 사용하여 사용자의 로그인 상태를 관리할 수 있도록 하였습니다. callback 함수에 updatedUser를 전달받을 수 있도록 하였습니다.
+* firebase의 사용자의 로그인 상태를 관리하는 **onAuthStateChanged( )**를 사용하여 기존에 로그인 한 user를 기억하고 새로운 user가 로그인 할 경우, callback 함수에 updatedUser를 전달받을 수 있도록 하였습니다. 
     
     ```jsx
     export function onUserStateChange(callback) {
@@ -52,7 +52,7 @@
 
 #### 3. 장바구니
 
-* firebase의 실시간 데이터베이스의 set()을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
+* firebase의 실시간 데이터베이스의 **set( )**을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
     
     ```jsx
     export async function addOrUpdateToCart(userId, product) {
@@ -64,6 +64,6 @@
 
 #### 4. 제품 상세보기
 
-* firebase에 admin 사용자의 uid를 설정하여 <br> admin으로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
+* react-router를 사용해 제품 id를 주소 경로로 설정하고 `useLocation( )`로 현재 페이지의 객체 정보를 얻어올 수 있도록 하였습니다.
 
 <br>
