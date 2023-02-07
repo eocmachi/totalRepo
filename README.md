@@ -36,7 +36,11 @@
 
 #### 3. 장바구니
 
-* firebase에 admin 사용자의 uid를 설정하여 <br> admin으로 로그인 할 경우, 새로운 제품 등록 페이지에 접근 가능하도록 구현하였습니다.
+* firebase의 실시간 데이터베이스의 set()을 사용하여 지정된 carts, userId에 사용자가 장바구니에 담은 제품이 추가되도록 하였습니다.
+
+    export async function addOrUpdateToCart(userId, product) {
+    return set(ref(database, `carts/${userId}/${product.id}`), product);
+    }
 
 <br>
 
