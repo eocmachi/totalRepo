@@ -24,8 +24,8 @@
 - firebase를 사용해 로그인 기능을 구현하였습니다.
   ```jsx
   login(providerName) {
-  const authProvider = this.getProvider(providerName);
-  return firebaseAuth.signInWithPopup(authProvider);
+    const authProvider = this.getProvider(providerName);
+    return firebaseAuth.signInWithPopup(authProvider);
   }
   ```
 
@@ -39,7 +39,7 @@
 
   ```jsx
   saveCard(userId, card) {
-  firebaseDatabase.ref(`${userId}/cards/${card.id}`).set(card);
+    firebaseDatabase.ref(`${userId}/cards/${card.id}`).set(card);
   }
   ```
 <br>
