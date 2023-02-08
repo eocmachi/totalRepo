@@ -20,7 +20,7 @@ const SearchHeader = ({ onSearch }) => {
     <header className="Header">
       <div className="hd_wrapper">
         <div className="logo">
-          <img src="/images/logo.png" alt="" />
+          <img src="./images/logo.png" alt="" />
           <h1>YouTube</h1>
         </div>
         <div className="search-button">
