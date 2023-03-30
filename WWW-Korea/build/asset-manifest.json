@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/WWF-Korea/static/css/main.00ea1298.css",
+    "main.js": "/WWF-Korea/static/js/main.d6e7ef31.js",
+    "static/media/main_pc03.png": "/WWF-Korea/static/media/main_pc03.b1a2d34b9835287511cc.png",
+    "static/media/main_pc01.png": "/WWF-Korea/static/media/main_pc01.341d1f4725c4331378ae.png",
+    "static/media/ori_1.png": "/WWF-Korea/static/media/ori_1.17af66ce67b78ab92e4e.png",
+    "static/media/main_pc02.jpg": "/WWF-Korea/static/media/main_pc02.d0cb6eb4660cd25ff387.jpg",
+    "static/media/all_bg.png": "/WWF-Korea/static/media/all_bg.9f07db6dfb75d2b6dba1.png",
+    "static/media/main_mb03.jpg": "/WWF-Korea/static/media/main_mb03.7f39380f49b1c21f2b61.jpg",
+    "static/media/main_pc04.jpeg": "/WWF-Korea/static/media/main_pc04.d7842907bc54d225f1ce.jpeg",
+    "static/media/main_mb01.jpg": "/WWF-Korea/static/media/main_mb01.cdbc7f9d898d63fd2fa0.jpg",
+    "static/media/main_mb02.jpg": "/WWF-Korea/static/media/main_mb02.1deb3cf7272264146362.jpg",
+    "static/media/main_mb05.jpg": "/WWF-Korea/static/media/main_mb05.e9f1eb0b915fddb69b17.jpg",
+    "static/media/main_pc05.jpg": "/WWF-Korea/static/media/main_pc05.6e8519a0fa21f29ae2ec.jpg",
+    "static/media/main_mb04.jpg": "/WWF-Korea/static/media/main_mb04.423a8bf39d83d3ff0a38.jpg",
+    "index.html": "/WWF-Korea/index.html",
+    "main.00ea1298.css.map": "/WWF-Korea/static/css/main.00ea1298.css.map",
+    "main.d6e7ef31.js.map": "/WWF-Korea/static/js/main.d6e7ef31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00ea1298.css",
+    "static/js/main.d6e7ef31.js"
+  ]
+}
