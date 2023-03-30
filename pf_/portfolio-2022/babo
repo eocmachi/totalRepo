@@ -1,0 +1,94 @@
+한페이지 안에 h1 은 하나만 써야함
+
+section의 제목은 h2로 잡고
+
+p는 문장을 의미하기 때문에 짧은 거 쓸 때 strong으로 대신 써주기
+
+box padding을 잡기
+margin을 아래쪽으로만 주기
+
+
+width auto로 주기
+width 넓이 주지 않기
+
+높이 절대 X
+
+
+* {
+            outline: 1px solid #f00;
+        }
+
+가이드 라인
+
+
+
+
+
+
+
+
+
+<figure>
+                    <img src="../img/Group 41.jpg" alt="">
+                    <div class="container">
+                        
+                    </div>
+
+                </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="event">
+                <p>GOOPIZA</p>
+                <strong>
+                    이벤트 / 할인 <br>
+                    안내
+                </strong>
+                <figure class="pop-up">
+                    <img src="../img/mv3_baemin_220428.png" alt="">
+                </figure>
+                <figure class="model">
+                    <img src="../img/mv3-model.png" alt="">
+                </figure>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+스크롤내렸을 때 요소 올라오기
+                $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 1200) {
+          $('.taste-title').addClass('on');
+        } else {
+          $('.taste-title').removeClass('on');
+        }
+      });
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 1200) {
+          $('.taste-title').addClass('on');
+        } else {
+          $('.taste-title').removeClass('on');
+        }
+      });
+
+
